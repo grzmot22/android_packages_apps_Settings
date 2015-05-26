@@ -1237,4 +1237,11 @@
     <string name="lock_to_cyanogen_master_clear_warning">Device Protection is enabled. Please disable to continue resetting your device.</string>
 
     <string name="bluetooth_pan_profile_summary_use_for_error">Connection error; is Bluetooth tethering enabled on this device?</string>
+
+    <!-- Change Log strings -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Optimized CyanogenMod 12.1 changelog</string>
+    <string name="changelog_loading">Loading changelog\u2026</string>
+
+    <string name="changelog_error">Unable to load changelog</string>
 </resources>
