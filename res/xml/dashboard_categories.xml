@@ -351,6 +351,17 @@
                 settings:advanced="true"
                 />
 
+        <!-- STweaks -->
+        <dashboard-tile
+                android:id="@+id/stweaks_settings"
+                android:title="STweaks"
+                android:icon="@drawable/ic_settings_stweaks">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.gokhanmoral.stweaks.app"
+                android:targetClass="com.gokhanmoral.stweaks.app.MainActivity"/>
+        </dashboard-tile>
+        
         <!-- Development -->
         <dashboard-tile
                 android:id="@+id/development_settings"
