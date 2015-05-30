@@ -1259,6 +1259,16 @@ public class SettingsActivity extends Activity
                     }
                 } else if (id == R.id.performance_settings) {
                         removeTile = true;
+                } else if (id == R.id.stweaks_settings) {
+                    // Check STweaks is installed
+                    try {
+                        // Do we find it?
+                        String packageName = "com.gokhanmoral.stweaks.app";
+                        getPackageManager().getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+                    } catch (NameNotFoundException e) {
+                        // Obviously not, remove the tile
+                        removeTile = true;
+                    }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
