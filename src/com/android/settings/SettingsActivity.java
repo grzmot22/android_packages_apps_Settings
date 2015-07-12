@@ -1263,8 +1263,6 @@ public class SettingsActivity extends Activity
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
                         removeTile = true;
                     }
-                } else if (id == R.id.performance_settings) {
-                        removeTile = true;
                 } else if (id == R.id.stweaks_settings) {
                     // Check STweaks is installed
                     try {

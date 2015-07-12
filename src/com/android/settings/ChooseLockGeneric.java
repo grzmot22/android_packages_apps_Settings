@@ -180,7 +180,7 @@ public class ChooseLockGeneric extends SettingsActivity {
          * @param disabled
          */
         private void maybeEnableEncryption(int quality, boolean disabled) {
-            maybeEnableEncryption(quality, disabled, 0);
+            maybeEnableEncryption(quality, disabled, LockPatternUtils.BIOMETRIC_WEAK_UNKNOWN);
         }
 
         /**
@@ -334,7 +334,7 @@ public class ChooseLockGeneric extends SettingsActivity {
                     LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, false);
             final boolean weakBiometricAvailable =
                     mChooseLockSettingsHelper.utils().isBiometricWeakInstalled();
-            final boolean fingerprintAvailable =
+            final boolean fingerprintAvailable = Process.myUserHandle().isOwner() &&
                     mChooseLockSettingsHelper.utils().isFingerprintInstalled(getActivity());
 
             // if there are multiple users, disable "None" setting
