@@ -33,6 +33,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -70,6 +71,7 @@ public class EnrollFingerprint extends SettingsActivity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     public static Intent createIntent(Context context) {
@@ -317,6 +319,7 @@ public class EnrollFingerprint extends SettingsActivity
                 mFpM.cancel();
             }
             mFpM.stopListening();
+            cancelEnrollmentStepTimeout();
             super.onDestroy();
         }
 
@@ -375,6 +378,11 @@ public class EnrollFingerprint extends SettingsActivity
             mTitle.setText(stage.titleMessage);
             mInstructions.setText(stage.instructionMessage);
             mInfoGraphic.setImageResource(stage.infoGraphic);
+            EnrollFingerprint activity = getEnrollmentActivity();
+            if (activity == null) {
+                // Activity is gone, nothiing to update here.
+                return;
+            }
             final SetupWizardNavBar setupBar = getEnrollmentActivity().getSetupBar();
 
             if (stage.backMode.enabled) {

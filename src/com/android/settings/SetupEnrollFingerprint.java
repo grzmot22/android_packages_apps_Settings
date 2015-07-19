@@ -46,7 +46,6 @@ public class SetupEnrollFingerprint extends EnrollFingerprint
     private static final int SET_FALLBACK = 99;
     private static final int CONFIRM_EXISTING_REQUEST = 100;
 
-    private LockPatternUtils mLockPatternUtils;
     private boolean mPasswordConfirmed = false;
     private boolean mWaitingForConfirmation = false;
 
@@ -93,6 +92,7 @@ public class SetupEnrollFingerprint extends EnrollFingerprint
 
         if (needsFallback) {
             Intent fallBackIntent = new Intent().setClass(this, SetupChooseLockGeneric.class);
+            fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, true);
             fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);
             fallBackIntent.putExtra(ManageFingerprints.CONFIRM_CREDENTIALS, false);
             fallBackIntent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE,
@@ -116,13 +116,8 @@ public class SetupEnrollFingerprint extends EnrollFingerprint
             mWaitingForConfirmation = false;
             mPasswordConfirmed = true;
         } else if (requestCode == SET_FALLBACK &&
-                (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER)) {
-            Log.d("TAG", "fallback password set");
-            mLockPatternUtils = new LockPatternUtils(this);
-            mLockPatternUtils.setUseFingerprint();
-        } else {
+                !(resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER)) {
             finish();
-            Log.d("TAG", "fallback password NOT set");
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
@@ -144,7 +139,13 @@ public class SetupEnrollFingerprint extends EnrollFingerprint
         protected void updateStage(Stage stage) {
             super.updateStage(stage);
             final SetupWizardNavBar setupBar = getEnrollmentActivity().getSetupBar();
-            setupBar.getBackButton().setVisibility(View.VISIBLE);
+            if (stage != Stage.EnrollmentFinished) {
+                setupBar.getBackButton().setVisibility(View.VISIBLE);
+            } else {
+                // setup needs the label to say "NEXT" instead of "DONE"
+                setupBar.getNextButton().setText(R.string.next_label);
+                setupBar.getBackButton().setVisibility(View.INVISIBLE);
+            }
         }
 
         @Override
@@ -166,11 +167,9 @@ public class SetupEnrollFingerprint extends EnrollFingerprint
         public void onNavigateNext() {
             switch (mUiStage) {
                 case EnrollmentFinished:
+                    LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
+                    lockPatternUtils.setUseFingerprint();
                     getActivity().setResult(Activity.RESULT_OK);
-                    Intent intent = new Intent(getActivity(), SetupManageFingerprints.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
-                    SetupWizardUtils.copySetupExtras(getActivity().getIntent(), intent);
-                    startActivity(intent);
                     getActivity().finish();
                     break;
                 default:
