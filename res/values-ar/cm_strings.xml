@@ -158,7 +158,7 @@
   <string name="block_notifications_title">تصفية شريط الإعلام</string>
   <string name="block_notifications_summary">إدارة اﻹشعارات التي تم تجاهلها والمرشحات</string>
   <string name="cmupdate_settings_title">تحديثات CyanogenMod</string>
-  <string name="mod_version">إصدار CyanogenMod</string>
+  <string name="mod_version">إصدار ROM</string>
   <string name="mod_version_default">غير معروف</string>
   <string name="build_date">تاريخ الإصدار</string>
   <string name="contributor_cloud_title">المساهمون</string>
