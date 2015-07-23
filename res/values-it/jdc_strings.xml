@@ -17,10 +17,10 @@
 <resources>
     <!-- Change Log strings -->
     <string name="changelog_title">Changelog</string>
-    <string name="changelog_summary">Optimized CyanogenMod 12.1 changelog</string>
-    <string name="changelog_loading">Loading changelog\u2026</string>
-    <string name="changelog_error">Unable to load changelog</string>
+    <string name="changelog_summary">Controlla il changelog per la build corrente</string>
+    <string name="changelog_loading">Carico il changelog\u2026</string>
+    <string name="changelog_error">Impossibile caricare il changelog</string>
     <!-- JDCTeam Google+ Community shortcut -->
-    <string name="community">JDCTeam on Google+</string>
-    <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
+    <string name="community">JDCTeam su Google+</string>
+    <string name="community_summary">Entra a far parte della nostra community ufficiale e resta aggiornato sui migliori software per il tuo telefono</string>
 </resources>
