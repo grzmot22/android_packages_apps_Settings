@@ -1317,6 +1317,22 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".jdcteam.BugReport"
+                android:label="@string/bug_report_activity"
+                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".jdcteam.WeirdShit"
+                android:label="@string/weird_shit"
+                android:parentActivityName="Settings$BugReport">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <activity android:name="Settings$StorageSettingsActivity"
                 android:label="@string/storage_settings_title"
                 android:taskAffinity="com.android.settings"

@@ -15,6 +15,11 @@
      limitations under the License.
 -->
 <resources>
+ <!-- Bug report -->
+    <string name="bug_report_activity">Segnala un problema</string>
+    <string name="bug_report_activity_summary">Segnala un problema riscontrato in questa ROM</string>
+    <string name="issue_tracker">JDCTeam Issue Tracker</string>
+    <string name="issue_tracker_summary">Premi qui per collegarti al nostro issue tracker</string>
     <!-- Change Log strings -->
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">Controlla il changelog per la build corrente</string>
@@ -23,4 +28,13 @@
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam su Google+</string>
     <string name="community_summary">Entra a far parte della nostra community ufficiale e resta aggiornato sui migliori software per il tuo telefono</string>
+    <!-- SWAG stuff -->
+    <string name="weird_shit">MSS - Most Secret Stuff</string>
+    <string name="weird_shit_summary">Triste per il problema riscontrato? Prova a premere qui...</string>
+    <string name="toast_higgs">Congratulazioni, hai appena scoperto la Madre dell\'Universo!</string>
+    <string name="toast_info">Hai trovato qualche info utile? :P</string>
+    <string name="toast_oncreate">Premi qualcosa!</string>
+    <string name="url1">https://goo.gl/RhIoKt</string>
+    <string name="url2">https://goo.gl/SVWg6S</string>
+    <string name="url3">https://goo.gl/EANNlw</string>
 </resources>

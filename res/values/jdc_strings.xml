@@ -15,6 +15,11 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Bug report -->
+    <string name="bug_report_activity">Bug report</string>
+    <string name="bug_report_activity_summary">Report an issue found in this ROM</string>
+    <string name="issue_tracker">JDCTeam Issue Tracker</string>
+    <string name="issue_tracker_summary">Press here to go to our issue tracker</string>
     <!-- Change Log strings -->
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">Optimized CyanogenMod 12.1 changelog</string>
@@ -23,4 +28,13 @@
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam on Google+</string>
     <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
+    <!-- SWAG stuff -->
+    <string name="weird_shit">MSS - Most Secret Stuff</string>
+    <string name="weird_shit_summary">Sad for the bug found? Try to press here...</string>
+    <string name="toast_higgs">Congratulations, you have discovered the Mother of Universe!</string>
+    <string name="toast_info">Did you find some useful info? :P</string>
+    <string name="toast_oncreate">Let\'s press somewhere!</string>
+    <string name="url1">https://goo.gl/Nlo7sN</string>
+    <string name="url2">https://goo.gl/S1MkOw</string>
+    <string name="url3">https://goo.gl/JrKvZX</string>
 </resources>

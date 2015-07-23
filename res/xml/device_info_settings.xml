@@ -56,7 +56,16 @@
                     android:targetPackage="com.android.settings"
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
-        
+
+        <!-- Bug report -->
+        <PreferenceScreen android:key="bug_report"
+            android:title="@string/bug_report_activity"
+            android:summary="@string/bug_report_activity_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.jdcteam.BugReport" />
+        </PreferenceScreen>
+
         <!-- Change Log -->
         <PreferenceScreen android:key="changelog"
             android:title="@string/changelog_title"
