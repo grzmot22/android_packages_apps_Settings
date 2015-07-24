@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Monitoraggio attività di rete</string>
+    <string name="show_network_traffic_state">Stato</string>
+    <string name="network_traffic_summary">Opzioni per la visualizzazione dell\'attività di rete nella barra di stato</string>
+    <string name="show_network_traffic_unit">Unità</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disabilitato</string>
+    <string name="show_network_traffic_up">In uscita</string>
+    <string name="show_network_traffic_down">In entrata</string>
+    <string name="show_network_traffic_all">Entrambi</string>
+    <string name="show_network_traffic_bit">Bit al secondo</string>
+    <string name="show_network_traffic_byte">Byte al secondo</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondi l\'icona quando non c\'è alcuna attività</string>
+    <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
+
+</resources>
