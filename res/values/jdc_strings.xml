@@ -29,6 +29,7 @@
     <string name="community">JDCTeam on Google+</string>
     <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
     <!-- SWAG stuff -->
+    <string name="missing_clicks">3 clicks left</string>
     <string name="weird_shit">MSS - Most Secret Stuff</string>
     <string name="weird_shit_summary">Sad for the bug found? Try to press here...</string>
     <string name="toast_higgs">Congratulations, you have discovered the Mother of Universe!</string>

@@ -23,13 +23,9 @@
         android:data="https://github.com/JDCTeam/issue_tracking_cm/issues/new" />
         </Preference>
 
-    <PreferenceScreen android:key="most_secret_stuff"
+    <Preference android:key="mss"
         android:title="@string/weird_shit"
         android:summary="@string/weird_shit_summary" >
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.settings"
-            android:targetClass="com.android.settings.jdcteam.WeirdShit" />
-    </PreferenceScreen>
+    </Preference>
 
 </PreferenceScreen>

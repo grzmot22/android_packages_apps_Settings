@@ -29,6 +29,7 @@
     <string name="community">JDCTeam su Google+</string>
     <string name="community_summary">Entra a far parte della nostra community ufficiale e resta aggiornato sui migliori software per il tuo telefono</string>
     <!-- SWAG stuff -->
+    <string name="missing_clicks">Mancano 3 pressioni</string>
     <string name="weird_shit">MSS - Most Secret Stuff</string>
     <string name="weird_shit_summary">Triste per il problema riscontrato? Prova a premere qui...</string>
     <string name="toast_higgs">Congratulazioni, hai appena scoperto la Madre dell\'Universo!</string>
