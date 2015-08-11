@@ -29,7 +29,7 @@ public class BugReport extends PreferenceActivity {
                 switch ( taps ) {
                     case 7:
                         toast = new Toast(BugReport.this);
-                        toast.makeText(BugReport.this, R.string.missing_clicks, Toast.LENGHT_SHORT).show();
+                        toast.makeText(BugReport.this, R.string.missing_clicks, Toast.LENGTH_SHORT).show();
                         break;
                     case 10:
                         start = new Intent (BugReport.this, WeirdShit.class);
