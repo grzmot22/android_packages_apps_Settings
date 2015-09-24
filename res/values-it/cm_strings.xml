@@ -342,6 +342,8 @@
   <string name="notification_light_default_value">Predefinito</string>
   <string name="notification_light_missed_call_title">Chiamata persa</string>
   <string name="notification_light_voicemail_title">Messaggio vocale</string>
+  <string name="notification_light_screen_on">Luci con schermo acceso</string>
+  <string name="keywords_lights_brightness_level">dim luminosità led</string>
   <string name="notification_ringtone_title_cm">Suoneria notifiche</string>
   <string name="headset_connect_player_title">Avvia lettore musicale</string>
   <string name="headset_connect_player_summary">Lancia il lettore musicale predefinito quando vengono connesse le cuffie</string>
@@ -482,6 +484,7 @@
   <string name="ok">OK</string>
   <string name="profile_menu_delete_title">Elimina</string>
   <string name="profile_action_none">Lascia invariato</string>
+  <string name="profile_action_system">Sistema predefinito</string>
   <string name="profile_action_disable">Disattiva</string>
   <string name="profile_action_enable">Attiva</string>
   <string name="profile_trigger_a2dp_connect">Alla connessione A2DP</string>
@@ -700,6 +703,7 @@
   <string name="status_bar_show_weather_summary">Visualizza il tempo sopra il pannello Impostazioni rapide</string>
   <string name="qs_category_title">Pannello Impostazioni rapide</string>
   <string name="qs_brightness_slider_title">Visualizza selettore luminosità</string>
+  <string name="qs_hide_tiles_with_sensitive_data">Nascondi tiles privati quando bloccato</string>
   <string name="qs_order_title">Seleziona e ordina i tile</string>
   <string name="add_qs">Aggiungi nuovo tile</string>
   <string name="qs_action_delete">Elimina</string>
@@ -722,6 +726,7 @@
   <string name="qs_tile_compass">Bussola</string>
   <string name="qs_tile_lockscreen">Schermata di sblocco</string>
   <string name="qs_tile_lte">LTE</string>
+  <string name="qs_tile_volume_panel">Pannello volume</string>
   <string name="qs_tile_screen_timeout">Sospensione schermo</string>
   <string name="qs_tile_usb_tether">Tethering USB</string>
   <string name="qs_tile_heads_up">Heads up</string>
@@ -831,6 +836,17 @@
   <string name="live_display_low_power_summary">Regola il display per un minore consumo energetico senza degradazione</string>
   <string name="live_display_enhance_color_title">Migliora colori</string>
   <string name="live_display_enhance_color_summary">Migliora la vividezza del colore di toni della pelle, paesaggi e altre immagini</string>
+  <string name="live_display_color_profile_title">Profilo colore</string>
+  <string name="live_display_color_profile_standard_title">Predefinito</string>
+  <string name="live_display_color_profile_standard_summary">Colori accurati e bianchi luminosi</string>
+  <string name="live_display_color_profile_natural_title">Naturale</string>
+  <string name="live_display_color_profile_natural_summary">Colori relalistici e toni forti</string>
+  <string name="live_display_color_profile_dynamic_title">Dinamico</string>
+  <string name="live_display_color_profile_dynamic_summary">Colori intensi e bianchi luminosi</string>
+  <string name="live_display_color_profile_cinema_title">Cinema</string>
+  <string name="live_display_color_profile_cinema_summary">Riproduzione del colore perfetto per contenuti multimediali</string>
+  <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+  <string name="live_display_color_profile_astronomy_summary">Rosso profondo per la visione notturna</string>
   <string name="battery_saver_threshold">Soglia risparmio energetico</string>
   <string name="battery_saver_summary">Riduce le prestazioni e limita i dati in background</string>
   <string name="battery_saver_summary_unavailable">Non disponibile durante la ricarica</string>
@@ -863,7 +879,7 @@
   <string name="sim_card_status_title">Status SIM %d</string>
   <string name="sim_card_lock_settings_title">Impostazioni blocco SIM %d</string>
   <string name="sim_card_summary_empty">SIM non inserita</string>
-  <string name="sim_mobile_network_settings_category_title">Impostazioni rete mobile</string>
+  <string name="sim_mobile_network_settings_category_title">Impostazioni rete cellulare</string>
   <string name="sim_mobile_network_settings_title">Impostazioni SIM %d</string>
   <string name="factory_reset_instructions_title">Dati personali &amp; applicazioni</string>
   <string name="factory_reset_instructions_summary">Questo cancellerà tutti gli account, applicazioni, dati delle app e impostazioni di sistema su questo dispositivo</string>
@@ -935,6 +951,7 @@
   <string name="fingerprint_enrollment_error_title_3">Hmm, qualcosa è andato storto</string>
   <string name="fingerprint_enrollment_error_title_4">Uh oh, riprova</string>
   <string name="fingerprint_enrollment_error_title_5">Whoos, c\'è stato un problema</string>
+  <string name="lockscreen_settings_and_fingerprint">Blocco schermo &amp; impronta digitale</string>
   <string name="menu_stats_reset">Reimposta statistiche</string>
   <string name="reset_stats_msg">Le statistiche delle batteria saranno resettate</string>
   <string name="dock_battery_not_present">Batteria dock non presente</string>
@@ -945,4 +962,22 @@
   <string name="lto_download_data_wifi_only">Download dati GPS-A</string>
   <string name="lto_download_data_wifi_only_on">Da tutte le reti</string>
   <string name="lto_download_data_wifi_only_off">Solo da reti Wi\u2011Fi</string>
+  <string name="keep_screen_on_never">Mai</string>
+  <string name="keep_screen_on_debugging">Durante il debug USB</string>
+  <string name="keep_screen_on_charging">Durante la ricarica</string>
+  <string name="contributors_cloud_fragment_title">Collaboratori</string>
+  <string name="contributors_cloud_loading_message">Caricamento dati collaboratori\u2026</string>
+  <string name="contributors_cloud_failed_message">Impossibile caricare dati collaboratori</string>
+  <string name="contributor_info_menu">Info collaboratore</string>
+  <string name="contributor_info_msg">
+        <![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Commit:</b> <xliff:g id="commits">%3$s</xliff:g><br/><br/>
+                 <b>Numero:</b> <xliff:g id="rank">%4$s</xliff:g>]]></string>
+  <string name="contributions_info_menu">Info contributi</string>
+  <string name="contributions_info_msg">
+        <![CDATA[<b>Totale collaboratori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Totale commit:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Ultimo aggiornamento:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+  <string name="quick_settings_reset_message">Reimpostare tile rapidi?</string>
 </resources>

@@ -700,6 +700,7 @@
   <string name="status_bar_show_weather_summary">Het weer weergeven boven het Snelle instellingenpaneel</string>
   <string name="qs_category_title">Snelle instellingenpaneel</string>
   <string name="qs_brightness_slider_title">Schuifregelaar helderheid</string>
+  <string name="qs_hide_tiles_with_sensitive_data">Gevoelige tegels verbergen indien vergrendeld</string>
   <string name="qs_order_title">Tegels selecteren en indelen</string>
   <string name="add_qs">Nieuwe tegel</string>
   <string name="qs_action_delete">Verwijderen</string>
@@ -888,7 +889,6 @@
   <string name="wifi_countrycode_entries_sg">Israël, Singapore</string>
   <string name="wifi_countrycode_entries_br">Brazilië</string>
   <string name="wifi_countrycode_entries_in">India</string>
-  <string name="unlock_set_unlock_launch_picker_title_with_fingerprint">Schermvergrendeling &amp; vingerafdruk</string>
   <string name="unlock_set_unlock_mode_fingerprint">Vingerafdruk</string>
   <string name="unlock_set_unlock_fingerprint_title">Vingerafdruk</string>
   <string name="fingerprint_item_add_new_fingerprint">Nieuwe vingerafdruk toevoegen</string>

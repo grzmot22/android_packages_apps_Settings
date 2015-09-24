@@ -342,6 +342,8 @@
   <string name="notification_light_default_value">Padrão</string>
   <string name="notification_light_missed_call_title">Chamada perdida</string>
   <string name="notification_light_voicemail_title">Correio de Voz</string>
+  <string name="notification_light_screen_on">Luzes com a tela ligada</string>
+  <string name="keywords_lights_brightness_level">escurecer o brilho do led</string>
   <string name="notification_ringtone_title_cm">Toque de notificação</string>
   <string name="headset_connect_player_title">Abrir app de música</string>
   <string name="headset_connect_player_summary">Iniciar o app de música padrão quando os fones de ouvido forem conectados</string>
@@ -701,6 +703,7 @@
   <string name="status_bar_show_weather_summary">Mostrar o tempo acima do painel de Configurações Rápidas</string>
   <string name="qs_category_title">Painel de Configurações Rápidas</string>
   <string name="qs_brightness_slider_title">Mostrar o controle deslizante de brilho</string>
+  <string name="qs_hide_tiles_with_sensitive_data">Esconder os botões sensíveis quando bloqueado</string>
   <string name="qs_order_title">Selecionar e ordenar os botões</string>
   <string name="add_qs">Adicionar novo botão</string>
   <string name="qs_action_delete">Remover</string>
@@ -723,6 +726,7 @@
   <string name="qs_tile_compass">Bússola</string>
   <string name="qs_tile_lockscreen">Tela de bloqueio</string>
   <string name="qs_tile_lte">LTE</string>
+  <string name="qs_tile_volume_panel">Painel de volume</string>
   <string name="qs_tile_screen_timeout">Tempo limite de tela</string>
   <string name="qs_tile_usb_tether">Tethering USB</string>
   <string name="qs_tile_heads_up">Heads up</string>
@@ -832,6 +836,17 @@
   <string name="live_display_low_power_summary">Ajustar exibição para menor consumo de energia, sem degradação</string>
   <string name="live_display_enhance_color_title">Realçar cores</string>
   <string name="live_display_enhance_color_summary">Melhorar a vivacidade da cor de tons de pele, cenário, e outras imagens</string>
+  <string name="live_display_color_profile_title">Perfil de cor</string>
+  <string name="live_display_color_profile_standard_title">Padrão</string>
+  <string name="live_display_color_profile_standard_summary">Cores precisas e brancos brilhantes</string>
+  <string name="live_display_color_profile_natural_title">Natural</string>
+  <string name="live_display_color_profile_natural_summary">Cores e tons de pele realistas</string>
+  <string name="live_display_color_profile_dynamic_title">Dinâmico</string>
+  <string name="live_display_color_profile_dynamic_summary">Cores melhoradas e brancos brilhantes</string>
+  <string name="live_display_color_profile_cinema_title">Cinema</string>
+  <string name="live_display_color_profile_cinema_summary">Reprodução de cor perfeita para a mídia</string>
+  <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+  <string name="live_display_color_profile_astronomy_summary">Vermelho profundo para preservar a visão noturna</string>
   <string name="battery_saver_threshold">Iniciar economia de bateria</string>
   <string name="battery_saver_summary">Reduzir o desempenho e desativar os dados em segundo plano</string>
   <string name="battery_saver_summary_unavailable">Indisponível enquanto estiver carregando</string>
@@ -945,4 +960,22 @@
   <string name="lto_download_data_wifi_only">Transferência de dados assistidos de GPS</string>
   <string name="lto_download_data_wifi_only_on">Qualquer rede</string>
   <string name="lto_download_data_wifi_only_off">Somente através de redes Wi\u2011Fi</string>
+  <string name="keep_screen_on_never">Nunca</string>
+  <string name="keep_screen_on_debugging">Durante a depuração USB</string>
+  <string name="keep_screen_on_charging">Enquanto estiver carregando</string>
+  <string name="contributors_cloud_fragment_title">Colaboradores</string>
+  <string name="contributors_cloud_loading_message">Lendo os dados dos contribuintes\u2026</string>
+  <string name="contributors_cloud_failed_message">Não é possível carregar dados dos contribuintes</string>
+  <string name="contributor_info_menu">Informação do colaborador</string>
+  <string name="contributor_info_msg">
+        <![CDATA[<b>Nome:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Usuário:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Contribuições:</b> <xliff:g id="commits">%3$s</xliff:g><br/><br/>
+                 <b>Ranking:</b> <xliff:g id="rank">%4$s</xliff:g>]]></string>
+  <string name="contributions_info_menu">Informação de contribuições</string>
+  <string name="contributions_info_msg">
+        <![CDATA[<b>Total de Colaboradores:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Total de contribuições:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Última Atualização:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+  <string name="quick_settings_reset_message">Redefinir atalhos da configuração rápida?</string>
 </resources>
