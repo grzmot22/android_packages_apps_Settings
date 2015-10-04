@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    
+    <ImageView
+	android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+	android:layout_marginTop="20dp"
+	android:layout_marginBottom="10dp"
+	android:id="@+id/jdc_romlogo"
+	android:src="@drawable/ic_romlogo"/>
+	
+    <!-- Team members in alphabetical order -->
+    <TextView
+	android:layout_below="@+id/jdc_romlogo"
+	android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+	android:layout_marginBottom="10dp"
+        android:id="@+id/jdcteam"
+        android:text="@string/jdcteam"
+	android:textColor="#918b8b"
+	android:textStyle="bold|italic"/>
+    <!---->
+
+</RelativeLayout>
