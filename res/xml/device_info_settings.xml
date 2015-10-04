@@ -16,6 +16,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
+	
+	<!-- ROM Logo - launches thread on XDA -->
+	<PreferenceScreen android:key="rom_logo"
+		android:layout="@layout/rom_logo">
+	    <intent android:action="android.intent.action.VIEW"
+                    android:data="http://goo.gl/bfuLpQ" />
+	</PreferenceScreen>
 
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
