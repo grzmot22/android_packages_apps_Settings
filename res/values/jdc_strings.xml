@@ -25,9 +25,35 @@
     <string name="changelog_summary">Optimized CyanogenMod 12.1 changelog</string>
     <string name="changelog_loading">Loading changelog\u2026</string>
     <string name="changelog_error">Unable to load changelog</string>
+    <!-- Custom device info screen -->
+    <string name="custom_device_info">Common</string>
+    <string name="custom_device_info_summary">Hardware, model, status etc.</string>
+    <!-- Custom ROM info screen -->
+    <string name="custom_rom_info">ROM</string>
+    <string name="custom_rom_info_summary">Android version, kernel version, legal info, name etc.</string>
+    <!-- Device hardware info screen -->
+    <string name="device_hardware_info">Hardware</string>
+    <string name="device_hardware_info_summary">Detailed info about device\'s CPU, GPU &amp; RAM</string>
+    <string name="device_soc_category">System on Chip</string>
+    <string name="device_soc_manufacturer">Manufacturer</string>
+    <string name="device_cpu_category">CPU</string>
+    <string name="device_cpu_count">Core count</string>
+    <string name="device_gpu_category">GPU</string>
+    <string name="device_hw_frequency">Maximum frequency</string>
+    <string name="device_hw_model">Model</string>
+    <string name="device_ram_category">RAM memory</string>
+    <string name="device_ram_free">Free</string>
+    <string name="device_ram_info">Status</string>
+    <string name="device_ram_size">Size</string>
+    <string name="device_ram_used">Used</string>
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam on Google+</string>
-    <string name="community_summary">Join our official community and keep yourself updated about the best software for your device</string>
+    <string name="community_summary">Join our official community and keep in touch with us</string>
+    <!-- More things screen -->
+    <string name="more_things">More</string>
+    <string name="more_things_summary">Issue report, ROM thread etc.</string>
+    <string name="rom_thread">ROM thread</string>
+    <string name="rom_thread_summary">Discuss about this ROM on XDA-Developers</string>
     <!-- SWAG stuff -->
     <string name="missing_clicks">3 clicks left</string>
     <string name="weird_shit">MSS - Most Secret Stuff</string>
@@ -38,4 +64,6 @@
     <string name="url1">https://goo.gl/Nlo7sN</string>
     <string name="url2">https://goo.gl/S1MkOw</string>
     <string name="url3">https://goo.gl/JrKvZX</string>
+    <!-- Team members under ROM logo -->
+    <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-\nfranzyroy, hawkerpaul, javelinanddart, Jimsilver73\nMattBooth, side, smeroni68, smstiv</string>
 </resources>

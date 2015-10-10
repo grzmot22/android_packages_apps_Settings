@@ -15,22 +15,43 @@
      limitations under the License.
 -->
 <resources>
- <!-- Bug report -->
+    <!-- Bug report -->
     <string name="bug_report_activity">Segnala un problema</string>
     <string name="bug_report_activity_summary">Segnala un problema riscontrato in questa ROM</string>
-    <string name="issue_tracker">JDCTeam Issue Tracker</string>
     <string name="issue_tracker_summary">Premi qui per collegarti al nostro issue tracker</string>
     <!-- Change Log strings -->
-    <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">Controlla il changelog per la build corrente</string>
     <string name="changelog_loading">Carico il changelog\u2026</string>
     <string name="changelog_error">Impossibile caricare il changelog</string>
+    <!-- Custom device info screen -->
+    <string name="custom_device_info">Generali</string>
+    <string name="custom_device_info_summary">Hardware, modello, stato ecc.</string>
+    <!-- Custom ROM info screen -->
+    <string name="custom_rom_info_summary">Info kernel, info legali, nome, versione di Android ecc.</string>
+    <!-- Device hardware info screen -->
+    <string name="device_hardware_info_summary">Informazioni dettagliate sul processore, processore grafico e memoria RAM</string>
+    <string name="device_soc_manufacturer">Produttore</string>
+    <string name="device_soc_year">Anno</string>
+    <string name="device_cpu_category">Processore</string>
+    <string name="device_cpu_count">Numero di core</string>
+    <string name="device_gpu_category">Processore grafico</string>
+    <string name="device_hw_frequency">Frequenza massima</string>
+    <string name="device_hw_model">Modello</string>
+    <string name="device_ram_category">Memoria RAM</string>
+    <string name="device_ram_free">Disponibile</string>
+    <string name="device_ram_info">Stato</string>
+    <string name="device_ram_size">Totale</string>
+    <string name="device_ram_used">In uso</string>
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam su Google+</string>
-    <string name="community_summary">Entra a far parte della nostra community ufficiale e resta aggiornato sui migliori software per il tuo telefono</string>
+    <string name="community_summary">Entra a far parte della nostra community ufficiale e resta in contatto con noi</string>
+    <!-- More things screen -->
+    <string name="more_things">Altro</string>
+    <string name="more_things_summary">Segnalazione problemi, thread della ROM ecc.</string>
+    <string name="rom_thread">Thread</string>
+    <string name="rom_thread_summary">Discuti di questa ROM su XDA-Developers</string>
     <!-- SWAG stuff -->
     <string name="missing_clicks">Mancano 3 pressioni</string>
-    <string name="weird_shit">MSS - Most Secret Stuff</string>
     <string name="weird_shit_summary">Triste per il problema riscontrato? Prova a premere qui...</string>
     <string name="toast_higgs">Congratulazioni, hai appena scoperto la Madre dell\'Universo!</string>
     <string name="toast_info">Hai trovato qualche info utile? :P</string>

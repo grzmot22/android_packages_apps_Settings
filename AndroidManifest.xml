@@ -1332,6 +1332,14 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+	
+	<activity android:name=".jdcteam.DeviceHWInfo"
+		android:label="@string/device_hardware_info"
+		android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+	    <intent-filter>
+		<action android:name="android.intent.action.MAIN" />
+	    </intent-filter>
+	</activity>
 
         <activity android:name=".jdcteam.WeirdShit"
                 android:label="@string/weird_shit"

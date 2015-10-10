@@ -98,6 +98,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_CM_UPDATES = "cm_updates";
     private static final String KEY_CM_LICENSE = "cmlicense";
+    private static final String KEY_HARDWARE_INFO = "show_device_hardware_info";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -152,6 +153,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_DEVICE_NAME, Build.PRODUCT);
         removePreferenceIfBoolFalse(KEY_DEVICE_NAME, getResources().getBoolean(
                 R.bool.config_displayDeviceName));
+	
+	// Remove device hardware information if boolean is false
+	removePreferenceIfBoolFalse(KEY_HARDWARE_INFO, getResources().getBoolean(
+		com.android.internal.R.bool.config_displayHardwareInfo));
 
         // Remove selinux information if property is not present
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SELINUX_STATUS,
