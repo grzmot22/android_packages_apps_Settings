@@ -69,11 +69,11 @@ public class DeviceHWInfo extends PreferenceActivity {
 		removePreference(getPreferenceScreen(), KEY_SOC_MODEL,
 		PROPERTY_SOC_MODEL);
 		
-		// Remove CPU cores count info info if property is missing
+		// Remove CPU cores count info if property is missing
 		removePreference(getPreferenceScreen(), KEY_CPU_COUNT,
 		PROPERTY_CPU_COUNT);
 		
-		// Remove CPU frequency info info if property is missing
+		// Remove CPU frequency info if property is missing
 		removePreference(getPreferenceScreen(), KEY_CPU_FREQUENCY,
 		PROPERTY_CPU_FREQUENCY);
 		
