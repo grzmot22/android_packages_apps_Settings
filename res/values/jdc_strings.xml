@@ -38,6 +38,10 @@
     <string name="device_soc_manufacturer">Manufacturer</string>
     <string name="device_cpu_category">CPU</string>
     <string name="device_cpu_count">Core count</string>
+    <string name="device_cpufreq_core0">Core 0</string>
+    <string name="device_cpufreq_core1">Core 1</string>
+    <string name="device_cpufreq_core2">Core 2</string>
+    <string name="device_cpufreq_core3">Core 3</string>
     <string name="device_gpu_category">GPU</string>
     <string name="device_hw_frequency">Maximum frequency</string>
     <string name="device_hw_model">Model</string>
