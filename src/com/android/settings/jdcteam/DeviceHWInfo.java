@@ -70,7 +70,7 @@ public class DeviceHWInfo extends PreferenceActivity {
 	private static final String SYSFS_CPUFREQ_CORE_1 = "/sys/devices/system/cpu/cpufreq/all_cpus/scaling_max_freq_cpu1";
 	private static final String SYSFS_CPUFREQ_CORE_2 = "/sys/devices/system/cpu/cpufreq/all_cpus/scaling_max_freq_cpu2";
 	private static final String SYSFS_CPUFREQ_CORE_3 = "/sys/devices/system/cpu/cpufreq/all_cpus/scaling_max_freq_cpu3";
-	private static final String SYSFS_GPUFREQ = "/sys/devices/platform/kgsl-3d0.0/kgsl/kgsl-3d0/max_gpuclk";
+	private static final String SYSFS_GPUFREQ = "/sys/devices/platform/kgsl-3d0.0/kgsl/kgsl-3d0/max_pwrlevel";
 	
 	// Megabyte, Megahertz, newline
 	private static final String MB = " MB";
@@ -287,14 +287,28 @@ public class DeviceHWInfo extends PreferenceActivity {
 	
 	private String tuneValue(String valueToFix) {
 		String finalValue = null;
-		float currValue = Float.parseFloat(valueToFix);
 		if (!isGpu) {
+			float currValue = Float.parseFloat(valueToFix);
 			currValue = Math.round(currValue / 1000);
+			finalValue = Float.toString(currValue).split("\\.")[0];
 		} else {
 			// GPU frequency needs to be handled differently
-			currValue = Math.round(currValue / (1000*1000));
+			int gpuPwrLevel = Integer.parseInt(valueToFix);
+			switch (gpuPwrLevel) {
+				case 0:
+					finalValue = "450";
+					break;
+				case 1:
+					finalValue = "320";
+					break;
+				case 2:
+					finalValue = "200";
+					break;
+				case 3:
+					finalValue = "128";
+					break;
+			}
 		}
-		finalValue = Float.toString(currValue).split("\\.")[0] + MHZ;
-		return finalValue;
+		return finalValue + MHZ;
 	}
 }
