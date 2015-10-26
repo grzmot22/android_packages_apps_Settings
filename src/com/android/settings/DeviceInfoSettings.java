@@ -81,6 +81,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
+    private static final String KEY_MOD_VERSION = "mod_version";
+    private static final String KEY_MOD_BUILD_DATE = "build_date";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -128,6 +130,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
+        setValueSummary(KEY_MOD_VERSION, "ro.cm.display.version");
+        findPreference(KEY_MOD_VERSION).setEnabled(true);
+        setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -180,9 +185,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         removePreferenceIfBoolFalse(KEY_UPDATE_SETTING,
                 R.bool.config_additional_system_update_setting_enable);
 
-        // Remove regulatory information if none present.
+        // Remove regulatory information if none present or config_show_regulatory_info is disabled
         final Intent intent = new Intent(Settings.ACTION_SHOW_REGULATORY_INFO);
-        if (getPackageManager().queryIntentActivities(intent, 0).isEmpty()) {
+        if (getPackageManager().queryIntentActivities(intent, 0).isEmpty()
+                || !getResources().getBoolean(R.bool.config_show_regulatory_info)) {
             Preference pref = findPreference(KEY_REGULATORY_INFO);
             if (pref != null) {
                 getPreferenceScreen().removePreference(pref);
@@ -236,7 +242,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     if (mDevHitToast != null) {
                         mDevHitToast.cancel();
                     }
-                    mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_on,
+                    mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_on_cm,
                             Toast.LENGTH_LONG);
                     mDevHitToast.show();
                     // This is good time to index the Developer Options
@@ -250,7 +256,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                         mDevHitToast.cancel();
                     }
                     mDevHitToast = Toast.makeText(getActivity(), getResources().getQuantityString(
-                            R.plurals.show_dev_countdown, mDevHitCountdown, mDevHitCountdown),
+                            R.plurals.show_dev_countdown_cm, mDevHitCountdown, mDevHitCountdown),
                             Toast.LENGTH_SHORT);
                     mDevHitToast.show();
                 }
@@ -258,7 +264,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 if (mDevHitToast != null) {
                     mDevHitToast.cancel();
                 }
-                mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_already,
+                mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_already_cm,
                         Toast.LENGTH_LONG);
                 mDevHitToast.show();
             }
