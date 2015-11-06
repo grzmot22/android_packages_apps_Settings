@@ -50,7 +50,7 @@ public class StatsUploadJobService extends JobService {
     public static final int JOB_TYPE_CMORG = 2;
 
     public static final String KEY_UNIQUE_ID = "uniqueId";
-    public static final String KEY_DEVICE_NAME = "deviceName";
+    public static final String KEY_DEVICE_MODEL = "deviceName";
     public static final String KEY_VERSION = "version";
     public static final String KEY_COUNTRY = "country";
     public static final String KEY_CARRIER = "carrier";
@@ -101,7 +101,7 @@ public class StatsUploadJobService extends JobService {
             PersistableBundle extras = mJobParams.getExtras();
 
             String deviceId = extras.getString(KEY_UNIQUE_ID);
-            String deviceName = extras.getString(KEY_DEVICE_NAME);
+            String deviceName = extras.getString(KEY_DEVICE_MODEL);
             String deviceVersion = extras.getString(KEY_VERSION);
             String deviceCountry = extras.getString(KEY_COUNTRY);
             String deviceCarrier = extras.getString(KEY_CARRIER);

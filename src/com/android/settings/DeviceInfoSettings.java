@@ -84,14 +84,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_KERNEL_VERSION = "kernel_version";
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
-    private static final String KEY_DEVICE_NAME = "device_name";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_SECURITY_PATCH = "security_patch";
     private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
-    private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
-    private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_MOD_VERSION = "mod_version";
@@ -133,7 +130,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             getPreferenceScreen().removePreference(findPreference(KEY_SECURITY_PATCH));
         }
         setValueSummary(KEY_BASEBAND_VERSION, "gsm.version.baseband");
-        setValueSummary(KEY_EQUIPMENT_ID, PROPERTY_EQUIPMENT_ID);
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
@@ -149,10 +145,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             String status = getResources().getString(R.string.selinux_status_permissive);
             setStringSummary(KEY_SELINUX_STATUS, status);
         }
-
-        setStringSummary(KEY_DEVICE_NAME, Build.PRODUCT);
-        removePreferenceIfBoolFalse(KEY_DEVICE_NAME, getResources().getBoolean(
-                R.bool.config_displayDeviceName));
 	
 	// Remove device hardware information if boolean is false
 	removePreferenceIfBoolFalse(KEY_HARDWARE_INFO, getResources().getBoolean(
@@ -172,10 +164,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SAFETY_LEGAL,
                 PROPERTY_URL_SAFETYLEGAL);
-
-        // Remove Equipment id preference if FCC ID is not set by RIL
-        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_EQUIPMENT_ID,
-                PROPERTY_EQUIPMENT_ID);
 
         // Remove Baseband version if wifi-only device
         if ((Utils.isWifiOnly(getActivity())
@@ -520,9 +508,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 }
                 if (isPropertyMissing(PROPERTY_URL_SAFETYLEGAL)) {
                     keys.add(KEY_SAFETY_LEGAL);
-                }
-                if (isPropertyMissing(PROPERTY_EQUIPMENT_ID)) {
-                    keys.add(KEY_EQUIPMENT_ID);
                 }
                 // Remove Baseband version if wifi-only device
                 if (Utils.isWifiOnly(context) && !Utils.showSimCardTile(context)) {

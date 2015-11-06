@@ -76,7 +76,7 @@ public class ReportingService extends IntentService {
         String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
 
         PersistableBundle cyanogenBundle = new PersistableBundle();
-        cyanogenBundle.putString(StatsUploadJobService.KEY_DEVICE_NAME, deviceName);
+        cyanogenBundle.putString(StatsUploadJobService.KEY_DEVICE_MODEL, deviceName);
         cyanogenBundle.putString(StatsUploadJobService.KEY_UNIQUE_ID, deviceId);
         cyanogenBundle.putString(StatsUploadJobService.KEY_VERSION, deviceVersion);
         cyanogenBundle.putString(StatsUploadJobService.KEY_COUNTRY, deviceCountry);
