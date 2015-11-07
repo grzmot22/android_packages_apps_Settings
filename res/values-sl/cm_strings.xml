@@ -832,11 +832,8 @@
   <string name="interruptions_ignore_while_media_title">Prepreči zvočno izognitev</string>
   <string name="interruptions_ignore_while_media_summary">Ne zmanjšaj glasnosti predvajanja predstavnosti, ko prispe obvestilo</string>
   <string name="none_is_silent_title">Nikoli ne utišaj budilk</string>
-<<<<<<< HEAD
-=======
   <string name="none_is_silent_summary_on">Budilke ne bodo prezrte v tihem načinu</string>
   <string name="none_is_silent_summary_off">Budilke bodo prezrte v načinu Brez</string>
->>>>>>> 7a985ee87858895b27eb2a47feda37f253aa4753
   <string name="allow_lights_title">Dovoli lučke obvestil</string>
   <string name="live_display_summary">Optimiziraj zaslon glede na čas dneva in pogoje okolice, da se izboljša berljivost in zmanjša obremenitev oči</string>
   <string name="live_display_mode">Način prikaza</string>

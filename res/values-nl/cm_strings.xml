@@ -830,11 +830,8 @@
   <string name="interruptions_ignore_while_media_title">Stabiel mediavolume</string>
   <string name="interruptions_ignore_while_media_summary">Mediavolume niet verminderen bij meldingen</string>
   <string name="none_is_silent_title">Nooit alarmen dempen</string>
-<<<<<<< HEAD
-=======
   <string name="none_is_silent_summary_on">Alarmen worden niet genegeerd in de stille stand</string>
   <string name="none_is_silent_summary_off">Alarmen worden genegeerd in de stille stand</string>
->>>>>>> 7a985ee87858895b27eb2a47feda37f253aa4753
   <string name="allow_lights_title">Meldingsled toestaan</string>
   <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
   <string name="live_display_mode">Weergavemodus</string>
