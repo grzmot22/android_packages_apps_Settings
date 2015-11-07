@@ -120,23 +120,12 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mDefaultPref.setOnPreferenceChangeListener(this);
 
         // Advanced light settings
-
-        mNotificationLedBrightnessPref = (PreferenceScreen)
-                findPreference(Settings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
         mScreenOnLightsPref = (SystemSettingSwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (SystemSettingSwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
         mCustomEnabledPref.setOnPreferenceChangeListener(this);
-
-        if (!resources.getBoolean(
-                com.android.internal.R.bool.config_adjustableNotificationLedBrightness)) {
-            mAdvancedPrefs.removePreference(mNotificationLedBrightnessPref);
-        } else {
-            mNotificationLedBrightnessPref.setOnPreferenceChangeListener(this);
-        }
-
 
         // Missed call and Voicemail preferences should only show on devices with a voice capabilities
         TelephonyManager tm = (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
@@ -407,9 +396,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mEnabledPref || preference == mCustomEnabledPref ||
-
-                preference == mNotificationLedBrightnessPref ||
-
                 preference == mScreenOnLightsPref) {
             getActivity().invalidateOptionsMenu();
         } else {
