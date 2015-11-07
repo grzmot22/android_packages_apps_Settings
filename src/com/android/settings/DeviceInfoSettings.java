@@ -65,6 +65,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String FILENAME_PROC_VERSION = "/proc/version";
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
 
+    private static final String KEY_MANUAL = "manual";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
@@ -131,7 +132,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
-        setValueSummary(KEY_MOD_VERSION, "ro.cm.display.version");
+        setValueSummary(KEY_MOD_VERSION, cyanogenmod.os.Build.CYANOGENMOD_DISPLAY_VERSION);
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setExplicitValueSummary(KEY_MOD_API_LEVEL, constructApiLevelString());
@@ -187,6 +188,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         // Read platform settings for additional system update setting
         removePreferenceIfBoolFalse(KEY_UPDATE_SETTING,
                 R.bool.config_additional_system_update_setting_enable);
+
+        // Remove manual entry if none present.
+        removePreferenceIfBoolFalse(KEY_MANUAL, R.bool.config_show_manual);
 
         // Remove regulatory information if none present or config_show_regulatory_info is disabled
         final Intent intent = new Intent(Settings.ACTION_SHOW_REGULATORY_INFO);
