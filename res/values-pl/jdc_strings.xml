@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The JDCTeam
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+   <!-- Bug report -->
+    <string name="bug_report_activity">Zgłoś błąd</string>
+    <string name="bug_report_activity_summary">Zgłoś problem znaleziony w tym Romie</string>
+    <string name="issue_tracker">JDCTeam Issue Tracker</string>
+    <string name="issue_tracker_summary">Naciśnij tutaj i przejdz do naszego issue tracker</string>
+    <!-- Change Log strings -->
+    <string name="changelog_title">Lista zmian</string>
+    <string name="changelog_summary">Lista zmian Optimized CyanogenMod 12.1</string>
+    <string name="changelog_loading">Wczytywanie listy zmian\u2026</string>
+    <string name="changelog_error">Nie udało się wczytać listy zmian</string>
+    <!-- Custom device info screen -->
+    <string name="custom_device_info">Ogólne</string>
+    <string name="custom_device_info_summary">Sprzęt, model, status etc.</string>
+     <!-- Custom ROM info screen -->
+    <string name="custom_rom_info">ROM</string>
+    <string name="custom_rom_info_summary">Wersja Android, wersja jądra, informacje prawne, nazwa etc.</string>
+    <!-- Device hardware info screen -->
+    <string name="device_hardware_info">Sprzęt</string>
+    <string name="device_hardware_info_summary">Szczegółowe informacje o CPU, GPU &amp; RAM</string>
+    <string name="device_soc_category">System on Chip</string>
+    <string name="device_soc_manufacturer">Producent</string>
+    <string name="device_cpu_category">CPU</string>
+    <string name="device_cpu_count">Ilość rdzeni</string>
+    <string name="device_cpufreq_core0">Rdzeń 0</string>
+    <string name="device_cpufreq_core1">Rdzeń 1</string>
+    <string name="device_cpufreq_core2">Rdzeń 2</string>
+    <string name="device_cpufreq_core3">Rdzeń 3</string>
+    <string name="device_gpu_category">GPU</string>
+    <string name="device_hw_frequency">Maksymalna częstotliwość</string>
+    <string name="device_hw_model">Model</string>
+    <string name="device_ram_category">Pamięć RAM</string>
+    <string name="device_ram_free">Wolna</string>
+    <string name="device_ram_info">Status</string>
+    <string name="device_ram_size">Wielkość</string>
+    <string name="device_ram_used">Użyta</string>
+    <!-- JDCTeam Google+ Community shortcut -->
+    <string name="community">JDCTeam na Google+</string>
+    <string name="community_summary">Dołącz to oficjalnej społeczności i bądz w kontakcie z nami</string>
+    <!-- More things screen -->
+    <string name="more_things">Więcej</string>
+    <string name="more_things_summary">Zgłoś błąd, Wątek na temat ROMu etc.</string>
+    <string name="rom_thread">Wątek na temat ROMu</string>
+    <string name="rom_thread_summary">Dyskutuj na temat tego Romu na XDA-Developers</string>
+    <!-- SWAG stuff -->
+    <string name="missing_clicks"> Jeszcze 3 kliknięcia</string>
+    <string name="weird_shit">MSS - Most Secret Stuff</string>
+    <string name="weird_shit_summary"> Smutny z powodu znalezienia błędu? Kliknij tutaj...</string>
+    <string name="toast_higgs">Gratulacje, otkryłeś Matkę Wszechświata!</string>
+    <string name="toast_info">Czy znalazłeś kilka przydatnych informacji? :P</string>
+    <string name="toast_oncreate">Naciśnij gdziekolwiek!</string>
+    <string name="url1">https://goo.gl/Nlo7sN</string>
+    <string name="url2">https://goo.gl/S1MkOw</string>
+    <string name="url3">https://goo.gl/JrKvZX</string>
+    <!-- Team members under ROM logo -->
+    <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-\nFernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73\njosegalre, MattBooth, side, smeroni68, smstiv</string>
+</resources>
+
