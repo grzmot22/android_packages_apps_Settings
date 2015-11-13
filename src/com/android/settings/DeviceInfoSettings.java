@@ -145,10 +145,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             String status = getResources().getString(R.string.selinux_status_permissive);
             setStringSummary(KEY_SELINUX_STATUS, status);
         }
-	
-	// Remove device hardware information if boolean is false
-	removePreferenceIfBoolFalse(KEY_HARDWARE_INFO, getResources().getBoolean(
-		com.android.internal.R.bool.config_displayHardwareInfo));
 
         // Remove selinux information if property is not present
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SELINUX_STATUS,

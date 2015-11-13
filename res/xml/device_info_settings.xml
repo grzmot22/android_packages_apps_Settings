@@ -75,16 +75,6 @@
                 android:title="@string/device_model"
                 android:summary="@string/device_info_default"/>
 
-	    <!-- Device hardware info -->
-	    <PreferenceScreen
-		    android:key="show_device_hardware_info"
-		    android:title="@string/device_hardware_info"
-		    android:summary="@string/device_hardware_info_summary">
-		<intent android:action="android.intent.action.MAIN"
-			android:targetPackage="com.android.settings"
-			android:targetClass="com.android.settings.jdcteam.DeviceHWInfo" />
-	    </PreferenceScreen>
-
             <!-- Device Baseband version -->
             <Preference android:key="baseband_version" 
                 style="?android:preferenceInformationStyle"

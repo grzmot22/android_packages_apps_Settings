@@ -27,29 +27,10 @@
     <string name="changelog_error">Unable to load changelog</string>
     <!-- Custom device info screen -->
     <string name="custom_device_info">Common</string>
-    <string name="custom_device_info_summary">Hardware, model, status etc.</string>
+    <string name="custom_device_info_summary">Model, status etc.</string>
     <!-- Custom ROM info screen -->
     <string name="custom_rom_info">ROM</string>
     <string name="custom_rom_info_summary">Android version, kernel version, legal info, name etc.</string>
-    <!-- Device hardware info screen -->
-    <string name="device_hardware_info">Hardware</string>
-    <string name="device_hardware_info_summary">Detailed info about device\'s CPU, GPU &amp; RAM</string>
-    <string name="device_soc_category">System on Chip</string>
-    <string name="device_soc_manufacturer">Manufacturer</string>
-    <string name="device_cpu_category">CPU</string>
-    <string name="device_cpu_count">Core count</string>
-    <string name="device_cpufreq_core0">Core 0</string>
-    <string name="device_cpufreq_core1">Core 1</string>
-    <string name="device_cpufreq_core2">Core 2</string>
-    <string name="device_cpufreq_core3">Core 3</string>
-    <string name="device_gpu_category">GPU</string>
-    <string name="device_hw_frequency">Maximum frequency</string>
-    <string name="device_hw_model">Model</string>
-    <string name="device_ram_category">RAM memory</string>
-    <string name="device_ram_free">Free</string>
-    <string name="device_ram_info">Status</string>
-    <string name="device_ram_size">Size</string>
-    <string name="device_ram_used">Used</string>
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam on Google+</string>
     <string name="community_summary">Join our official community and keep in touch with us</string>
@@ -69,5 +50,5 @@
     <string name="url2">https://goo.gl/S1MkOw</string>
     <string name="url3">https://goo.gl/JrKvZX</string>
     <!-- Team members under ROM logo -->
-    <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-\nFernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73\njosegalre, MattBooth, side, smeroni68, smstiv</string>
+    <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, smstiv</string>
 </resources>

@@ -12,16 +12,25 @@
 	android:src="@drawable/ic_romlogo"/>
 	
     <!-- Team members in alphabetical order -->
-    <TextView
+    <HorizontalScrollView
 	android:layout_below="@+id/jdc_romlogo"
-	android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-	android:layout_marginBottom="10dp"
-        android:id="@+id/jdcteam"
-        android:text="@string/jdcteam"
-	android:textColor="#918b8b"
-	android:textStyle="bold|italic"/>
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:layout_marginStart="32dp"
+	android:layout_marginEnd="32dp"
+	android:scrollbarThumbHorizontal="@drawable/logo_scrollbar">
+
+	<TextView
+	    android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+	    android:layout_marginBottom="6dp"
+            android:id="@+id/jdcteam"
+            android:text="@string/jdcteam"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="#918b8b"
+	    android:textStyle="bold|italic"/>
+    </HorizontalScrollView>
     <!---->
 
 </RelativeLayout>
