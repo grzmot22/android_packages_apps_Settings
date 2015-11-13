@@ -25,23 +25,9 @@
     <string name="changelog_error">Impossibile caricare il changelog</string>
     <!-- Custom device info screen -->
     <string name="custom_device_info">Generali</string>
-    <string name="custom_device_info_summary">Hardware, modello, stato ecc.</string>
+    <string name="custom_device_info_summary">Modello, stato ecc.</string>
     <!-- Custom ROM info screen -->
     <string name="custom_rom_info_summary">Info kernel, info legali, nome, versione di Android ecc.</string>
-    <!-- Device hardware info screen -->
-    <string name="device_hardware_info_summary">Informazioni dettagliate sul processore, processore grafico e memoria RAM</string>
-    <string name="device_soc_manufacturer">Produttore</string>
-    <string name="device_soc_year">Anno</string>
-    <string name="device_cpu_category">Processore</string>
-    <string name="device_cpu_count">Numero di core</string>
-    <string name="device_gpu_category">Processore grafico</string>
-    <string name="device_hw_frequency">Frequenza massima</string>
-    <string name="device_hw_model">Modello</string>
-    <string name="device_ram_category">Memoria RAM</string>
-    <string name="device_ram_free">Disponibile</string>
-    <string name="device_ram_info">Stato</string>
-    <string name="device_ram_size">Totale</string>
-    <string name="device_ram_used">In uso</string>
     <!-- JDCTeam Google+ Community shortcut -->
     <string name="community">JDCTeam su Google+</string>
     <string name="community_summary">Entra a far parte della nostra community ufficiale e resta in contatto con noi</string>
