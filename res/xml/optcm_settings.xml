@@ -51,12 +51,19 @@
 	    android:summaryOff="@string/qs_fast_data_enable_sum_off"
 	    android:defaultValue="false"/>
 	    
-	      <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-		android:key="double_tap_sleep_anywhere"
-		android:title="Double tap to lockscreen"
-		android:summaryOff="Double tap to lockscreen will lock the device"
-		android:summaryOn="Double tap to lockscreen won't lock the device"
-		android:defaultValue="false" />
+	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+	   android:key="double_tap_sleep_anywhere"
+	   android:title="Double tap to lockscreen"
+	   android:summaryOff="Double tap to lockscreen will lock the device"
+	   android:summaryOn="Double tap to lockscreen won't lock the device"
+	   android:defaultValue="false" />
+		
+	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+          android:key="show_su_indicator"
+          android:title="@string/su_indicator"
+          android:summaryOn="@string/su_indicator_summary_on"
+          android:summaryOff="@string/su_indicator_summary_off"
+          android:defaultValue="true" />
 		
 	    <PreferenceScreen
 		android:id="@+id/development_settings"
