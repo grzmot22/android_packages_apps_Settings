@@ -177,6 +177,62 @@
                 android:title="@string/notification_light_title"
                 android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
 
+
     </PreferenceCategory>
 
+        <PreferenceCategory
+                android:key="interface"
+                android:title="@string/category_interface">
+
+            <PreferenceScreen
+                    android:key="wallpaper"
+                    android:title="@string/wallpaper_settings_title"
+                    settings:keywords="@string/keywords_display_wallpaper"
+                    android:fragment="com.android.settings.WallpaperTypeSettings" />
+
+            <!-- expanded desktop -->
+            <PreferenceScreen
+                    android:key="expanded_desktop"
+                    android:title="@string/power_menu_expanded_desktop"
+                    android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
+
+            <!-- Search in Recents -->
+            <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
+                    android:key="recents_show_search_bar"
+                    android:title="@string/recents_show_searchbar"
+                    android:defaultValue="true" />
+
+            <!-- RAM Memory bar -->
+            <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                    android:key="systemui_recents_mem_display"
+                    android:title="@string/recents_show_membar_title"
+                    android:summaryOn="@string/recents_show_membar_summary_on"
+                    android:summaryOff="@string/recents_show_membar_summary_off"
+                    android:defaultValue="false" />
+
+            <com.android.settings.FontDialogPreference
+                    android:key="font_size"
+                    android:title="@string/title_font_size"
+                    settings:keywords="@string/keywords_display_font_size"
+                    android:summary="@string/summary_font_size"
+                    android:dialogTitle="@string/dialog_title_font_size" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+                android:key="advanced_display_prefs"
+                android:title="@string/advanced_settings">
+
+                <SwitchPreference
+                    android:key="wake_when_plugged_or_unplugged"
+                    android:title="@string/wake_when_plugged_or_unplugged_title"
+                    android:summary="@string/wake_when_plugged_or_unplugged_summary"
+                    android:defaultValue="false" />
+
+                <SwitchPreference
+                    android:key="adaptive_backlight"
+                    android:title="@string/adaptive_backlight_title"
+                    android:summary="@string/adaptive_backlight_summary"
+                    android:defaultValue="true" />
+        </PreferenceCategory>
 </PreferenceScreen>
