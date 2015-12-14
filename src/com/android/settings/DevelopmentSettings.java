@@ -78,9 +78,11 @@ import android.widget.TextView;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.fuelgauge.InactiveApps;
+import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
+import com.android.settings.util.Helpers;
 import cyanogenmod.providers.CMSettings;
 
 import java.util.ArrayList;
@@ -106,12 +108,18 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
      */
     public static final String PREF_SHOW = "show";
 
+    /**
+     * Whether to show unnacounted and over-counted battery stats.  Default is false.
+     */
+    public static final String SHOW_UNAC_AND_OVERCOUNTED_STATS = "show_unac_and_overcounted_stats";
+
     private static final String ENABLE_ADB = "enable_adb";
     private static final String ADB_NOTIFY = "adb_notify";
     private static final String ADB_TCPIP = "adb_over_network";
     private static final String CLEAR_ADB_KEYS = "clear_adb_keys";
     private static final String ENABLE_TERMINAL = "enable_terminal";
     private static final String KEEP_SCREEN_ON_MODES = "keep_screen_on_modes";
+    private static final String RESTART_SYSTEMUI = "restart_systemui";
     private static final String BT_HCI_SNOOP_LOG = "bt_hci_snoop_log";
     private static final String ENABLE_OEM_UNLOCK = "oem_unlock_enable";
     private static final String HDCP_CHECKING_KEY = "hdcp_checking";
@@ -183,6 +191,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
+    private static final String KILL_APP_LONGPRESS_TIMEOUT = "kill_app_longpress_timeout";
+
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
     private static final String TERMINAL_APP_PACKAGE = "com.android.terminal";
@@ -192,6 +202,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String ADVANCED_REBOOT_KEY = "advanced_reboot";
 
     private static final String DEVELOPMENT_SHORTCUT_KEY = "development_shortcut";
+
+    private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
 
     private static final int RESULT_DEBUG_APP = 1000;
     private static final int RESULT_MOCK_LOCATION_APP = 1001;
@@ -216,11 +228,13 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private boolean mHaveDebugSettings;
     private boolean mDontPokeProperties;
 
+    private SwitchPreference mShowUnacAndOvercounted;
     private SwitchPreference mEnableAdb;
     private SwitchPreference mAdbNotify;
     private SwitchPreference mAdbOverNetwork;
     private Preference mClearAdbKeys;
     private SwitchPreference mEnableTerminal;
+    private Preference mRestartSystemUI;
     private Preference mBugreport;
     private SwitchPreference mBugreportInPower;
     private ListPreference mKeepScreenOn;
@@ -277,6 +291,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mShowAllANRs;
     private SwitchPreference mKillAppLongpressBack;
+    private ListPreference mKillAppLongpressTimeout;
 
     private ListPreference mRootAccess;
     private Object mSelectedRootValue;
@@ -288,6 +303,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private SwitchPreference mUpdateRecovery;
 
     private SwitchPreference mDevelopmentShortcut;
+
+    private ListPreference mMSOB;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
 
@@ -331,6 +348,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.development_prefs);
 
+        mShowUnacAndOvercounted = findAndInitSwitchPref(SHOW_UNAC_AND_OVERCOUNTED_STATS);
+
         final PreferenceGroup debugDebuggingCategory = (PreferenceGroup)
                 findPreference(DEBUG_DEBUGGING_CATEGORY_KEY);
         mEnableAdb = findAndInitSwitchPref(ENABLE_ADB);
@@ -352,6 +371,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             mEnableTerminal = null;
         }
 
+        mRestartSystemUI = findPreference(RESTART_SYSTEMUI);
+
         mBugreport = findPreference(BUGREPORT);
         mBugreportInPower = findAndInitSwitchPref(BUGREPORT_IN_POWER_KEY);
         mKeepScreenOn = addListPreference(KEEP_SCREEN_ON_MODES);
@@ -369,6 +390,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mUpdateRecovery = findAndInitSwitchPref(UPDATE_RECOVERY_KEY);
         mDevelopmentShortcut = findAndInitSwitchPref(DEVELOPMENT_SHORTCUT_KEY);
 
+        mMSOB = (ListPreference) findPreference(MEDIA_SCANNER_ON_BOOT);
+        mAllPrefs.add(mMSOB);
+        mMSOB.setOnPreferenceChangeListener(this);
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
@@ -452,6 +476,10 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mResetSwitchPrefs.add(mShowAllANRs);
 
         mKillAppLongpressBack = findAndInitSwitchPref(KILL_APP_LONGPRESS_BACK);
+
+        // Back long press timeout
+        mKillAppLongpressTimeout = addListPreference(KILL_APP_LONGPRESS_TIMEOUT);
+        mKillAppLongpressTimeout.setOnPreferenceChangeListener(this);
 
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
@@ -595,6 +623,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         }
         mSwitchBar.show();
         updateKillAppLongpressBackOptions();
+        updateKillAppLongpressTimeoutOptions();
 
         if (mColorModePreference != null) {
             mColorModePreference.startListening();
@@ -704,7 +733,26 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateRootAccessOptions();
         updateAdvancedRebootOptions();
         updateDevelopmentShortcutOptions();
-        updateUpdateRecoveryOptions();
+        updateMSOBOptions();
+    }
+
+    private void resetMSOBOptions() {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+    }
+
+    private void writeMSOBOptions(Object newValue) {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT,
+                Integer.valueOf((String) newValue));
+        updateMSOBOptions();
+    }
+
+    private void updateMSOBOptions() {
+        int value = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+        mMSOB.setValue(String.valueOf(value));
+        mMSOB.setSummary(mMSOB.getEntry());
     }
 
     private void writeAdvancedRebootOptions() {
@@ -772,6 +820,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             }
         }
         resetDebuggerOptions();
+        resetMSOBOptions();
         writeLogdSizeOption(null);
         resetRootAccessOptions();
         resetDevelopmentShortcutOptions();
@@ -789,6 +838,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateAllOptions();
         mDontPokeProperties = false;
         pokeSystemProperties();
+        mShowUnacAndOvercounted.setChecked(false);
     }
 
    private void updateRootAccessOptions() {
@@ -877,6 +927,33 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void updateKillAppLongpressBackOptions() {
         mKillAppLongpressBack.setChecked(CMSettings.Secure.getInt(
             getActivity().getContentResolver(), CMSettings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
+    }
+
+    private void writeKillAppLongpressTimeoutOptions(Object newValue) {
+        int index = mKillAppLongpressTimeout.findIndexOfValue((String) newValue);
+        int value = Integer.valueOf((String) newValue);
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT, value);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[index]);
+    }
+
+    private void updateKillAppLongpressTimeoutOptions() {
+        String value = Settings.Secure.getString(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT);
+        if (value == null) {
+            value = "";
+        }
+
+        CharSequence[] values = mKillAppLongpressTimeout.getEntryValues();
+        for (int i = 0; i < values.length; i++) {
+            if (value.contentEquals(values[i])) {
+                mKillAppLongpressTimeout.setValueIndex(i);
+                mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[i]);
+                return;
+            }
+        }
+        mKillAppLongpressTimeout.setValueIndex(0);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[0]);
     }
 
     private void updatePasswordSummary() {
@@ -1048,7 +1125,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     private static boolean showEnableMultiWindowPreference() {
-        return !"user".equals(Build.TYPE);
+        return true;
     }
 
     private void setEnableMultiWindow(boolean value) {
@@ -1870,6 +1947,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                         CMSettings.Secure.ADB_PORT, -1);
                 updateAdbOverNetwork();
             }
+        } else if (preference == mRestartSystemUI) {
+            Helpers.restartSystemUI(); 
         } else if (preference == mClearAdbKeys) {
             if (mAdbKeysDialog != null) dismissDialogs();
             mAdbKeysDialog = new AlertDialog.Builder(getActivity())
@@ -2072,6 +2151,12 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mKeepScreenOn) {
             writeStayAwakeOptions(newValue);
+            return true;
+        } else if (preference == mKillAppLongpressTimeout) {
+            writeKillAppLongpressTimeoutOptions(newValue);
+            return true;
+        } else if (preference == mMSOB) {
+            writeMSOBOptions(newValue);
             return true;
         }
         return false;

@@ -22,29 +22,24 @@
 		android:layout="@layout/rom_logo">
 	</PreferenceScreen>
 
+        <!-- Changelog -->
+        <PreferenceScreen android:key="changelog"
+                android:title="@string/changelog_temasek_title"
+                android:fragment="com.android.settings.temasek.Changelog" />
+
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title"
                 android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"
-                    android:targetPackage="com.cyngn.fota"
-                    android:targetClass="com.cyngn.fota.SystemUpdateActivity" />
+            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
         </PreferenceScreen>
+
 
         <PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="@string/additional_system_update"
                     android:targetClass="@string/additional_system_update_menu" />
-        </PreferenceScreen>
-
-        <!-- CyanogenMod Updates -->
-        <PreferenceScreen android:key="cm_updates"
-                android:title="@string/cmupdate_settings_title"
-                android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.cyanogenmod.updater"
-                    android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
         </PreferenceScreen>
 
         <!-- Device status - launches activity -->
@@ -61,14 +56,6 @@
                 android:key="manual"
                 android:title="@string/manual">
             <intent android:action="android.settings.SHOW_MANUAL" />
-        </PreferenceScreen>
-
-        <!-- Anonymous statistics - (CMStats) -->
-        <PreferenceScreen
-            android:key="cmstats"
-            android:title="@string/anonymous_statistics_title"
-            android:summary="@string/anonymous_statistics_summary"
-            android:fragment="com.android.settings.cmstats.AnonymousStats" >
         </PreferenceScreen>
 
         <!-- Legal Information -->
@@ -141,6 +128,24 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/kernel_version"
                 android:summary="@string/device_info_default"/>
+
+        <!-- Device cpu info -->
+        <Preference android:key="device_cpu"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/cpu_info"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Device mem info -->
+        <Preference android:key="device_memory"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mem_info"
+                android:summary="@string/device_info_default"/>
+
+	<!-- Temasek version -->
+        <Preference android:key="temasek_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/temasek_version_title"
+                android:summary="@string/temasek_version_default"/>
 
         <!-- Build date -->
         <Preference android:key="build_date"

@@ -58,12 +58,18 @@
             android:summary="@string/owner_info_settings_summary"/>
 
         <PreferenceScreen
-            android:key="lockscreen_shortcuts_settings"
-            android:title="@string/lockscreen_targets_message" >
-            <intent
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
+            android:key="lockscreen_wallpaper"
+            android:title="@string/lockscreen_wallpaper_title"
+            android:summary="@string/lockscreen_wallpaper_summary"
+            android:persistent="false"
+            android:fragment="com.android.settings.temasek.LockscreenWallpaper">
         </PreferenceScreen>
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
 
         <Preference android:key="manage_trust_agents"
                     android:title="@string/manage_trust_agents"

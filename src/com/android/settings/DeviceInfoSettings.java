@@ -20,9 +20,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.os.Build;
 import android.os.Bundle;
@@ -50,6 +48,7 @@ import com.android.settings.search.Indexable;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -66,6 +65,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String LOG_TAG = "DeviceInfoSettings";
     private static final String FILENAME_PROC_VERSION = "/proc/version";
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
+    private static final String FILENAME_PROC_MEMINFO = "/proc/meminfo";
+    private static final String FILENAME_PROC_CPUINFO = "/proc/cpuinfo";
 
     private static final String KEY_MANUAL = "manual";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
@@ -87,7 +88,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_MOD_API_LEVEL = "mod_api_level";
-    private static final String KEY_CM_UPDATES = "cm_updates";
+    private static final String KEY_DEVICE_CPU = "device_cpu";
+    private static final String KEY_DEVICE_MEMORY = "device_memory";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -153,11 +155,19 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SELINUX_STATUS,
                 PROPERTY_SELINUX_STATUS);
 
-        // Only the owner should see the Updater settings, if it exists
-        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
-            removePreferenceIfPackageNotInstalled(findPreference(KEY_CM_UPDATES));
+        String cpuInfo = getCPUInfo();
+        String memInfo = getMemInfo();
+
+        if (cpuInfo != null) {
+            setStringSummary(KEY_DEVICE_CPU, cpuInfo);
         } else {
-            getPreferenceScreen().removePreference(findPreference(KEY_CM_UPDATES));
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_CPU));
+        }
+
+        if (memInfo != null) {
+            setStringSummary(KEY_DEVICE_MEMORY, memInfo);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
         }
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
@@ -190,9 +200,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             Utils.updatePreferenceToSpecificActivityOrRemove(act, parentPreference,
                     KEY_SYSTEM_UPDATE_SETTINGS,
                     Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
-            /* Make sure the activity is provided by who we want... */
-            if (findPreference(KEY_SYSTEM_UPDATE_SETTINGS) != null)
-                removePreferenceIfPackageNotInstalled(findPreference(KEY_SYSTEM_UPDATE_SETTINGS));
         } else {
             // Remove for secondary users
             removePreference(KEY_SYSTEM_UPDATE_SETTINGS);
@@ -280,13 +287,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                             Toast.LENGTH_SHORT);
                     mDevHitToast.show();
                 }
-            } else if (mDevHitCountdown < 0) {
-                if (mDevHitToast != null) {
-                    mDevHitToast.cancel();
-                }
-                mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_already_cm,
-                        Toast.LENGTH_LONG);
-                mDevHitToast.show();
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
@@ -565,28 +565,71 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             }
         };
 
-    private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
-        String intentUri=((PreferenceScreen) preference).getIntent().toUri(1);
-        Pattern pattern = Pattern.compile("component=([^/]+)/");
-        Matcher matcher = pattern.matcher(intentUri);
+    private String getMemInfo() {
+        String result = null;
 
-        String packageName=matcher.find()?matcher.group(1):null;
-        if(packageName != null) {
-            try {
-                PackageInfo pi = getPackageManager().getPackageInfo(packageName,
-                        PackageManager.GET_ACTIVITIES);
-                if (!pi.applicationInfo.enabled) {
-                    Log.e(LOG_TAG,"package "+packageName+" is disabled, hiding preference.");
-                    getPreferenceScreen().removePreference(preference);
-                    return true;
+        try {
+            /* /proc/meminfo entries follow this format:
+             * MemTotal:         362096 kB
+             * MemFree:           29144 kB
+             * Buffers:            5236 kB
+             * Cached:            81652 kB
+             */
+            String firstLine = readLine(FILENAME_PROC_MEMINFO);
+            if (firstLine != null) {
+                String parts[] = firstLine.split("\\s+");
+                if (parts.length == 3) {
+                    result = Long.parseLong(parts[1])/1024 + " MB";
                 }
-            } catch (NameNotFoundException e) {
-                Log.e(LOG_TAG,"package "+packageName+" not installed, hiding preference.");
-                getPreferenceScreen().removePreference(preference);
-                return true;
             }
-        }
-        return false;
+        } catch (IOException e) {}
+
+        return result;
+    }
+
+    private String getCPUInfo() {
+        String result = null;
+
+        try {
+            /* The expected /proc/cpuinfo output is as follows:
+             * Processor   : ARMv7 Processor rev 2 (v7l)
+             * BogoMIPS    : 272.62
+             *
+             * This needs updating, since
+             *
+             * Hammerhead output :
+             * Processor   : ARMv7 Processor rev 0 (v7l)
+             * processor   : 0
+             * BogoMIPS    : xxx
+             *
+             * Shamu output :
+             * processor   : 0
+             * model name  : ARMv7 Processor rev 1 (v7l)
+             * BogoMIPS    : xxx
+             *
+             * Continue reading the file until running into a line starting
+             * with either "model name" or "Processor" to meet both
+             */
+            
+            BufferedReader reader = new BufferedReader(new FileReader(FILENAME_PROC_CPUINFO), 256);
+
+            String Line = reader.readLine();
+
+            while (Line != null) {
+                if (Line.indexOf("model name") == -1 &&
+                    Line.indexOf("Processor" ) == -1    ) {
+                    Line = reader.readLine();
+                } else {
+                    result = Line.split(":")[1].trim();
+                    break;
+                }
+            }
+
+            reader.close();
+
+        } catch (IOException e) {}
+
+        return result;
     }
 }
 

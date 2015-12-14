@@ -38,6 +38,13 @@
         android:summary="@string/advanced_reboot_summary" />
 
     <PreferenceScreen
+            android:title="@string/system_ui_tuner">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
             android:key="local_backup_password"
             android:title="@string/local_backup_password_title"
             android:summary="@string/local_backup_password_summary_none"
@@ -86,10 +93,20 @@
         android:entries="@array/root_access_entries"
         android:entryValues="@array/root_access_values" />
 
-    <SwitchPreference
-        android:key="update_recovery"
-        android:title="@string/update_recovery_title"
-        android:summary="@string/update_recovery_summary" />
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary" />
+
+    <ListPreference
+        android:key="media_scanner_on_boot"
+        android:title="@string/media_scanner_on_boot_title"
+        android:persistent="false"
+        android:entries="@array/media_scanner_on_boot_entries"
+        android:entryValues="@array/media_scanner_on_boot_values" />
+
+    <Preference android:key="restart_systemui"
+        android:title="@string/restart_systemui" />
 
     <com.android.settings.ColorModePreference
         android:key="color_mode"
@@ -214,6 +231,12 @@
             android:dialogTitle="@string/select_usb_configuration_dialog_title"
             android:entries="@array/usb_configuration_titles"
             android:entryValues="@array/usb_configuration_values" />
+
+       <SwitchPreference
+            android:key="show_unac_and_overcounted_stats"
+            android:title="@string/show_unac_and_overcounted_stats_title"
+            android:summary="@string/show_unac_and_overcounted_stats_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
@@ -410,6 +433,13 @@
             android:key="kill_app_longpress_back"
             android:title="@string/kill_app_longpress_back"
             android:summary="@string/kill_app_longpress_back_summary"/>
+
+        <ListPreference
+            android:key="kill_app_longpress_timeout"
+            android:title="@string/kill_app_longpress_timeout_title"
+            android:entries="@array/kill_app_longpress_timeout_entries"
+            android:entryValues="@array/kill_app_longpress_timeout_values"
+            android:dependency="kill_app_longpress_back" />
 
      </PreferenceCategory>
 

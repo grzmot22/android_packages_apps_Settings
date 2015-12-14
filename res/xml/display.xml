@@ -138,11 +138,27 @@
                 android:title="@string/power_menu_expanded_desktop"
                 android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment"/>
 
+        <!-- Toast Icons -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                android:key="toast_icon"
+                android:title="@string/toast_icon_title"
+                android:defaultValue="true" />
+
         <!-- DPI chooser -->
         <ListPreference
-                android:key="lcd_density"
-                android:title="@string/lcd_density"
-                android:persistent="false" />
+                android:key="screen_timeout"
+                android:title="@string/screen_timeout"
+                android:summary="@string/screen_timeout_summary"
+                android:persistent="false"
+                android:entries="@array/screen_timeout_entries"
+                android:entryValues="@array/screen_timeout_values" />
+
+        <!-- Wake on plug -->
+        <SwitchPreference
+                android:key="wake_when_plugged_or_unplugged"
+                android:title="@string/wake_when_plugged_or_unplugged_title"
+                android:summary="@string/wake_when_plugged_or_unplugged_summary"
+                android:defaultValue="false"/>
 
         <!-- Day dream -->
         <PreferenceScreen
@@ -158,12 +174,18 @@
                 android:summary="@string/summary_font_size"
                 android:dialogTitle="@string/dialog_title_font_size" />
 
-        <!-- Search in Recents -->
+    </PreferenceCategory>
+
+    <!-- Weather -->
+    <PreferenceCategory
+        android:key="status_bar_show_weather_category"
+        android:title="@string/status_bar_show_weather_category" >
+
         <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
-                android:key="recents_show_search_bar"
-                android:title="@string/recents_show_searchbar"
-                settings:keywords="@string/keywords_recents_show_searchbar"
-                android:defaultValue="true" />
+            android:key="status_bar_show_weather"
+            android:title="@string/status_bar_show_weather_title"
+            android:summary="@string/status_bar_show_weather_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
