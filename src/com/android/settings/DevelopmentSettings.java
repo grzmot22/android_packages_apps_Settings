@@ -2048,32 +2048,10 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             writeDevelopmentShortcutOptions();
         } else if (preference == mKillAppLongpressBack) {
             writeKillAppLongpressBackOptions();
-        } else if (preference == mUpdateRecovery) {
-            if (mSwitchBar.isChecked()) {
-                if (mUpdateRecoveryDialog != null) {
-                    dismissDialogs();
-                }
-                if (mUpdateRecovery.isChecked()) {
-                    mUpdateRecoveryDialog = new AlertDialog.Builder(getActivity()).setMessage(
-                            getResources().getString(R.string.update_recovery_on_warning))
-                            .setTitle(R.string.update_recovery_title)
-                            .setPositiveButton(android.R.string.yes, this)
-                            .setNegativeButton(android.R.string.no, this)
-                            .show();
-                } else {
-                    mUpdateRecoveryDialog = new AlertDialog.Builder(getActivity()).setMessage(
-                            getResources().getString(R.string.update_recovery_off_warning))
-                            .setTitle(R.string.update_recovery_title)
-                            .setPositiveButton(android.R.string.yes, this)
-                            .setNegativeButton(android.R.string.no, this)
-                            .show();
-                }
-                mUpdateRecoveryDialog.setOnDismissListener(this);
-            }
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
-
+        
         return false;
     }
 
