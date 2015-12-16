@@ -159,7 +159,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mEnableHwKeys;
     private ColorPickerPreference mNavbarButtonTint;
     private SwitchPreference mCameraDoubleTapPowerGesture;
-    private SwitchPreference mCameraDoubleTapPowerGesture;
 
     SwitchPreference mDimNavButtons;
     SwitchPreference mDimNavButtonsTouchAnywhere;
