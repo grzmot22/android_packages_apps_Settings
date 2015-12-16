@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V1.5</string>
+    <string name="temasek_version_default">Build V1.6</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek spare parts</string>
@@ -925,5 +925,9 @@
 
     <string name="reset_temasek">temasek</string>
     <string name="reset_android">Android</string>
+
+    <!-- Temasek Extra Info -->
+    <string name="temaextrainfo">Extra information</string>
+    <string name="temaextrainfo_summary">Display extra info for cpu, display, etc</string>
 
 </resources>

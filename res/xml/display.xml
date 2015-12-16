@@ -157,19 +157,6 @@
 
     </PreferenceCategory>
 
-    <!-- Weather -->
-    <PreferenceCategory
-        android:key="status_bar_show_weather_category"
-        android:title="@string/status_bar_show_weather_category" >
-
-        <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
-            android:key="status_bar_show_weather"
-            android:title="@string/status_bar_show_weather_title"
-            android:summary="@string/status_bar_show_weather_summary"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
-
     <PreferenceCategory
             android:key="lights"
             android:title="@string/category_lights">
