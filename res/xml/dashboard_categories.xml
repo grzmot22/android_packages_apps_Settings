@@ -358,25 +358,6 @@
                 android:targetPackage="eu.chainfire.supersu"
                 android:targetClass="eu.chainfire.supersu.MainActivity" />
         </dashboard-tile>
-
-        <!-- Development -->
-        <dashboard-tile
-                android:id="@+id/development_settings"
-                android:title="@string/development_settings_title"
-                android:fragment="com.android.settings.DevelopmentSettings"
-                android:icon="@drawable/ic_settings_development"
-                />
-
-        <!-- OTA Update -->
-        <dashboard-tile
-            android:id="@+id/ota_settings"
-            android:icon="@drawable/ic_sysbar_quicksettings"
-            android:title="@string/ota_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.ota.updates"
-                android:targetClass="com.ota.updates.activities.MainActivity" />
-        </dashboard-tile>
 		
 		<!-- STweaks -->
         <dashboard-tile
@@ -400,6 +381,25 @@
                     android:targetClass="com.jdcteam.toolbox.ToolboxMain" />
         </dashboard-tile>
         
+        <!-- Development -->
+        <dashboard-tile
+                android:id="@+id/development_settings"
+                android:title="@string/development_settings_title"
+                android:fragment="com.android.settings.DevelopmentSettings"
+                android:icon="@drawable/ic_settings_development"
+                />
+
+        <!-- OTA Update -->
+        <dashboard-tile
+            android:id="@+id/ota_settings"
+            android:icon="@drawable/ic_sysbar_quicksettings"
+            android:title="@string/ota_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.ota.updates"
+                android:targetClass="com.ota.updates.activities.MainActivity" />
+        </dashboard-tile>
+
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"
