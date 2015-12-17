@@ -147,12 +147,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
     };
     private SwitchPreference mCameraGesturePreference;
-<<<<<<< HEAD
-=======
     private PreferenceCategory mDozeCategory;
     private SwitchPreference mDozePreference;
     private PreferenceScreen mAdvancedDozeOptions;
->>>>>>> fdc60341d6a8dbed77642341619656f9ddd69641
 
     @Override
     protected int getMetricsCategory() {
@@ -264,8 +261,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
-<<<<<<< HEAD
-=======
         mDozeCategory = (PreferenceCategory) findPreference(KEY_DOZE_CATEGORY);
         if (Utils.isDozeAvailable(activity)) {
             // Doze master switch
@@ -275,7 +270,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             removePreference(KEY_DOZE_CATEGORY);
         }
 
->>>>>>> fdc60341d6a8dbed77642341619656f9ddd69641
         mNightModePreference = (ListPreference) findPreference(KEY_NIGHT_MODE);
         if (mNightModePreference != null) {
             final UiModeManager uiManager = (UiModeManager) getSystemService(
