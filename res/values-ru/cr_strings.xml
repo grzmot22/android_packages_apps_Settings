@@ -856,4 +856,105 @@
     <!-- System UI tuner -->
     <string name="system_ui_tuner">System UI Tuner</string>
 
+    <!-- PA Pie control -->
+    <string name="pa_piecontrol_settings_summary">Customize PA Pie 2.0 targets, sytle, size and color</string>
+    <string name="pa_pie_control_title">PA Pie Control</string>
+    <string name="pa_pie_control_enable_title">Включить управление Pie</string>
+    <string name="pa_pie_targets_title">Настройки кнопок</string>
+    <string name="pa_pie_style_title">Стиль Pie</string>
+    <string name="pa_pie_menu_title">Всегда показывать кнопку меню</string>
+    <string name="pa_pie_menu_summary">Кнопка меню будет показана всегда, даже когда это не требуется</string>
+    <string name="pa_pie_size_title">Размер Pie</string>
+    <string name="pa_pie_size_summary">Задать размер элементов управления Pie</string>
+    <string name="pa_pie_size_small">Маленький</string>
+    <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
+    <string name="pa_pie_size_large">Большой</string>
+    <string name="pa_pie_size_gigantic">Гигантский</string>
+    <string name="pa_pie_size_monster">Монструозный</string>
+    <string name="pa_pie_size_enormous">Чудовищный</string>
+    <string name="pa_pie_mode_default">По умолчанию</string>
+    <string name="pa_pie_gravity_title">Pie Gravity</string>
+    <string name="pa_pie_gravity_summary">Выбор стороны активации Pie</string>
+    <string name="pa_pie_gravity_bottom">Pie будет появляться по свайпу снизу</string>
+    <string name="pa_pie_gravity_right">Pie будет появляться по свайпу справа</string>
+    <string name="pa_pie_gravity_left">Pie будет появляться по свайпу слева</string>
+    <string name="pa_pie_gap_title">Item gap</string>
+    <string name="pa_pie_gap_summary">Расстояние между кнопками Pie</string>
+    <string name="pa_pie_angle_title">Угол Pie</string>
+    <string name="pa_pie_angle_summary">Определяет насколько далеко будут отходить кнопки Pie от края экрана</string>
+    <string name="pa_pie_angle_none">Нет</string>
+    <string name="pa_pie_angle_small">Маленький</string>
+    <string name="pa_pie_angle_big">Нормальный (default)</string>
+    <string name="pa_pie_angle_huge">Большой</string>
+    <string name="pa_pie_angle_super">Огромный</string>
+    <string name="pa_pie_gap_none">Нет</string>
+    <string name="pa_pie_gap_small">Маленькое</string>
+    <string name="pa_pie_gap_big">Большое (default)</string>
+    <string name="pa_pie_gap_huge">Огромное</string>
+    <string name="pa_pie_mode_title">Стиль Pie</string>
+    <string name="pa_pie_mode_summary">Скорость анимации дополнений</string>
+    <string name="pa_pie_mode_bare">Без анимации</string>
+    <string name="pa_pie_mode_quick">Быстрая</string>
+    <string name="pa_pie_mode_default">Обычная</string>
+    <string name="pa_pie_mode_slow">Медленная</string>
+    <string name="pa_pie_lastapp_title">Последнее приложение</string>
+    <string name="pa_pie_lastapp_summary">Включить кнопку последнего приложения</string>
+    <string name="pa_pie_killtask_title">Завершить задачу</string>
+    <string name="pa_pie_killtask_summary">Включить кнопку завершения задачи</string>
+    <string name="pa_pie_notifications_title">Уведомления</string>
+    <string name="pa_pie_notifications_summary">Включить кнопку уведомлений</string>
+    <string name="pa_pie_settings_panel_title">Панель быстрых настроек</string>
+    <string name="pa_pie_settings_panel_summary">Включить кнопку панели быстрых настроек</string>
+    <string name="pa_pie_screenshot_title">Скриншот</string>
+    <string name="pa_pie_screenshot_summary">Включить кнопку скриншота</string>
+    <string name="pa_pie_color_title">Настройки цвета Pie</string>
+    <string name="pa_pie_color_style_title">Цветовой стиль Pie</string>
+    <string name="pa_pie_background_title">Цвет фона</string>
+    <string name="pa_pie_select_title">Цвет выбора</string>
+    <string name="pa_pie_outlines_title">Цвет контура</string>
+    <string name="pa_pie_status_clock_title">Цвет часов</string>
+    <string name="pa_pie_status_title">Цвет статуса</string>
+    <string name="pa_pie_chevron_title">Цвет шеврона</string>
+    <string name="pa_pie_juice_title">Цвет батареи</string>
+    <string name="pa_pie_button_color">Цвет кнопки</string>
+    <string name="pa_pie_button_color_title">Цвет кнопок</string>
+    <string name="pa_pie_always_right_title">Pie всегда справа</string>
+    <string name="pa_pie_always_right_summary">В пейзажном режиме Pie всегда находится справа</string>
+
+    <string name="reset_temasek">temasek</string>
+    <string name="reset_android">Android</string>
+
+    <!-- Temasek Extra Info -->
+    <string name="temaextrainfo">Доп. информация</string>
+    <string name="temaextrainfo_summary">Информация о процессоре, экране и т.д.</string>
+
+    <!-- Doze options -->
+    <string name="display_category_doze_options_title">Ambient display</string>
+    <string name="doze_settings_title">Advanced doze options</string>
+    <string name="doze_timeout_title">Doze pulse timeout</string>
+    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
+    <string name="doze_trigger_pickup_title">Pick up gesture trigger</string>
+    <string name="doze_trigger_pickup_summary_on">Doze pulse will be triggered by pick up gesture sensor events</string>
+    <string name="doze_trigger_pickup_summary_off">Pick up gesture sensor will not be utilized as a triggering mechanism</string>
+    <string name="doze_trigger_sigmotion_title">Significant motion trigger</string>
+    <string name="doze_trigger_sigmotion_summary_on">Doze pulse will be triggered by significant motion sensor events</string>
+    <string name="doze_trigger_sigmotion_summary_off">Significant motion sensor will not be utilized as a triggering mechanism</string>
+    <string name="doze_trigger_notification_title">Notification trigger</string>
+    <string name="doze_trigger_notification_summary_on">Doze pulse will be triggered by notifications</string>
+    <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
+    <string name="doze_schedule_title">Doze schedule</string>
+    <string name="doze_schedule_summary_on">Predefined doze repeat intervals (normally [1s,10s,30s,60s,120s]) will be used (default)</string>
+    <string name="doze_schedule_summary_off">Doze will only pulse once per notification</string>
+    <string name="doze_brightness_title">Doze brightness level</string>
+    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
+
+    <!-- Doze notification color invert -->
+    <string name="doze_notification_color_invert_title">Инверсия цвета</string>
+    <string name="doze_notification_color_invert_summary_off">Уведомления при \"Запрете спящего режима\" не будут инвертированы. Используйте для тёмных тем.</string>
+    <string name="doze_notification_color_invert_summary_on">Уведомления при \"Запрете спящего режима\" будут инвертированы. Используйте для светлых/стоковых тем.</string>
+
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Диспетчер задач</string>
+    <string name="enable_task_manager_summary">Кнопка диспетчера задач в расширенной области панели уведомлений.</string>
+
 </resources>
