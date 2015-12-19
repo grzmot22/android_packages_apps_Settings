@@ -60,11 +60,9 @@ import org.cyanogenmod.internal.util.ScreenType;
 
 import java.util.List;
 
-
 import com.android.internal.util.temasek.TemasekUtils;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
-import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
 
 import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
 
@@ -151,7 +149,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mVolumeWakeScreen;
     private SwitchPreference mVolumeMusicControls;
-    private SwitchPreference mVolumeControlRingStream;
     private SwitchPreference mSwapVolumeButtons;
     private SwitchPreference mNavigationBarLeftPref;
     private ListPreference mNavigationRecentsLongPressAction;
@@ -454,14 +451,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
         mVolumeWakeScreen = (SwitchPreference) findPreference(CMSettings.System.VOLUME_WAKE_SCREEN);
         mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
-
-        mVolumeControlRingStream = (SwitchPreference)
-                findPreference(KEY_VOLUME_CONTROL_RING_STREAM);
-        int volumeControlRingtone = CMSettings.System.getInt(getContentResolver(),
-                CMSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM, 1);
-        if (mVolumeControlRingStream != null) {
-            mVolumeControlRingStream.setChecked(volumeControlRingtone > 0);
-        }
 
         if (mVolumeWakeScreen != null) {
             if (mVolumeMusicControls != null) {
@@ -774,10 +763,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.DIM_NAV_BUTTONS_ANIMATE_DURATION,
                 Integer.parseInt((String) newValue));
-        } else if (preference == mCameraDoubleTapPowerGesture) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
-                    value ? 0 : 1 /* Backwards because setting is for disabling */);
             return true;
         } else if (preference == mCameraDoubleTapPowerGesture) {
             boolean value = (Boolean) newValue;
@@ -795,10 +780,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     ? (ScreenType.isTablet(getActivity()) ? 2 : 1) : 0;
             CMSettings.System.putInt(getActivity().getContentResolver(),
                     CMSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION, value);
-        } else if (preference == mVolumeControlRingStream) {
-            int value = mVolumeControlRingStream.isChecked() ? 1 : 0;
-            CMSettings.System.putInt(getActivity().getContentResolver(),
-                    CMSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM, value);
         } else if (preference == mPowerEndCall) {
             handleTogglePowerButtonEndsCallPreferenceClick();
             return true;
