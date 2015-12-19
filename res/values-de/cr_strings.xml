@@ -444,12 +444,6 @@
     <string name="unlock_quick_unlock_control_title">Schnelles entsperren</string>
     <string name="unlock_quick_unlock_control_summary">Sofort entsperren wenn PIN/password korrekt eingegeben wurde</string>
 
-    <!-- Sound & Notification Settings -->
-    <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Gleiche Lautstärke für Benachrichtigungen und Klingelton</string>
-    <string name="notification_volume_option_title">Lautstärke der Benachrichtigungen</string>
-    <string name="ring_notification_volume_option_title">Klingelton und Benachrichtigungs-Lautstärke</string>
-
     <!--Power menu -->
     <string name="power_category">Power-Knopf</string>
     <string name="lockscreen_enable_power_menu_title">Auf dem Sperrbildschirm einschalten</string>
@@ -651,8 +645,10 @@
     <!-- Slim lockscreen shortcuts -->
     <string name="lockscreen_shortcuts_title">Shortcuts Bildschirmmitte</string>
     <string name="lockscreen_shortcuts_summary">Shortcuts in der Bildschirmmitte anpassen</string>
-    <string name="lockscreen_shorcuts_longpress_title">Shortcuts langes Drücken</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Bei langem Drücken eigene Shortcuts verwenden</string>
+    <string name="lockscreen_shorcuts_launch_type_title">Shortcut Klick Typ</string>
+    <string name="lockscreen_shortcuts_single_tap">Klick</string>
+    <string name="lockscreen_shortcuts_double_tap">Doppelklick</string>
+    <string name="lockscreen_shortcuts_longpress">Langer Klick</string>
 
     <string name="shortcut_action_app">Bestimmte App</string>
     <string name="shortcut_action_home">Home</string>
@@ -792,7 +788,7 @@
     <string name="pref_scrollingcache_default_disable">Standart deaktiviert</string>
     <string name="pref_scrollingcache_force_disable">Immer Deaktiviert</string>
 
-    <!-- AOKP custom system animations -->
+    <!-- AOKP custom system animations -->  
     <string name="aokp_animation_title">System Animationen</string>
     <string name="aokp_animation_summary">AOKP Animationen</string>
     <string name="animation_exit_only_title">Enter only Animation</string>
@@ -855,5 +851,106 @@
 
     <!-- System UI tuner -->
     <string name="system_ui_tuner">System UI Einstellungen</string>
+
+    <!-- PA Pie control -->
+    <string name="pa_piecontrol_settings_summary">Customize PA Pie 2.0 targets, sytle, size and color</string>
+    <string name="pa_pie_control_title">PA Pie Control</string>
+    <string name="pa_pie_control_enable_title">Enable Pie Control</string>
+    <string name="pa_pie_targets_title">Pie Targets</string>
+    <string name="pa_pie_style_title">Pie Style</string>
+    <string name="pa_pie_menu_title">Always show menu button</string>
+    <string name="pa_pie_menu_summary">Whether or not the menu button should always be shown, even when its not needed</string>
+    <string name="pa_pie_size_title">Pie Size</string>
+    <string name="pa_pie_size_summary">Define Pie controls size</string>
+    <string name="pa_pie_size_small">Small</string>
+    <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
+    <string name="pa_pie_size_large">Large</string>
+    <string name="pa_pie_size_gigantic">Gigantic</string>
+    <string name="pa_pie_size_monster">Monster</string>
+    <string name="pa_pie_size_enormous">Enormous</string>
+    <string name="pa_pie_mode_default">Default</string>
+    <string name="pa_pie_gravity_title">Pie Gravity</string>
+    <string name="pa_pie_gravity_summary">Select the location where the Pie will be placed</string>
+    <string name="pa_pie_gravity_bottom">Bottom</string>
+    <string name="pa_pie_gravity_right">Right</string>
+    <string name="pa_pie_gravity_left">Left</string>
+    <string name="pa_pie_gap_title">Item gap</string>
+    <string name="pa_pie_gap_summary">Adjust the gap that separates the Pie elements</string>
+    <string name="pa_pie_angle_title">Pie Angle</string>
+    <string name="pa_pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
+    <string name="pa_pie_angle_none">None (old)</string>
+    <string name="pa_pie_angle_small">Small</string>
+    <string name="pa_pie_angle_big">Normal (default)</string>
+    <string name="pa_pie_angle_huge">Big</string>
+    <string name="pa_pie_angle_super">Huge</string>
+    <string name="pa_pie_gap_none">None</string>
+    <string name="pa_pie_gap_small">Small</string>
+    <string name="pa_pie_gap_big">Big (default)</string>
+    <string name="pa_pie_gap_huge">Huge</string>
+    <string name="pa_pie_mode_title">Pie Style</string>
+    <string name="pa_pie_mode_summary">Manage how animations and status additions will be handled</string>
+    <string name="pa_pie_mode_bare">Bare</string>
+    <string name="pa_pie_mode_quick">Quick</string>
+    <string name="pa_pie_mode_default">Default</string>
+    <string name="pa_pie_mode_slow">Slow</string>
+    <string name="pa_pie_lastapp_title">Last App</string>
+    <string name="pa_pie_lastapp_summary">Enable last app button</string>
+    <string name="pa_pie_killtask_title">Kill Task</string>
+    <string name="pa_pie_killtask_summary">Enable kill task button</string>
+    <string name="pa_pie_notifications_title">Notifications</string>
+    <string name="pa_pie_notifications_summary">Enable notifications button</string>
+    <string name="pa_pie_settings_panel_title">Quick Settings Panel</string>
+    <string name="pa_pie_settings_panel_summary">Enable expand quick settings panel button</string>
+    <string name="pa_pie_screenshot_title">Screenshot</string>
+    <string name="pa_pie_screenshot_summary">Enable screenshot button</string>
+    <string name="pa_pie_color_title">Pie Color Settings</string>
+    <string name="pa_pie_color_style_title">Pie Color Style</string>
+    <string name="pa_pie_background_title">Background Color</string>
+    <string name="pa_pie_select_title">Selection Color</string>
+    <string name="pa_pie_outlines_title">Outlines Color</string>
+    <string name="pa_pie_status_clock_title">Clock Color</string>
+    <string name="pa_pie_status_title">Status Color</string>
+    <string name="pa_pie_chevron_title">Chevron Color</string>
+    <string name="pa_pie_juice_title">Battery Juice Color</string>
+    <string name="pa_pie_button_color">Button Color</string>
+    <string name="pa_pie_button_color_title">Buttons Color</string>
+    <string name="pa_pie_always_right_title">Pie always on the right</string>
+    <string name="pa_pie_always_right_summary">Pie will be always shown on the right while in landscape</string>
+
+    <string name="reset_temasek">temasek</string>
+    <string name="reset_android">Android</string>
+
+    <!-- Temasek Extra Info -->
+    <string name="temaextrainfo">Weitere Informationen</string>
+    <string name="temaextrainfo_summary">Weitere Informationen für cpu, display, etc zeigen</string>
+
+    <!-- Doze options -->
+    <string name="display_category_doze_options_title">Ambient display</string>
+    <string name="doze_settings_title">Advanced doze options</string>
+    <string name="doze_timeout_title">Doze pulse timeout</string>
+    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
+    <string name="doze_trigger_pickup_title">Pick up gesture trigger</string>
+    <string name="doze_trigger_pickup_summary_on">Doze pulse will be triggered by pick up gesture sensor events</string>
+    <string name="doze_trigger_pickup_summary_off">Pick up gesture sensor will not be utilized as a triggering mechanism</string>
+    <string name="doze_trigger_sigmotion_title">Significant motion trigger</string>
+    <string name="doze_trigger_sigmotion_summary_on">Doze pulse will be triggered by significant motion sensor events</string>
+    <string name="doze_trigger_sigmotion_summary_off">Significant motion sensor will not be utilized as a triggering mechanism</string>
+    <string name="doze_trigger_notification_title">Notification trigger</string>
+    <string name="doze_trigger_notification_summary_on">Doze pulse will be triggered by notifications</string>
+    <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
+    <string name="doze_schedule_title">Doze schedule</string>
+    <string name="doze_schedule_summary_on">Predefined doze repeat intervals (normally [1s,10s,30s,60s,120s]) will be used (default)</string>
+    <string name="doze_schedule_summary_off">Doze will only pulse once per notification</string>
+    <string name="doze_brightness_title">Helligkeits Level</string>
+    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
+
+    <!-- Doze notification color invert -->
+    <string name="doze_notification_color_invert_title">Farbumkehrung</string>
+    <string name="doze_notification_color_invert_summary_off">Umgebende Bildschirmbenachrichtigungen werden nicht invertiert. Bei dunklen Themes verwenden.</string>
+    <string name="doze_notification_color_invert_summary_on">Umgebende Bildschirmbenachrichtigungen werden invertiert dargestellt. Bei hellem/stock Theme verwenden.</string>
+
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Task Manager</string>
+    <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area.</string>
 
 </resources>
