@@ -74,16 +74,16 @@
     <!-- Recents panel settings -->
     <string name="recents_panel_title">Anwendungsverlauf</string>
     <string name="recents_panel_settings">Anwendungsverlauf Einstellungen</string>
-    <string name="show_clear_all_recents_button_title">Alle gecachten Apps schließen Button</string>
-    <string name="show_clear_all_recents_button_summary">Alle schließen Button anzeigen</string>
-    <string name="recents_clear_all_location_title">Position des alle schließen Buttons</string>
+    <string name="show_clear_all_recents_button_title">Alle aktuellen Anwendungen schließen Button</string>
+    <string name="show_clear_all_recents_button_summary">Alle aktuellen Anwendungen schließen Button anzeigen</string>
+    <string name="recents_clear_all_location_title">Position des Alle aktuellen Anwendungen schließen Buttons</string>
     <string name="recents_clear_all_location_top_right">Rechts oben</string>
     <string name="recents_clear_all_location_top_left">Links oben</string>
     <string name="recents_clear_all_location_top_center">Oben mittig</string>
     <string name="recents_clear_all_location_bottom_right">Rechts unten</string>
     <string name="recents_clear_all_location_bottom_left">Links unten</string>
     <string name="recents_clear_all_location_bottom_center">Unten mittig</string>
-    <string name="recents_clear_all_dismiss_all_title">Alle Tasks beenden</string>
+    <string name="recents_clear_all_dismiss_all_title">Alle aktuellen Anwendungen beenden</string>
     <string name="recents_clear_all_dismiss_all_summary">Soll auch die App im Vordergrund beendet werden?</string>
 
     <!-- Recents Fullscreen -->
@@ -120,8 +120,8 @@
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Uhr</string>
     <string name="clock_color_title">Farbe</string>
-    <string name="status_bar_clock_style_reset">Lösche Farbe</string>
-    <string name="status_bar_clock_style_reset_message">Lösche Uhr Farbe?</string>
+    <string name="status_bar_clock_style_reset">Standard</string>
+    <string name="status_bar_clock_style_reset_message">Auf Satndard Farbe setzen ?</string>
     <string name="clock_font_style_title">Schrift</string>
     <string name="clock_font_normal">Normal</string>
     <string name="clock_font_italic">Kursiv</string>
@@ -161,17 +161,17 @@
     <string name="clock_font_size_23">23</string>
 
     <!-- Navigation bar -->
-    <string name="nav_bar_title">Navigationsleite</string>
-    <string name="navbar_enable_bar_title">Buttons Navigationsleite</string>
-    <string name="navbar_enable_bar_summary">On-screen Navigationsleite Schaltflächen aktivieren</string>
-    <string name="navbar_style_dimen_title">Abmessungen der Navigationsleite</string>
-    <string name="navbar_dimensions_reset_message">Alle Dimensions-Einstellungen zurück zu Standard?</string>
-    <string name="navigation_bar_height_title">Höhe der Navigationsleite</string>
-    <string name="navigation_bar_height_summary">Höhe der Navigationsleite im Hochformat</string>
-    <string name="navigation_bar_height_landscape_title">Höhe der Navigationsleite im Querformat</string>
-    <string name="navigation_bar_height_landscape_summary">Höhe der Navigationsleite im Querformat</string>
-    <string name="navigation_bar_width_title">Breite der Navigationsleite</string>
-    <string name="navigation_bar_width_summary">Höhe der Navigationsleiten wenn die Leiste seitlich ist</string>
+    <string name="nav_bar_title">Navigationsleiste</string>
+    <string name="navbar_enable_bar_title">Navigationsleiste an</string>
+    <string name="navbar_enable_bar_summary">Bildschirm Navigationsleiste aktivieren</string>
+    <string name="navbar_style_dimen_title">Größe der Navigationsleiste</string>
+    <string name="navbar_dimensions_reset_message">Größe der Navigationsleiste wird zurückgesetzt</string>
+    <string name="navigation_bar_height_title">Höhe der Navigationsleiste</string>
+    <string name="navigation_bar_height_summary">Höhe der Navigationsleiste im Hochformat</string>
+    <string name="navigation_bar_height_landscape_title">Höhe der Navigationsleiste im Querformat</string>
+    <string name="navigation_bar_height_landscape_summary">Höhe der Navigationsleiste im Querformat</string>
+    <string name="navigation_bar_width_title">Breite der Navigationsleiste</string>
+    <string name="navigation_bar_width_summary">Höhe der Navigationsleisten wenn die Leiste seitlich ist</string>
     <string name="navigation_bar_size_42_dp_default">42 dp (Standard)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
     <string name="navigation_bar_size_30_dp">30 dp</string>
@@ -186,8 +186,8 @@
     <string name="navbar_button_tint_title">Navigations Button Farbe</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Doppel-Klick Sleep</string>
-    <string name="double_tap_sleep_nav_bar_summary">Navigationsleite doppelklicken, um das Gerät in den Schlafzustand zu versetzen.</string>
+    <string name="double_tap_sleep_nav_bar_title">Schlafzustand bei doppeltem tippen der Navigationsleiste</string>
+    <string name="double_tap_sleep_nav_bar_summary">Navigationsleiste doppeltippen, um das Gerät in den Schlafzustand zu versetzen.</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Hardware Tasten</string>
@@ -199,13 +199,13 @@
 
     <!-- SlimDim -->
     <string name="dim_nav_buttons_category">SlimDim</string>
-    <string name="dim_nav_buttons_title">Dim buttons after inactivity</string>
-    <string name="dim_nav_buttons_summary">Dim navigation bar buttons after not interacting with navigation bar for a specified time</string>
-    <string name="dim_nav_buttons_timeout_title">Timeout before dimming</string>
-    <string name="dim_nav_buttons_timeout_summary">Time (in milliseconds) to wait before dimming buttons</string>
+    <string name="dim_nav_buttons_title">Navigationsleiste dimmen, wenn inaktiv</string>
+    <string name="dim_nav_buttons_summary">Navigationsleiste nach einer bestimmten inaktiven Zeit dimmen</string>
+    <string name="dim_nav_buttons_timeout_title">Zeit der inaktivität zum dimmen</string>
+    <string name="dim_nav_buttons_timeout_summary">Zeit (in Milisekunden) zum warten bevor Navigationsleiste zu dimmen</string>
     <string name="dim_nav_buttons_alpha_title">Dim alpha</string>
-    <string name="dim_nav_buttons_alpha_summary">Alpha value to dim buttons to</string>
-    <string name="dim_nav_buttons_animate_title">Dim animation</string>
+    <string name="dim_nav_buttons_alpha_summary">Alpha Wert zum dimmen der Navigationsleiste</string>
+    <string name="dim_nav_buttons_animate_title">Dim Animation</string>
     <string name="dim_nav_buttons_animate_summary">Animate the alpha fade</string>
     <string name="dim_nav_buttons_animate_duration_title">Animation duration</string>
     <string name="dim_nav_buttons_animate_duration_summary">Duration (in milliseconds) of the alpha animation</string>
@@ -224,7 +224,7 @@
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Netzwerk Aktivität</string>
-    <string name="show_network_traffic_state">Netwerk Aktivität in der Statusleite anzeigen</string>
+    <string name="show_network_traffic_state">Netzwerk Aktivität in der Statusleite anzeigen</string>
     <string name="network_traffic_summary">Verschiedene Optionen zur Anzeige der Netzwerk-Aktivität in der Statusleiste</string>
     <string name="show_network_traffic_unit">Anzeige Einheit</string>
     <string name="show_network_traffic_frequency">Aktualisierungs-Intervall</string>
@@ -258,31 +258,31 @@
     <string name="battery_bar_animate_summary">Die Lade Animation kann das System verlangsamen</string>
 
     <!-- Status bar temperature -->
-    <string name="status_bar_temperature_title">Weather temperature</string>
+    <string name="status_bar_temperature_title">Wetter und Temperatur</string>
     <string name="status_bar_temperature_hidden">Versteckt</string>
-    <string name="status_bar_temperature_show_scale">Shown with scale</string>
-    <string name="status_bar_temperature_hide_scale">Shown without scale</string>
-    <string name="status_bar_temperature_location_title">Placement</string>
-    <string name="status_bar_temperature_location_summary">Select where the weather temperature is shown on the statusbar</string>
-    <string name="status_bar_temperature_location_right">Show on right</string>
-    <string name="status_bar_temperature_location_left">Show on left</string>
-    <string name="status_bar_weather_color_title">Temperature color</string>
+    <string name="status_bar_temperature_show_scale">Mit Skala anzeigen</string>
+    <string name="status_bar_temperature_hide_scale">Ohne Skala anzeigen</string>
+    <string name="status_bar_temperature_location_title">Plazierung</string>
+    <string name="status_bar_temperature_location_summary">Wetter und Temperatur in der Statusleiste anzeigen</string>
+    <string name="status_bar_temperature_location_right">Rechts anzeigen</string>
+    <string name="status_bar_temperature_location_left">Links anzeigen</string>
+    <string name="status_bar_weather_color_title">Temperatur-Farbe</string>
     <string name="status_bar_weather_size_title">Schriftgröße</string>
-    <string name="status_bar_weather_font_style_title">Font</string>
+    <string name="status_bar_weather_font_style_title">Schriftart</string>
     <string name="status_bar_weather_font_normal">Normal</string>
-    <string name="status_bar_weather_font_italic">Italic</string>
-    <string name="status_bar_weather_font_bold">Bold</string>
-    <string name="status_bar_weather_font_bold_italic">Bold Italic</string>
-    <string name="status_bar_weather_font_light">Light</string>
-    <string name="status_bar_weather_font_light_italic">Light Italic</string>
-    <string name="status_bar_weather_font_thin">Thin</string>
-    <string name="status_bar_weather_font_thin_italic">Thin Italic</string>
-    <string name="status_bar_weather_font_condensed">Condensed</string>
-    <string name="status_bar_weather_font_condensed_italic">Condensed Italic</string>
-    <string name="status_bar_weather_font_condensed_bold">Condensed Bold</string>
-    <string name="status_bar_weather_font_condensed_bold_italic">Condensed Bold Italic</string>
-    <string name="status_bar_weather_font_medium">Medium</string>
-    <string name="status_bar_weather_font_medium_italic">Medium Italic</string>
+    <string name="status_bar_weather_font_italic">Kuriv</string>
+    <string name="status_bar_weather_font_bold">Fett</string>
+    <string name="status_bar_weather_font_bold_italic">Fett und kursiv</string>
+    <string name="status_bar_weather_font_light">Leicht</string>
+    <string name="status_bar_weather_font_light_italic">Leicht und kursiv</string>
+    <string name="status_bar_weather_font_thin">Dünn</string>
+    <string name="status_bar_weather_font_thin_italic">Dünn und kursiv</string>
+    <string name="status_bar_weather_font_condensed">Schmal</string>
+    <string name="status_bar_weather_font_condensed_italic">Schmal und kursiv</string>
+    <string name="status_bar_weather_font_condensed_bold">Schmal und fett</string>
+    <string name="status_bar_weather_font_condensed_bold_italic">Schmal, fett und kursiv</string>
+    <string name="status_bar_weather_font_medium">Mittel</string>
+    <string name="status_bar_weather_font_medium_italic">Mittel und kursiv</string>
 
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">Wetter</string>
@@ -353,8 +353,8 @@
     <string name="lockscreen_blur_radius">Stärke des Unschärfe-Effektes</string>
 
     <!-- Media art -->
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+    <string name="media_art_title">Medien Titelbilder</string>
+    <string name="media_art_summary">Medien Titelbilder auf dem Sperrbildschirm anzeigen</string>
 
     <!-- Sound settings -->
     <string name="advanced_sound_title">Erweiterte Einstellungen</string>
@@ -853,69 +853,69 @@
     <string name="system_ui_tuner">System UI Einstellungen</string>
 
     <!-- PA Pie control -->
-    <string name="pa_piecontrol_settings_summary">Customize PA Pie 2.0 targets, sytle, size and color</string>
-    <string name="pa_pie_control_title">PA Pie Control</string>
-    <string name="pa_pie_control_enable_title">Enable Pie Control</string>
-    <string name="pa_pie_targets_title">Pie Targets</string>
-    <string name="pa_pie_style_title">Pie Style</string>
-    <string name="pa_pie_menu_title">Always show menu button</string>
-    <string name="pa_pie_menu_summary">Whether or not the menu button should always be shown, even when its not needed</string>
-    <string name="pa_pie_size_title">Pie Size</string>
-    <string name="pa_pie_size_summary">Define Pie controls size</string>
-    <string name="pa_pie_size_small">Small</string>
+    <string name="pa_piecontrol_settings_summary">PA Pie 2.0 anpassen</string>
+    <string name="pa_pie_control_title">PA Pie Steuerung</string>
+    <string name="pa_pie_control_enable_title">Pie aktivieren</string>
+    <string name="pa_pie_targets_title">Pie Ziele</string>
+    <string name="pa_pie_style_title">Pie Stil</string>
+    <string name="pa_pie_menu_title">Menü Schaltfläche immer anzeigen</string>
+    <string name="pa_pie_menu_summary">Soll die Menü-Schaltfläche immer angezeigt werden, auch wenn sie gerade nicht benötogt wird</string>
+    <string name="pa_pie_size_title">Pie Größe</string>
+    <string name="pa_pie_size_summary">Pie Größe einstellen</string>
+    <string name="pa_pie_size_small">Klein</string>
     <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
-    <string name="pa_pie_size_large">Large</string>
-    <string name="pa_pie_size_gigantic">Gigantic</string>
-    <string name="pa_pie_size_monster">Monster</string>
-    <string name="pa_pie_size_enormous">Enormous</string>
-    <string name="pa_pie_mode_default">Default</string>
-    <string name="pa_pie_gravity_title">Pie Gravity</string>
-    <string name="pa_pie_gravity_summary">Select the location where the Pie will be placed</string>
-    <string name="pa_pie_gravity_bottom">Bottom</string>
-    <string name="pa_pie_gravity_right">Right</string>
-    <string name="pa_pie_gravity_left">Left</string>
-    <string name="pa_pie_gap_title">Item gap</string>
-    <string name="pa_pie_gap_summary">Adjust the gap that separates the Pie elements</string>
-    <string name="pa_pie_angle_title">Pie Angle</string>
-    <string name="pa_pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
-    <string name="pa_pie_angle_none">None (old)</string>
-    <string name="pa_pie_angle_small">Small</string>
-    <string name="pa_pie_angle_big">Normal (default)</string>
-    <string name="pa_pie_angle_huge">Big</string>
-    <string name="pa_pie_angle_super">Huge</string>
-    <string name="pa_pie_gap_none">None</string>
-    <string name="pa_pie_gap_small">Small</string>
-    <string name="pa_pie_gap_big">Big (default)</string>
-    <string name="pa_pie_gap_huge">Huge</string>
-    <string name="pa_pie_mode_title">Pie Style</string>
-    <string name="pa_pie_mode_summary">Manage how animations and status additions will be handled</string>
-    <string name="pa_pie_mode_bare">Bare</string>
-    <string name="pa_pie_mode_quick">Quick</string>
-    <string name="pa_pie_mode_default">Default</string>
-    <string name="pa_pie_mode_slow">Slow</string>
-    <string name="pa_pie_lastapp_title">Last App</string>
-    <string name="pa_pie_lastapp_summary">Enable last app button</string>
-    <string name="pa_pie_killtask_title">Kill Task</string>
-    <string name="pa_pie_killtask_summary">Enable kill task button</string>
-    <string name="pa_pie_notifications_title">Notifications</string>
-    <string name="pa_pie_notifications_summary">Enable notifications button</string>
-    <string name="pa_pie_settings_panel_title">Quick Settings Panel</string>
-    <string name="pa_pie_settings_panel_summary">Enable expand quick settings panel button</string>
-    <string name="pa_pie_screenshot_title">Screenshot</string>
-    <string name="pa_pie_screenshot_summary">Enable screenshot button</string>
-    <string name="pa_pie_color_title">Pie Color Settings</string>
-    <string name="pa_pie_color_style_title">Pie Color Style</string>
-    <string name="pa_pie_background_title">Background Color</string>
-    <string name="pa_pie_select_title">Selection Color</string>
-    <string name="pa_pie_outlines_title">Outlines Color</string>
-    <string name="pa_pie_status_clock_title">Clock Color</string>
-    <string name="pa_pie_status_title">Status Color</string>
-    <string name="pa_pie_chevron_title">Chevron Color</string>
-    <string name="pa_pie_juice_title">Battery Juice Color</string>
-    <string name="pa_pie_button_color">Button Color</string>
-    <string name="pa_pie_button_color_title">Buttons Color</string>
-    <string name="pa_pie_always_right_title">Pie always on the right</string>
-    <string name="pa_pie_always_right_summary">Pie will be always shown on the right while in landscape</string>
+    <string name="pa_pie_size_large">Groß</string>
+    <string name="pa_pie_size_gigantic">Gigantisch</string>
+    <string name="pa_pie_size_monster">Monstermäßig</string>
+    <string name="pa_pie_size_enormous">Enorm</string>
+    <string name="pa_pie_mode_default">Standard</string>
+    <string name="pa_pie_gravity_title">Pie Schwerkraft</string>
+    <string name="pa_pie_gravity_summary">Pie Position auswählen</string>
+    <string name="pa_pie_gravity_bottom">Unten</string>
+    <string name="pa_pie_gravity_right">Rechts</string>
+    <string name="pa_pie_gravity_left">Links</string>
+    <string name="pa_pie_gap_title">Abstand</string>
+    <string name="pa_pie_gap_summary">Abstand zwischen Pie Elementen einstellen</string>
+    <string name="pa_pie_angle_title">Pie Winkel</string>
+    <string name="pa_pie_angle_summary">Winkel der Pie Kanten anpassen</string>
+    <string name="pa_pie_angle_none">Keine (alt)</string>
+    <string name="pa_pie_angle_small">Schmal</string>
+    <string name="pa_pie_angle_big">Normal (standard)</string>
+    <string name="pa_pie_angle_huge">Groß</string>
+    <string name="pa_pie_angle_super">Riesig</string>
+    <string name="pa_pie_gap_none">Keine</string>
+    <string name="pa_pie_gap_small">Schmal</string>
+    <string name="pa_pie_gap_big">Groß (standard)</string>
+    <string name="pa_pie_gap_huge">Riesig</string>
+    <string name="pa_pie_mode_title">Pie Stil</string>
+    <string name="pa_pie_mode_summary">Animationen und Statusänderungen verwalten</string>
+    <string name="pa_pie_mode_bare">Schlicht</string>
+    <string name="pa_pie_mode_quick">Schnell</string>
+    <string name="pa_pie_mode_default">Standard</string>
+    <string name="pa_pie_mode_slow">Langsam</string>
+    <string name="pa_pie_lastapp_title">Letzte Anwendung</string>
+    <string name="pa_pie_lastapp_summary">Schaltfläche für letzte Anwendung aktivieren</string>
+    <string name="pa_pie_killtask_title">Aufgabe beenden</string>
+    <string name="pa_pie_killtask_summary">Aufgabe beenden Schaltfläche aktivieren</string>
+    <string name="pa_pie_notifications_title">Benachrichtigungen</string>
+    <string name="pa_pie_notifications_summary">Benachrichtigungs-Schaltfläche aktivieren</string>
+    <string name="pa_pie_settings_panel_title">Schnelleinstellungs Fenster</string>
+    <string name="pa_pie_settings_panel_summary">Schnelleinstellungs Schaltfläche aktivieren</string>
+    <string name="pa_pie_screenshot_title">Bildschirmfoto</string>
+    <string name="pa_pie_screenshot_summary">Schaltfläche für Bildschirmfoto aktivieren</string>
+    <string name="pa_pie_color_title">Pie Farb-Einstellungen</string>
+    <string name="pa_pie_color_style_title">Pie Farb-Stil</string>
+    <string name="pa_pie_background_title">Hintergrundfarbe</string>
+    <string name="pa_pie_select_title">Auswahl Farbe</string>
+    <string name="pa_pie_outlines_title">Umrandungsfarbe</string>
+    <string name="pa_pie_status_clock_title">Uhr Farbe</string>
+    <string name="pa_pie_status_title">Status Farbe</string>
+    <string name="pa_pie_chevron_title">Chevron Farbe</string>
+    <string name="pa_pie_juice_title">Batterie Farbe</string>
+    <string name="pa_pie_button_color">Schaltflächen Farbe</string>
+    <string name="pa_pie_button_color_title">Schaltflächen Farbe</string>
+    <string name="pa_pie_always_right_title">Pie immer rechts</string>
+    <string name="pa_pie_always_right_summary">Pi im querformat immer rechts anzeigen</string>
 
     <string name="reset_temasek">temasek</string>
     <string name="reset_android">Android</string>
@@ -925,7 +925,7 @@
     <string name="temaextrainfo_summary">Weitere Informationen für cpu, display, etc zeigen</string>
 
     <!-- Doze options -->
-    <string name="display_category_doze_options_title">Ambient display</string>
+    <string name="display_category_doze_options_title">Ambient Bildschirm</string>
     <string name="doze_settings_title">Advanced doze options</string>
     <string name="doze_timeout_title">Doze pulse timeout</string>
     <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
