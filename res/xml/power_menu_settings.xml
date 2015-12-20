@@ -19,17 +19,12 @@
     android:title="@string/power_menu_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <SwitchPreference
-        android:key="power"
-        android:title="@string/power_menu_power_title"
-        android:defaultValue="true" />
-
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="reboot"
         android:title="@string/power_menu_reboot_title"
         android:defaultValue="true" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="screenshot"
         android:title="@string/power_menu_screenshot_title"
         android:defaultValue="false" />
@@ -39,7 +34,7 @@
         android:title="@string/powermenu_screenshot_delay_title"
         android:dependency="screenshot" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="screenrecord"
         android:title="@string/power_menu_screenrecord_title"
         android:defaultValue="false" />
@@ -55,42 +50,42 @@
         android:summary="@string/onthego_alpha_summary"
         android:dependency="power_menu_onthego_enabled" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="airplane"
         android:title="@string/power_menu_airplane_title"
         android:defaultValue="true" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="users"
         android:title="@string/power_menu_users_title"
         android:defaultValue="false" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="settings"
         android:title="@string/power_menu_settings_title"
         android:defaultValue="false" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="lockdown"
         android:title="@string/power_menu_lockdown_title"
         android:defaultValue="false" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="bugreport"
         android:title="@string/power_menu_bug_report_title"
         android:defaultValue="false" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="silent"
         android:title="@string/power_menu_sound_title"
         android:defaultValue="true" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="voiceassist"
         android:title="@string/power_menu_sound_title"
         android:defaultValue="true" />
 
-    <SwitchPreference
+    <CheckBoxPreference
         android:key="assist"
         android:title="@string/power_menu_sound_title"
         android:defaultValue="true" />
