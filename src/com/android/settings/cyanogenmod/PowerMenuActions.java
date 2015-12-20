@@ -52,19 +52,19 @@ public class PowerMenuActions extends SettingsPreferenceFragment
 
     private static final String PREF_ON_THE_GO_ALPHA = "on_the_go_alpha";
     private static final String SCREENSHOT_DELAY = "screenshot_delay";
-
-    private CheckBoxPreference mRebootPref;
-    private CheckBoxPreference mScreenshotPref;
-    private CheckBoxPreference mScreenrecordPref;
-    private CheckBoxPreference mProfilePref;
-    private CheckBoxPreference mAirplanePref;
-    private CheckBoxPreference mUsersPref;
-    private CheckBoxPreference mSettingsPref;
-    private CheckBoxPreference mLockdownPref;
-    private CheckBoxPreference mBugReportPref;
-    private CheckBoxPreference mSilentPref;
-    private CheckBoxPreference mVoiceAssistPref;
-    private CheckBoxPreference mAssistPref;
+    
+    private SwitchPreference mRebootPref;
+    private SwitchPreference mScreenshotPref;
+    private SwitchPreference mScreenrecordPref;
+    private SwitchPreference mProfilePref;
+    private SwitchPreference mAirplanePref;
+    private SwitchPreference mUsersPref;
+    private SwitchPreference mSettingsPref;
+    private SwitchPreference mLockdownPref;
+    private SwitchPreference mBugReportPref;
+    private SwitchPreference mSilentPref;
+    private SwitchPreference mVoiceAssistPref;
+    private SwitchPreference mAssistPref;
     private SlimSeekBarPreference mOnTheGoAlphaPref;
 
     Context mContext;
@@ -103,7 +103,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment
             }
 
             if (action.equals(GLOBAL_ACTION_KEY_REBOOT)) {
-                mRebootPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_REBOOT);
+                mRebootPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_REBOOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENRECORD)) {
