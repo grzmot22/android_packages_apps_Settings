@@ -444,12 +444,6 @@
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
-    <!-- Sound & Notification Settings -->
-    <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Link ring and notification volumes</string>
-    <string name="notification_volume_option_title">Notification volume</string>
-    <string name="ring_notification_volume_option_tile">Ring and notification volume</string>
-
     <!--Power menu -->
     <string name="power_category">Кнопка питания</string>
     <string name="lockscreen_enable_power_menu_title">Показывать на экране блокировки</string>
@@ -651,8 +645,10 @@
     <!-- Slim lockscreen shortcuts -->
     <string name="lockscreen_shortcuts_title">Ярлыки в центре экрана</string>
     <string name="lockscreen_shortcuts_summary">Посмотреть или изменить ярлыки посередине экрана блокировки</string>
-    <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Open custom lockscreen shortcuts on longpress</string>
+    <string name="lockscreen_shorcuts_launch_type_title">Тип нажатия на ярлык</string>
+    <string name="lockscreen_shortcuts_single_tap">Нажатие</string>
+    <string name="lockscreen_shortcuts_double_tap">Двойное нажатие</string>
+    <string name="lockscreen_shortcuts_longpress">Долгое нажатие</string>
 
     <string name="shortcut_action_app">Пользовательское приложение</string>
     <string name="shortcut_action_home">Домой</string>
@@ -895,7 +891,7 @@
     <string name="pa_pie_mode_summary">Скорость анимации дополнений</string>
     <string name="pa_pie_mode_bare">Без анимации</string>
     <string name="pa_pie_mode_quick">Быстрая</string>
-    <string name="pa_pie_mode_default">Обычная</string>
+    <string name="pa_pie_mode_default">Обычный (-ая)</string>
     <string name="pa_pie_mode_slow">Медленная</string>
     <string name="pa_pie_lastapp_title">Последнее приложение</string>
     <string name="pa_pie_lastapp_summary">Включить кнопку последнего приложения</string>
