@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About phone screen, Temasek version -->
-    <string name="temasek_version_title">Temasek非官方版本</string>
+    <string name="temasek_version_title">Temasek版本</string>
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek扩展设置</string>
     <!-- Changelog -->
@@ -21,6 +21,9 @@
     <string name="additional_options_title">附加选项</string>
     <string name="general_options_title">一般</string>
     <string name="screen_and_animations_title">屏幕和动画</string>
+    <string name="quicksettings_title">快速设置</string>
+    <string name="qs_brightness_slider_title">显示亮度调节滑块</string>
+    <string name="statusbar_notifications_title">通知</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">拾色器</string>
     <string name="press_color_to_apply">点击以应用该颜色</string>
@@ -861,4 +864,32 @@
     <!-- Task Manager -->
     <string name="enable_task_manager_title">任务管理器</string>
     <string name="enable_task_manager_summary">启用/禁用在扩展状态栏区域显示任务管理器按钮.</string>
+    <!-- Notification fragment -->
+    <string name="battery_saver_notif_title">省电模式通知</string>
+    <string name="battery_saver_notif_summary">当启用省电模式时显示通知</string>
+    <string name="battery_low_notif_title">电量低通知</string>
+    <string name="battery_low_notif_summary">当启用时显示电量低通知</string>
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">强制扩展通知</string>
+    <string name="force_expanded_notifications_summary">仅适用于支持扩展通知的应用</string>
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">禁用沉浸模式消息</string>
+    <string name="disable_immersive_message_summary">将会隐藏所有沉浸模式消息</string>
+    <!-- Less Notification sounds -->
+    <string name="notifications_category_title">通知</string>
+    <string name="less_notification_sounds_title">减少频繁的通知声音</string>
+    <string name="less_notification_sounds_summary">限制每个应用程序在指定时间段内仅播放一次通知声音</string>
+    <string name="less_notification_sounds_default">默认行为</string>
+    <string name="less_notification_sounds_3s">3秒</string>
+    <string name="less_notification_sounds_5s">5秒</string>
+    <string name="less_notification_sounds_10s">10秒</string>
+    <string name="less_notification_sounds_15s">15秒</string>
+    <string name="less_notification_sounds_30s">30秒</string>
+    <string name="less_notification_sounds_45s">45秒</string>
+    <string name="less_notification_sounds_1m">1分钟</string>
+    <string name="less_notification_sounds_2m">2分钟</string>
+    <string name="less_notification_sounds_5m">5分钟</string>
+    <!-- Device policy override -->
+    <string name="device_policy_override_title">设备配置覆盖</string>
+    <string name="device_policy_override_summary">允许应用程序强制安全锁屏和覆盖配置文件设置</string>
 </resources>
