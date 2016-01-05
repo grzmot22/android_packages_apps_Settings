@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V2.1</string>
+    <string name="temasek_version_default">Build V2.3</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek spare parts</string>
@@ -78,6 +78,8 @@
 
     <!-- Recents panel settings -->
     <string name="recents_panel_title">Recents panel</string>
+    <string name="recents_settings_title">Recents</string>
+    <string name="recents_panel_category">AOSP Recents</string>
     <string name="recents_panel_settings">Recents panel settings</string>
     <string name="show_clear_all_recents_button_title">Clear all recents button</string>
     <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
@@ -95,8 +97,13 @@
     <string name="recents_show_fullscreen">Recents in fullscreen</string>
     <string name="recents_fullscreen_summary_enabled">Recents in fullscreen is enabled</string>
     <string name="recents_fullscreen_summary_disabled">Recents in fullscreen is disabled</string>
+    <string name="recents_full_screen_clock_title">Show clock</string>
+    <string name="recents_full_screen_clock_summary">Shows clock at the top while in fullscreen</string>
+    <string name="recents_full_screen_date_title">Show date</string>
+    <string name="recents_full_screen_date_summary">Shows date at the top while in fullscreen</string>
 
     <!-- OmniSwitch -->
+    <string name="other_recents_category">OmniSwitch</string>
     <string name="omniswitch_settings_title">OmniSwitch</string>
     <string name="recents_use_omniswitch_title">Use for recents</string>
     <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of default recents view</string>
@@ -292,13 +299,10 @@
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">Weather</string>
     <string name="lock_screen_weather_settings_title">Lock screen weather</string>
-    <string name="weather_cat_notifications_title">Notifications</string>
     <string name="weather_show_weather_title">Show weather</string>
     <string name="weather_show_weather_summary">Enable to show weather informations</string>
     <string name="weather_show_location_title">Show location</string>
     <string name="weather_show_location_summary">Enable to show the location</string>
-    <string name="weather_show_timestamp_title">Show timestamp</string>
-    <string name="weather_show_timestamp_summary">Enable to show the timestamp</string>
     <string name="weather_condition_icon_title">Condition icon</string>
     <string name="weather_condition_icon_dlg_title">Choose an icon for displaying the weather condition</string>
     <string name="weather_condition_icon_monochrome_title">Monochrome</string>
@@ -306,22 +310,6 @@
     <string name="weather_condition_icon_vclouds_title">VClouds</string>
     <string name="weather_colorize_all_icons_title">Colorize all icons</string>
     <string name="weather_colorize_all_icons_summary">Enable to colorize all icons, disable to colorize only the monochrome icons</string>
-    <string name="weather_hide_panel_title">Hide weather panel</string>
-    <string name="weather_hide_panel_dlg_title">Choose when the weather panel should be hidden</string>
-    <string name="weather_hide_panel_auto_title">Auto</string>
-    <string name="weather_hide_panel_custom_title">Custom</string>
-    <string name="weather_hide_panel_never_title">Never</string>
-    <string name="weather_hide_panel_auto_summary">The weather panel will be hidden, when the visible notifications will reach the maximum allowed notifications on the lock screen</string>
-    <string name="weather_hide_panel_custom_summary">The weather panel will be hidden, when the visible notifications will reach the choosen number of notifications (%s)</string>
-    <string name="weather_hide_panel_never_summary">The weather panel won\'t be hidden</string>
-    <string name="weather_number_of_notifications_title">Number of notifications</string>
-    <string name="weather_number_of_notifications_dlg_title">Choose the number of notifications to hide the weather panel</string>
-    <string name="weather_number_of_notifications_always_title">Always</string>
-    <string name="weather_number_of_notifications_two_title">2</string>
-    <string name="weather_number_of_notifications_three_title">3</string>
-    <string name="weather_number_of_notifications_four_title">4</string>
-    <string name="weather_number_of_notifications_five_title">5</string>
-    <string name="weather_number_of_notifications_six_title">6</string>
     <string name="icons_title">Icons</string>
     <string name="position_right_title">Right</string>
     <string name="position_centered_title">Centered</string>
@@ -331,8 +319,13 @@
     <string name="colors_title">Colors</string>
     <string name="text_title">Text</string>
 
-    <!-- Show carrier label and custom -->
+    <!-- Max Lockscreen Notification count -->
+    <string name="weather_cat_notifications_title">Notifications</string>
+    <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
+    <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
+    <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
 
+    <!-- Show carrier label and custom -->
     <string name="carrier_options">Carrier Label</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
@@ -990,5 +983,60 @@
     <!-- Device policy override -->
     <string name="device_policy_override_title">Device policy override</string>
     <string name="device_policy_override_summary">Allow apps to force secure lock screen and override profile settings</string>
+
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Lock Clock Fonts</string>
+    <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
+    <string name="lock_clock_font_dialog_title">Select lock clock font</string>
+    <string name="lock_clock_font_stock">Normal (default)</string>
+    <string name="lock_clock_font_bold">Bold</string>
+    <string name="lock_clock_font_italic">Italic</string>
+    <string name="lock_clock_font_bold_italic">Bold Italic</string>
+    <string name="lock_clock_font_light">Light</string>
+    <string name="lock_clock_font_light_italic">Light Italic</string>
+    <string name="lock_clock_font_thin">Thin</string>
+    <string name="lock_clock_font_thin_italic">Thin Italic</string>
+    <string name="lock_clock_font_condensed_normal">Condensed</string>
+    <string name="lock_clock_font_condensed_italic">Condensed Italic</string>
+    <string name="lock_clock_font_condensed_bold">Condensed Bold</string>
+    <string name="lock_clock_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="lock_clock_font_medium_normal">Medium</string>
+    <string name="lock_clock_font_medium_italic">Medium Italic</string>
+
+    <!-- Slim Recents -->
+    <string name="recent_panel_category">Slim Recents</string>
+    <string name="slim_recents_panel">Slim Recents</string>
+    <string name="use_slim_recents_title">Slim recents</string>
+    <string name="show_running_tasks_title">Only show running apps</string>
+    <string name="recents_max_apps_title">Max allowed apps</string>
+    <string name="recent_panel_scale_title">Size</string>
+    <string name="recent_panel_expanded_mode_title">Expanded mode</string>
+    <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Always</string>
+    <string name="recent_panel_expanded_mode_never">Never</string>
+    <string name="recent_panel_show_topmost_title">Show topmost task</string>
+    <string name="recent_panel_show_topmost_summary">Don\'t exclude the topmost task in recents view</string>
+    <string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="recent_card_text_color_title">Card text color</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
+    <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+
+    <!-- Slim Recent App Sidebar  -->
+    <string name="recent_app_sidebar_title">App sidebar</string>
+    <string name="recent_app_sidebar_summary">Show app shortcuts on the other edge</string>
+    <string name="recent_app_sidebar_style_title">Sidebar style</string>
+    <string name="recent_app_sidebar_style_summary">Change recent app sidebar style</string>
+    <string name="recent_app_sidebar_hide_labels_title">Hide icon labels</string>
+    <string name="recent_app_sidebar_label_color_title">Label color</string>
+    <string name="recent_app_sidebar_bg_color_title">Background color</string>
+    <string name="recent_app_sidebar_scale_title">Size</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 
 </resources>

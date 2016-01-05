@@ -413,36 +413,6 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="weather_hide_panel_entries">
-        <item>@string/weather_hide_panel_auto_title</item>
-        <item>@string/weather_hide_panel_custom_title</item>
-        <item>@string/weather_hide_panel_never_title</item>
-    </string-array>
-
-    <string-array name="weather_hide_panel_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string-array name="weather_number_of_notifications_entries">
-        <item>@string/weather_number_of_notifications_always_title</item>
-        <item>@string/weather_number_of_notifications_two_title</item>
-        <item>@string/weather_number_of_notifications_three_title</item>
-        <item>@string/weather_number_of_notifications_four_title</item>
-        <item>@string/weather_number_of_notifications_five_title</item>
-        <item>@string/weather_number_of_notifications_six_title</item>
-    </string-array>
-
-    <string-array name="weather_number_of_notifications_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-    </string-array>
-
     <string-array name="clock_date_position_entries">
         <item>@string/position_right_title</item>
         <item>@string/position_centered_title</item>
@@ -1113,6 +1083,54 @@
         <item>60000</item>
         <item>120000</item>
         <item>300000</item>
+    </string-array>
+
+    <!-- Lock Clock Fonts -->
+    <string-array name="lock_clock_fonts_entries">
+        <item>@string/lock_clock_font_stock</item>
+        <item>@string/lock_clock_font_bold</item>
+        <item>@string/lock_clock_font_italic</item>
+        <item>@string/lock_clock_font_bold_italic</item>
+        <item>@string/lock_clock_font_light</item>
+        <item>@string/lock_clock_font_light_italic</item>
+        <item>@string/lock_clock_font_thin</item>
+        <item>@string/lock_clock_font_thin_italic</item>
+        <item>@string/lock_clock_font_condensed_normal</item>
+        <item>@string/lock_clock_font_condensed_italic</item>
+        <item>@string/lock_clock_font_condensed_bold</item>
+        <item>@string/lock_clock_font_condensed_bold_italic</item>
+        <item>@string/lock_clock_font_medium_normal</item>
+        <item>@string/lock_clock_font_medium_italic</item>
+    </string-array>
+
+    <string-array name="lock_clock_fonts_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+    <!-- Recent panel -->
+    <string-array name="recent_panel_expanded_mode_entries">
+        <item>@string/recent_panel_expanded_mode_auto</item>
+        <item>@string/recent_panel_expanded_mode_always</item>
+        <item>@string/recent_panel_expanded_mode_never</item>
+    </string-array>
+
+    <string-array name="recent_panel_expanded_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
 </resources>

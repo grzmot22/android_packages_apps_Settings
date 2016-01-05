@@ -77,7 +77,12 @@
     <string name="recents_show_fullscreen">全屏显示最近任务</string>
     <string name="recents_fullscreen_summary_enabled">全屏显示最近任务已启用</string>
     <string name="recents_fullscreen_summary_disabled">全屏显示最近任务已禁用</string>
+     <string name="recents_full_screen_clock_title">显示时钟</string>
+    <string name="recents_full_screen_clock_summary">当全屏时在顶部显示时钟</string>
+    <string name="recents_full_screen_date_title">显示日期</string>
+    <string name="recents_full_screen_date_summary">当全屏时在顶部显示日期</string>
     <!-- OmniSwitch -->
+    <string name="other_recents_category">OmniSwitch</string>
     <string name="omniswitch_settings_title">OmniSwitch</string>
     <string name="recents_use_omniswitch_title">用作最近应用</string>
     <string name="recents_use_omniswitch_summary">使用OmniSwitch代替默认的最近应用面板视图</string>
@@ -118,7 +123,7 @@
     <string name="clock_font_condensed_italic">简斜体</string>
     <string name="clock_font_condensed_bold">简粗体</string>
     <string name="clock_font_condensed_bold_italic">简粗斜体</string>
-    <string name="clock_font_medium">中体</string>
+    <string name="clock_font_medium">中等</string>
     <string name="clock_font_medium_italic">中斜体</string>
     <string name="clock_font_size_title">字体大小</string>
     <string name="status_bar_show_clock_second_title">时钟秒数</string>
@@ -259,13 +264,10 @@
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">天气</string>
     <string name="lock_screen_weather_settings_title">锁屏天气</string>
-    <string name="weather_cat_notifications_title">通知</string>
     <string name="weather_show_weather_title">显示天气</string>
     <string name="weather_show_weather_summary">启用显示天气信息</string>
     <string name="weather_show_location_title">显示位置</string>
     <string name="weather_show_location_summary">启用显示位置</string>
-    <string name="weather_show_timestamp_title">显示时间戳</string>
-    <string name="weather_show_timestamp_summary">启用显示时间戳</string>
     <string name="weather_condition_icon_title">状态图标</string>
     <string name="weather_condition_icon_dlg_title">选择一个图标用于显示天气状况</string>
     <string name="weather_condition_icon_monochrome_title">黑白</string>
@@ -273,22 +275,6 @@
     <string name="weather_condition_icon_vclouds_title">虚拟</string>
     <string name="weather_colorize_all_icons_title">所有图标填充颜色</string>
     <string name="weather_colorize_all_icons_summary">启用所有图标填充颜色，仅在黑白图标下禁用填充</string>
-    <string name="weather_hide_panel_title">隐藏天气面板</string>
-    <string name="weather_hide_panel_dlg_title">选择何时天气面板该隐藏</string>
-    <string name="weather_hide_panel_auto_title">自动</string>
-    <string name="weather_hide_panel_custom_title">自定义</string>
-    <string name="weather_hide_panel_never_title">从不</string>
-    <string name="weather_hide_panel_auto_summary">当可见通知数量达到允许的最大值时，将隐藏天气面板</string>
-    <string name="weather_hide_panel_custom_summary">当可见通知数量达到设置的值(%s)时，将隐藏天气面板</string>
-    <string name="weather_hide_panel_never_summary">天气面板不会隐藏</string>
-    <string name="weather_number_of_notifications_title">通知数量</string>
-    <string name="weather_number_of_notifications_dlg_title">选择达到多少通知数量时隐藏天气面板</string>
-    <string name="weather_number_of_notifications_always_title">总是</string>
-    <string name="weather_number_of_notifications_two_title">2</string>
-    <string name="weather_number_of_notifications_three_title">3</string>
-    <string name="weather_number_of_notifications_four_title">4</string>
-    <string name="weather_number_of_notifications_five_title">5</string>
-    <string name="weather_number_of_notifications_six_title">6</string>
     <string name="icons_title">图标</string>
     <string name="position_right_title">右侧</string>
     <string name="position_centered_title">居中</string>
@@ -297,6 +283,11 @@
     <string name="dlg_reset_android">是</string>
     <string name="colors_title">颜色</string>
     <string name="text_title">文本</string>
+    <!-- Max Lockscreen Notification count -->
+    <string name="weather_cat_notifications_title">通知</string>
+    <string name="lockscreen_maxnotif_title">锁屏通知数量</string>
+    <string name="lockscreen_maxnotif_sumary">启用调整锁屏通知数最大值</string>
+    <string name="lockscreen_maxnotif_config">锁屏通知数最大值</string>
     <!-- Show carrier label and custom -->
     <string name="carrier_options">运营商标签</string>
     <string name="custom_carrier_label_title">自定义运营商标签</string>
@@ -892,4 +883,54 @@
     <!-- Device policy override -->
     <string name="device_policy_override_title">设备配置覆盖</string>
     <string name="device_policy_override_summary">允许应用程序强制安全锁屏和覆盖配置文件设置</string>
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">锁屏时钟字体</string>
+    <string name="lock_clock_font_summary">更改默认的锁屏时钟部件的字体</string>
+    <string name="lock_clock_font_dialog_title">选择锁屏时钟字体</string>
+    <string name="lock_clock_font_stock">标准(默认)</string>
+    <string name="lock_clock_font_bold">加粗</string>
+    <string name="lock_clock_font_italic">斜体</string>
+    <string name="lock_clock_font_bold_italic">粗斜体</string>
+    <string name="lock_clock_font_light">细体</string>
+    <string name="lock_clock_font_light_italic">细斜体</string>
+    <string name="lock_clock_font_thin">瘦体</string>
+    <string name="lock_clock_font_thin_italic">瘦斜体</string>
+    <string name="lock_clock_font_condensed_normal">简单体</string>
+    <string name="lock_clock_font_condensed_italic">简斜体</string>
+    <string name="lock_clock_font_condensed_bold">简粗体</string>
+    <string name="lock_clock_font_condensed_bold_italic">简粗斜体</string>
+    <string name="lock_clock_font_medium_normal">中等</string>
+    <string name="lock_clock_font_medium_italic">中斜体</string>
+    <!-- Slim Recents -->
+    <string name="recent_panel_category">Slim最近任务</string>
+    <string name="slim_recents_panel">Slim最近任务</string>
+    <string name="use_slim_recents_title">Slim最近任务</string>
+    <string name="show_running_tasks_title">仅显示正在运行的应用</string>
+    <string name="recents_max_apps_title">最大允许应用数量</string>
+    <string name="recent_panel_scale_title">大小</string>
+    <string name="recent_panel_expanded_mode_title">扩展模式</string>
+    <string name="recent_panel_expanded_mode_summary">最近任务扩展预览模式</string>
+    <string name="recent_panel_expanded_mode_auto">自动(默认)</string>
+    <string name="recent_panel_expanded_mode_always">总是</string>
+    <string name="recent_panel_expanded_mode_never">从不</string>
+    <string name="recent_panel_show_topmost_title">显示最顶层任务</string>
+    <string name="recent_panel_show_topmost_summary">最近任务视图中不排除最顶层任务应用</string>
+    <string name="recent_panel_bg_color_title">面板背景颜色</string>
+    <string name="recent_card_bg_color_title">卡片背景颜色</string>
+    <string name="recent_card_text_color_title">卡片文本颜色</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">左侧边缘显示</string>
+    <string name="recent_panel_lefty_mode_summary">在左侧边缘显示最近应用程序</string>
+    <!-- Slim Recent App Sidebar  -->
+    <string name="recent_app_sidebar_title">应用侧边栏</string>
+    <string name="recent_app_sidebar_summary">在另一侧边缘显示应用快捷方式</string>
+    <string name="recent_app_sidebar_style_title">侧边栏样式</string>
+    <string name="recent_app_sidebar_style_summary">更改最近应用侧边栏样式</string>
+    <string name="recent_app_sidebar_hide_labels_title">隐藏图标标签</string>
+    <string name="recent_app_sidebar_label_color_title">标签颜色</string>
+    <string name="recent_app_sidebar_bg_color_title">背景颜色</string>
+    <string name="recent_app_sidebar_scale_title">大小</string>
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">截图声音</string>
+    <string name="screenshot_sound_summary">截图时播放音效</string>
 </resources>

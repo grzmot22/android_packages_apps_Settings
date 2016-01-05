@@ -26,6 +26,9 @@
     <string name="additional_options_title">Расширенные настройки</string>
     <string name="general_options_title">Основные</string>
     <string name="screen_and_animations_title">Экран и анимация</string>
+    <string name="quicksettings_title">Быстрые настройки</string>
+    <string name="qs_brightness_slider_title">Показывать регулятор яркости</string>
+    <string name="statusbar_notifications_title">Уведомления</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Палитра цветов</string>
@@ -73,6 +76,8 @@
 
     <!-- Recents panel settings -->
     <string name="recents_panel_title">Недавние приложения</string>
+    <string name="recents_settings_title">Recents</string>
+    <string name="recents_panel_category">AOSP Recents</string>
     <string name="recents_panel_settings">Настройки \"Недавних приложений\"</string>
     <string name="show_clear_all_recents_button_title">Показывать кнопку \"Очистить всё\"</string>
     <string name="show_clear_all_recents_button_summary">Показывать кнопку \"Очистить всё\" в \"Недавних приложениях\"</string>
@@ -90,8 +95,13 @@
     <string name="recents_show_fullscreen">\"Недавние приложения\" в полноэкранном режиме</string>
     <string name="recents_fullscreen_summary_enabled">Включено</string>
     <string name="recents_fullscreen_summary_disabled">Выключено</string>
+    <string name="recents_full_screen_clock_title">Показывать часы</string>
+    <string name="recents_full_screen_clock_summary">Показывать часы в полноэкранном режиме</string>
+    <string name="recents_full_screen_date_title">Показывать дату</string>
+    <string name="recents_full_screen_date_summary">Показывать дату в полноэкранном режиме</string>
 
     <!-- OmniSwitch -->
+    <string name="other_recents_category">OmniSwitch</string>
     <string name="omniswitch_settings_title">OmniSwitch</string>
     <string name="recents_use_omniswitch_title">Использовать как \"Недавние приложения\"</string>
     <string name="recents_use_omniswitch_summary">Использовать OmniSwitch вместо стандартных \"Недавних приложений\"</string>
@@ -287,13 +297,10 @@
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">Погода</string>
     <string name="lock_screen_weather_settings_title">Погода на экране блокировки</string>
-    <string name="weather_cat_notifications_title">Уведомления</string>
     <string name="weather_show_weather_title">Показывать погоду</string>
     <string name="weather_show_weather_summary">Включить отображение информации о погоде</string>
     <string name="weather_show_location_title">Показывать местоположение</string>
     <string name="weather_show_location_summary">Включить отображение местоположения</string>
-    <string name="weather_show_timestamp_title">Показывать время</string>
-    <string name="weather_show_timestamp_summary">Включить отображение времени</string>
     <string name="weather_condition_icon_title">Стиль иконок</string>
     <string name="weather_condition_icon_dlg_title">Выберете стиль иконок для отображения погоды</string>
     <string name="weather_condition_icon_monochrome_title">Монохромные</string>
@@ -301,22 +308,6 @@
     <string name="weather_condition_icon_vclouds_title">Объёмные</string>
     <string name="weather_colorize_all_icons_title">Раскрасить все иконки</string>
     <string name="weather_colorize_all_icons_summary">Включить для раскраски всех иконок. Выключить для раскраски только монохромных иконок</string>
-    <string name="weather_hide_panel_title">Скрыть панель погоды</string>
-    <string name="weather_hide_panel_dlg_title">Выберите, когда панель погоды должна быть скрыта</string>
-    <string name="weather_hide_panel_auto_title">Автоматически</string>
-    <string name="weather_hide_panel_custom_title">Свое значение</string>
-    <string name="weather_hide_panel_never_title">Никогда</string>
-    <string name="weather_hide_panel_auto_summary">Панель погоды будет скрыта, когда количество уведомлений на экране блокировки достигнет максимального значения</string>
-    <string name="weather_hide_panel_custom_summary">Панель погоды будет скрыта, когда количество уведомлений на экране блокировки будет равно (%s)</string>
-    <string name="weather_hide_panel_never_summary">Панель погоды не будет скрыта</string>
-    <string name="weather_number_of_notifications_title">Количество уведомлений</string>
-    <string name="weather_number_of_notifications_dlg_title">Выберите необходимое количество уведомлений для скрытия погоды</string>
-    <string name="weather_number_of_notifications_always_title">Всегда</string>
-    <string name="weather_number_of_notifications_two_title">2</string>
-    <string name="weather_number_of_notifications_three_title">3</string>
-    <string name="weather_number_of_notifications_four_title">4</string>
-    <string name="weather_number_of_notifications_five_title">5</string>
-    <string name="weather_number_of_notifications_six_title">6</string>
     <string name="icons_title">Иконки</string>
     <string name="position_right_title">Справа</string>
     <string name="position_centered_title">По центру</string>
@@ -326,8 +317,13 @@
     <string name="colors_title">Цвета</string>
     <string name="text_title">Текст</string>
 
-    <!-- Show carrier label and custom -->
+    <!-- Max Lockscreen Notification count -->
+    <string name="weather_cat_notifications_title">Уведомления</string>
+    <string name="lockscreen_maxnotif_title">Количество уведомлений на экране блокировки</string>
+    <string name="lockscreen_maxnotif_sumary">Включить регулировку максимального количества уведомлений</string>
+    <string name="lockscreen_maxnotif_config">Максимальное количество уведомлений</string>
 
+    <!-- Show carrier label and custom -->
     <string name="carrier_options">Логотип оператора</string>
     <string name="custom_carrier_label_title">Свой логотип</string>
     <string name="custom_carrier_label_explain">Пожалуйста, введите имя оператора. Оставьте поле пустым для отображения по умолчанию.</string>
@@ -828,7 +824,7 @@
     <string name="onthego_alpha_title">Настройка Alpha-канала</string>
     <string name="onthego_alpha_summary">Настройка прозрачности в режиме \"На ходу\"</string>
 
-<!-- Three-fingers-swipe to screenshot -->
+    <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Свайп тремя пальцами</string>
     <string name="three_finger_gesture_summary">Свайп тремя пальцами, чтобы сделать скриншот</string>
 
@@ -926,31 +922,119 @@
 
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Ambient display</string>
-    <string name="doze_settings_title">Advanced doze options</string>
-    <string name="doze_timeout_title">Doze pulse timeout</string>
-    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
+    <string name="doze_settings_title">Расширенные настройки doze</string>
+    <string name="doze_timeout_title">Тайм-аут импульса doze</string>
+    <string name="doze_timeout_summary">Продолжительность (в мс) включения экрана для импульса</string>
     <string name="doze_trigger_pickup_title">Pick up gesture trigger</string>
     <string name="doze_trigger_pickup_summary_on">Doze pulse will be triggered by pick up gesture sensor events</string>
     <string name="doze_trigger_pickup_summary_off">Pick up gesture sensor will not be utilized as a triggering mechanism</string>
     <string name="doze_trigger_sigmotion_title">Significant motion trigger</string>
     <string name="doze_trigger_sigmotion_summary_on">Doze pulse will be triggered by significant motion sensor events</string>
     <string name="doze_trigger_sigmotion_summary_off">Significant motion sensor will not be utilized as a triggering mechanism</string>
-    <string name="doze_trigger_notification_title">Notification trigger</string>
-    <string name="doze_trigger_notification_summary_on">Doze pulse will be triggered by notifications</string>
-    <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-    <string name="doze_schedule_title">Doze schedule</string>
-    <string name="doze_schedule_summary_on">Predefined doze repeat intervals (normally [1s,10s,30s,60s,120s]) will be used (default)</string>
-    <string name="doze_schedule_summary_off">Doze will only pulse once per notification</string>
-    <string name="doze_brightness_title">Doze brightness level</string>
-    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
+    <string name="doze_trigger_notification_title">Триггер</string>
+    <string name="doze_trigger_notification_summary_on">Уведомления используются в качестве триггера для doze</string>
+    <string name="doze_trigger_notification_summary_off">Уведомления не будут использованы в качестве триггера</string>
+    <string name="doze_schedule_title">Режим пульсации</string>
+    <string name="doze_schedule_summary_on">Будут использованы предопределенные интервалы повторений [1с,10с,30с,60с,120с] (по умолчанию)</string>
+    <string name="doze_schedule_summary_off">Однократная пульсация при получении уведомления</string>
+    <string name="doze_brightness_title">Уровень яркости</string>
+    <string name="doze_brightness_summary">Уровень яркости экрана при импульсе (% от максимально допустимой яркости)</string>
 
     <!-- Doze notification color invert -->
     <string name="doze_notification_color_invert_title">Инверсия цвета</string>
-    <string name="doze_notification_color_invert_summary_off">Уведомления при \"Запрете спящего режима\" не будут инвертированы. Используйте для тёмных тем.</string>
-    <string name="doze_notification_color_invert_summary_on">Уведомления при \"Запрете спящего режима\" будут инвертированы. Используйте для светлых/стоковых тем.</string>
+    <string name="doze_notification_color_invert_summary_off">Уведомления не будут инвертированы. Используйте для тёмных тем.</string>
+    <string name="doze_notification_color_invert_summary_on">Уведомления будут инвертированы. Используйте для светлых/стоковых тем.</string>
 
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Диспетчер задач</string>
     <string name="enable_task_manager_summary">Кнопка диспетчера задач в расширенной области панели уведомлений.</string>
+
+    <!-- Notification fragment -->
+    <string name="battery_saver_notif_title">Уведомление о включении режима энергосбережения</string>
+    <string name="battery_saver_notif_summary">Если включено, то отображается уведомление о включении энегросбережения</string>
+    <string name="battery_low_notif_title">Уведомление о низком заряде</string>
+    <string name="battery_low_notif_summary">Если включено, то отображается уведомление о низком заряде батареи</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Принудительные расширенные уведомления</string>
+    <string name="force_expanded_notifications_summary">Доступно для приложений поддерживающих расширенные уведомления</string>
+
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Отключить сообщения режима погружения</string>
+    <string name="disable_immersive_message_summary">Скрывает все сообщения режима погружения</string>
+
+    <!-- Less Notification sounds -->
+    <string name="notifications_category_title">Уведомления</string>
+    <string name="less_notification_sounds_title">Снизить частоту звуков уведомлений</string>
+    <string name="less_notification_sounds_summary">Ограничить звуки уведомлений: каждое приложение воспроизводит звук один раз в заданный временной отрезок</string>
+    <string name="less_notification_sounds_default">По умолчанию</string>
+    <string name="less_notification_sounds_3s">3 секунды</string>
+    <string name="less_notification_sounds_5s">5 секунд</string>
+    <string name="less_notification_sounds_10s">10 секунд</string>
+    <string name="less_notification_sounds_15s">15 секунд</string>
+    <string name="less_notification_sounds_30s">30 секунд</string>
+    <string name="less_notification_sounds_45s">45 секунд</string>
+    <string name="less_notification_sounds_1m">1 минута</string>
+    <string name="less_notification_sounds_2m">2 минута</string>
+    <string name="less_notification_sounds_5m">5 минута</string>
+
+    <!-- Device policy override -->
+    <string name="device_policy_override_title">Переопределение политики устройства</string>
+    <string name="device_policy_override_summary">Разрешить приложениям переопределять настройки профилей и защищённого экрана блокировки</string>
+
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Шрифт часов экрана блокировки</string>
+    <string name="lock_clock_font_summary">Сменить шрифт часов на экране блокировки</string>
+    <string name="lock_clock_font_dialog_title">Выберите шрифт</string>
+    <string name="lock_clock_font_stock">Обычный (по умолчанию)</string>
+    <string name="lock_clock_font_bold">Жирный</string>
+    <string name="lock_clock_font_italic">Курсив</string>
+    <string name="lock_clock_font_bold_italic">Жирный курсив</string>
+    <string name="lock_clock_font_light">Легкий</string>
+    <string name="lock_clock_font_light_italic">Легкий курсив</string>
+    <string name="lock_clock_font_thin">Тонкий</string>
+    <string name="lock_clock_font_thin_italic">Тонкий курсив</string>
+    <string name="lock_clock_font_condensed_normal">Плотный</string>
+    <string name="lock_clock_font_condensed_italic">Плотный курсив</string>
+    <string name="lock_clock_font_condensed_bold">Плотный жирный</string>
+    <string name="lock_clock_font_condensed_bold_italic">Плотный жирный курсив</string>
+    <string name="lock_clock_font_medium_normal">Средний</string>
+    <string name="lock_clock_font_medium_italic">Средний курсив</string>
+
+    <!-- Slim Recents -->
+    <string name="recent_panel_category">\"Недавние приложения\" от Slim</string>
+    <string name="slim_recents_panel">Slim Recents</string>
+    <string name="use_slim_recents_title">Slim recents</string>
+    <string name="show_running_tasks_title">Показывать только запущенные приложения</string>
+    <string name="recents_max_apps_title">Максимум запущенных приложений</string>
+    <string name="recent_panel_scale_title">Размер</string>
+    <string name="recent_panel_expanded_mode_title">Расширенный режим</string>
+    <string name="recent_panel_expanded_mode_summary">Расширенный режим просмотра недавних приложений</string>
+    <string name="recent_panel_expanded_mode_auto">Авто (по умолчанию)</string>
+    <string name="recent_panel_expanded_mode_always">Всегда</string>
+    <string name="recent_panel_expanded_mode_never">Никогда</string>
+    <string name="recent_panel_show_topmost_title">Показывать последнее приложение</string>
+    <string name="recent_panel_show_topmost_summary">Показывать последнее приложение в списке недавних</string>
+    <string name="recent_panel_bg_color_title">Цвет фона панели</string>
+    <string name="recent_card_bg_color_title">Цвет фона карточки</string>
+    <string name="recent_card_text_color_title">Цвет текста карточки</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Показывать у левого края</string>
+    <string name="recent_panel_lefty_mode_summary">Показывать панель недавних приложений у левого края</string>
+
+    <!-- Slim Recent App Sidebar  -->
+    <string name="recent_app_sidebar_title">Боковая панель приложений</string>
+    <string name="recent_app_sidebar_summary">Показывать ярлыки приложений на другом краю</string>
+    <string name="recent_app_sidebar_style_title">Стиль панели</string>
+    <string name="recent_app_sidebar_style_summary">Изменить стиль панели приложений</string>
+    <string name="recent_app_sidebar_hide_labels_title">Скрыть текст иконок</string>
+    <string name="recent_app_sidebar_label_color_title">Цвет текста</string>
+    <string name="recent_app_sidebar_bg_color_title">Цвет фона</string>
+    <string name="recent_app_sidebar_scale_title">Размер</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скриншота</string>
+    <string name="screenshot_sound_summary">Проигрывать звук при скриншоте</string>
 
 </resources>
