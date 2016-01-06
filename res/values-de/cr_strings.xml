@@ -29,7 +29,7 @@
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Farbauswahl</string>
-    <string name="press_color_to_apply">Antippen um Farbe zu wählen</string>
+    <string name="press_color_to_apply">Tippen um Farbe zu wählen</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -48,7 +48,7 @@
     <string name="viper_title">Viper4Android</string>
 
     <!-- OTA update -->
-    <string name="ota_title">OTA update</string>
+    <string name="ota_title">OTA Update</string>
 
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Superuser Hinweis</string>
@@ -74,17 +74,17 @@
     <!-- Recents panel settings -->
     <string name="recents_panel_title">Anwendungsverlauf</string>
     <string name="recents_panel_settings">Anwendungsverlauf Einstellungen</string>
-    <string name="show_clear_all_recents_button_title">Alle aktuellen Anwendungen schließen Button</string>
-    <string name="show_clear_all_recents_button_summary">Alle aktuellen Anwendungen schließen Button anzeigen</string>
-    <string name="recents_clear_all_location_title">Position des Alle aktuellen Anwendungen schließen Buttons</string>
+    <string name="show_clear_all_recents_button_title">Aktuelle Anwendungen schließen Knopf</string>
+    <string name="show_clear_all_recents_button_summary">Aktuelle Anwendungen schließen Knopf anzeigen</string>
+    <string name="recents_clear_all_location_title">Position des aktuelle Anwendungen schließen Knopf</string>
     <string name="recents_clear_all_location_top_right">Rechts oben</string>
     <string name="recents_clear_all_location_top_left">Links oben</string>
     <string name="recents_clear_all_location_top_center">Oben mittig</string>
     <string name="recents_clear_all_location_bottom_right">Rechts unten</string>
     <string name="recents_clear_all_location_bottom_left">Links unten</string>
     <string name="recents_clear_all_location_bottom_center">Unten mittig</string>
-    <string name="recents_clear_all_dismiss_all_title">Alle aktuellen Anwendungen beenden</string>
-    <string name="recents_clear_all_dismiss_all_summary">Soll auch die App im Vordergrund beendet werden?</string>
+    <string name="recents_clear_all_dismiss_all_title">Aktuelle Anwendungen beenden</string>
+    <string name="recents_clear_all_dismiss_all_summary">App im Vordergrund auch beenden ?</string>
 
     <!-- Recents Fullscreen -->
     <string name="recents_show_fullscreen">Anwendungsverlauf im Vollbildschirm-Modus</string>
@@ -113,7 +113,7 @@
     <string name="status_bar_date_style_normal">Normal</string>
     <string name="status_bar_date_style_lowercase">Kleinbuchstaben</string>
     <string name="status_bar_date_style_uppercase">Großbuchstaben</string>
-    <string name="status_bar_date_format_custom">java Format angeben</string>
+    <string name="status_bar_date_format_custom">Format angeben</string>
     <string name="status_bar_date_string_edittext_title">Muß DateFormat kompatibel sein z.B. MM/dd/yy</string>
     <string name="status_bar_date_string_edittext_summary">Zeichenkette eingeben</string>
 
@@ -163,7 +163,7 @@
     <!-- Navigation bar -->
     <string name="nav_bar_title">Navigationsleiste</string>
     <string name="navbar_enable_bar_title">Navigationsleiste an</string>
-    <string name="navbar_enable_bar_summary">Bildschirm Navigationsleiste aktivieren</string>
+    <string name="navbar_enable_bar_summary">Navigationsleiste aktivieren</string>
     <string name="navbar_style_dimen_title">Größe der Navigationsleiste</string>
     <string name="navbar_dimensions_reset_message">Größe der Navigationsleiste wird zurückgesetzt</string>
     <string name="navigation_bar_height_title">Höhe der Navigationsleiste</string>
@@ -186,8 +186,8 @@
     <string name="navbar_button_tint_title">Navigations Button Farbe</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Schlafzustand bei doppeltem tippen der Navigationsleiste</string>
-    <string name="double_tap_sleep_nav_bar_summary">Navigationsleiste doppeltippen, um das Gerät in den Schlafzustand zu versetzen</string>
+    <string name="double_tap_sleep_nav_bar_title">Stanby bei doppeltem tippen der Navigationsleiste</string>
+    <string name="double_tap_sleep_nav_bar_summary">Navigationsleiste doppeltippen, um das Gerät in Standby zu versetzen</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Hardware Tasten</string>
@@ -199,19 +199,19 @@
 
     <!-- SlimDim -->
     <string name="dim_nav_buttons_category">SlimDim</string>
-    <string name="dim_nav_buttons_title">Navigationsleiste dimmen, wenn inaktiv</string>
-    <string name="dim_nav_buttons_summary">Navigationsleiste nach einer bestimmten inaktiven Zeit dimmen</string>
-    <string name="dim_nav_buttons_timeout_title">Zeit der inaktivität zum dimmen</string>
-    <string name="dim_nav_buttons_timeout_summary">Zeit (in Milisekunden) zum warten bevor Navigationsleiste zu dimmen</string>
+    <string name="dim_nav_buttons_title">Navigationsleiste dimmen Timeout</string>
+    <string name="dim_nav_buttons_summary">Navigationsleiste dimmen, wenn inaktiv</string>
+    <string name="dim_nav_buttons_timeout_title">Timout zum dimmen</string>
+    <string name="dim_nav_buttons_timeout_summary">Zeit (in Milisekunden) zum warten bevor Navigationsleiste dimmt</string>
     <string name="dim_nav_buttons_alpha_title">Dim alpha</string>
     <string name="dim_nav_buttons_alpha_summary">Alpha Wert zum dimmen der Navigationsleiste</string>
     <string name="dim_nav_buttons_animate_title">Dim Animation</string>
-    <string name="dim_nav_buttons_animate_summary">Animate the alpha fade</string>
-    <string name="dim_nav_buttons_animate_duration_title">Animation duration</string>
-    <string name="dim_nav_buttons_animate_duration_summary">Duration (in milliseconds) of the alpha animation</string>
-    <string name="dim_nav_buttons_touch_anywhere_title">Listen for touches on entire screen</string>
-    <string name="dim_nav_buttons_touch_anywhere_summary_on">Touching anywhere on the screen will cause buttons to un-dim</string>
-    <string name="dim_nav_buttons_touch_anywhere_summary_off">Only touches on the navbar will cause buttons to un-dim</string>
+    <string name="dim_nav_buttons_animate_summary">Animiere den alpha fade</string>
+    <string name="dim_nav_buttons_animate_duration_title">Animations dauer</string>
+    <string name="dim_nav_buttons_animate_duration_summary">Zeit (in Millisekunden) für die alpha Animation</string>
+    <string name="dim_nav_buttons_touch_anywhere_title">Auf Bildschirmberührungen achten</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_on">Bildschirm berühren um unzudimmen</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_off">Navigationleiste berühren um unzudimmen</string>
 
     <!-- Time-context headers in notification header -->
     <string name="contextual_title">Contextual headers</string>
@@ -915,14 +915,14 @@
     <string name="pa_pie_button_color">Schaltflächen Farbe</string>
     <string name="pa_pie_button_color_title">Schaltflächen Farbe</string>
     <string name="pa_pie_always_right_title">Pie immer rechts</string>
-    <string name="pa_pie_always_right_summary">Pie im querformat immer rechts anzeigen</string>
+    <string name="pa_pie_always_right_summary">Pie im querformat immer rechts</string>
 
     <string name="reset_temasek">Temasek</string>
     <string name="reset_android">Android</string>
 
     <!-- Temasek Extra Info -->
     <string name="temaextrainfo">Weitere Informationen</string>
-    <string name="temaextrainfo_summary">Weitere Informationen für cpu, display, etc zeigen</string>
+    <string name="temaextrainfo_summary">Weitere Informationen für das Gerät</string>
 
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Ambient Bildschirm</string>
