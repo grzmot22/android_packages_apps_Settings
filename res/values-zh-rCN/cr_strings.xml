@@ -758,8 +758,6 @@
     <string name="volume_steps_15">15</string>
     <string name="volume_steps_7">7</string>
     <string name="volume_steps_5">5</string>
-    <!-- System UI tuner -->
-    <string name="system_ui_tuner">系统UI界面调谐器</string>
     <!-- PA Pie control -->
     <string name="pa_piecontrol_settings_summary">定制PA手势2.0对象,样式,尺寸和颜色</string>
     <string name="pa_pie_control_title">PA手势控制</string>
@@ -933,4 +931,21 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">截图声音</string>
     <string name="screenshot_sound_summary">截图时播放音效</string>
+     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">重置统计数据</string>
+    <string name="battery_stats_message">电池历史统计记录将会被重置</string>
+    <string name="ok_string">确定</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">显示CPU信息</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">屏幕叠加显示当前CPU信息</string>
+    <!-- app notifications hide on lockscreen -->
+    <string name="app_notification_no_keyguard_title">锁定时隐藏</string>
+    <string name="app_notification_no_keyguard_summary">当设备锁定时隐藏这个应用的通知</string>
+    <string name="filter_notif_no_keyguard">锁定时隐藏</string>
+    <string name="notifications_no_keyguard">锁定时隐藏</string>
+    <string name="notifications_four_items"><xliff:g id="notif_state" example="Priority">%1$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%2$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%3$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%4$s</xliff:g></string>
+    <!-- Option to Disable Brightness Icon In Brightness Slider -->
+    <string name="brightness_icon_title">亮度图标</string>
+    <string name="brightness_icon_summary">亮度控制滑块上启用图标</string>
 </resources>

@@ -172,6 +172,16 @@
             android:summary="@string/battery_low_notif_summary"
             android:defaultValue="true" />
 
+        <PreferenceScreen
+            android:key="status_bar_icons"
+            android:title="@string/status_bar_icons_title"
+            android:summary="@string/status_bar_icons_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity$StatusBarIconActivity" />
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -207,12 +217,12 @@
             android:title="@string/qs_brightness_slider_title"
             android:defaultValue="true"/>
 
-        <PreferenceScreen
-            android:title="@string/system_ui_tuner">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.systemui"
-                    android:targetClass="com.android.systemui.tuner.TunerActivity" />
-        </PreferenceScreen>
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="brightness_icon"
+            android:title="@string/brightness_icon_title"
+            android:summary="@string/brightness_icon_summary"
+            android:dependency="qs_show_brightness_slider"
+            android:defaultValue="true"/>
 
     </PreferenceCategory>
 
