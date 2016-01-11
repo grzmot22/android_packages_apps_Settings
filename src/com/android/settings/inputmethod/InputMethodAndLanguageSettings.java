@@ -65,6 +65,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 
+import com.android.settings.voicewakeup.VoiceWakeupSettings;
 import cyanogenmod.hardware.CMHardwareManager;
 import cyanogenmod.providers.CMSettings;
 
@@ -97,6 +98,8 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
     private static final String KEY_TRACKPAD_SETTINGS = "gesture_pad_settings";
     private static final String KEY_STYLUS_GESTURES = "stylus_gestures";
     private static final String KEY_STYLUS_ICON_ENABLED = "stylus_icon_enabled";
+    private static final String KEY_VOICE_CATEGORY = "voice_category";
+    private static final String KEY_VOICE_WAKEUP = "voice_wakeup";
 
     // false: on ICS or later
     private static final boolean SHOW_INPUT_METHOD_SWITCHER_SETTINGS = false;
@@ -269,6 +272,18 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                 startingIntent.getParcelableExtra(Settings.EXTRA_INPUT_DEVICE_IDENTIFIER);
         if (mShowsOnlyFullImeAndKeyboardList && identifier != null) {
             showKeyboardLayoutDialog(identifier);
+        }
+        if (!Utils.isUserOwner() ||
+                !Utils.isPackageInstalled(getActivity(),
+                        VoiceWakeupSettings.VOICE_WAKEUP_PACKAGE, false)) {
+            PreferenceCategory voiceCategory = (PreferenceCategory)
+                    findPreference(KEY_VOICE_CATEGORY);
+            if (voiceCategory != null) {
+                Preference wakeup = voiceCategory.findPreference(KEY_VOICE_WAKEUP);
+                if (wakeup != null) {
+                    voiceCategory.removePreference(wakeup);
+                }
+            }
         }
     }
 
