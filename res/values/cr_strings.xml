@@ -6,6 +6,8 @@
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
     <string name="temasek_version_default">Build V2.7</string>
+    <string name="android_version_title">Marshmallow</string>
+    <string name="android_version_default">Release 10</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek spare parts</string>

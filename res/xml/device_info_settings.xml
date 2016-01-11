@@ -141,11 +141,17 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
-	<!-- Temasek version -->
+        <!-- Temasek version -->
         <Preference android:key="temasek_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/temasek_version_title"
                 android:summary="@string/temasek_version_default"/>
+
+        <!-- Android version -->
+        <Preference android:key="android_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/android_version_title"
+                android:summary="@string/android_version_default"/>
 
         <!-- Build date -->
         <Preference android:key="build_date"
