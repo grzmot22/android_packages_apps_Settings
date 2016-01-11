@@ -216,8 +216,8 @@
     <!-- Time-context headers in notification header -->
     <string name="contextual_title">Contextual headers</string>
     <string name="status_bar_custom_header_title">Eigenes Header-Bild</string>
-    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
-    <string name="status_bar_custom_header_default_title">Select your images</string>
+    <string name="status_bar_custom_header_summary">Aktiviere eigenes Bild für den Header</string>
+    <string name="status_bar_custom_header_default_title">Wähle ein Bild</string>
     <string name="custom_header_image_0">Standard</string>
     <string name="custom_header_image_1">Modern</string>
     <string name="custom_header_image_2">Poly HD</string>
@@ -258,12 +258,12 @@
     <string name="battery_bar_animate_summary">Die Lade Animation kann das System verlangsamen</string>
 
     <!-- Status bar temperature -->
-    <string name="status_bar_temperature_title">Wetter und Temperatur</string>
+    <string name="status_bar_temperature_title">Wetter in Statusleiste</string>
     <string name="status_bar_temperature_hidden">Versteckt</string>
     <string name="status_bar_temperature_show_scale">Mit Skala anzeigen</string>
     <string name="status_bar_temperature_hide_scale">Ohne Skala anzeigen</string>
     <string name="status_bar_temperature_location_title">Plazierung</string>
-    <string name="status_bar_temperature_location_summary">Wetter und Temperatur in der Statusleiste anzeigen</string>
+    <string name="status_bar_temperature_location_summary">Platzierung des Wetters</string>
     <string name="status_bar_temperature_location_right">Rechts anzeigen</string>
     <string name="status_bar_temperature_location_left">Links anzeigen</string>
     <string name="status_bar_weather_color_title">Temperatur-Farbe</string>
@@ -310,7 +310,7 @@
     <string name="weather_hide_panel_custom_summary">Die Wetter Anzeige wird ausgeblendet wenn die gewählte Anzahl auf dem Sperrbildschirm zugelassene Benachrichtigungen erreicht ist (%s)</string>
     <string name="weather_hide_panel_never_summary">Die Wetter Anzeige ist immer sichtbar</string>
     <string name="weather_number_of_notifications_title">Anzahl der Benachrichtigungen</string>
-    <string name="weather_number_of_notifications_dlg_title">Anzahl der Benachrichtigungen ab der die Wetter Anzeige ausgeblendet wird wählen</string>
+    <string name="weather_number_of_notifications_dlg_title">Anzahl der Benachrichtigungen ab der die Wetter Anzeige ausblendet</string>
     <string name="weather_number_of_notifications_always_title">Immer</string>
     <string name="weather_number_of_notifications_two_title">2</string>
     <string name="weather_number_of_notifications_three_title">3</string>
@@ -348,9 +348,9 @@
     <string name="reset_lockscreen_wallpaper">Auf Standard zurücksetzen</string>
 
     <!-- Lockscreen see through -->
-    <string name="lockscreen_see_through_title">Transparenter Sperrbildchirm</string>
-    <string name="lockscreen_see_through_summary">Stellt den Inhalt hinter dem Sperrbildschirm unscharf dar.</string>
-    <string name="lockscreen_blur_radius">Stärke des Unschärfe-Effektes</string>
+    <string name="lockscreen_see_through_title">Durchsichtiger Sperrbildchirm</string>
+    <string name="lockscreen_see_through_summary">Stellt den Inhalt hinter dem Sperrbildschirm unscharf dar</string>
+    <string name="lockscreen_blur_radius">Stärke der Unschärfe</string>
 
     <!-- Media art -->
     <string name="media_art_title">Medien Titelbilder</string>
@@ -377,7 +377,7 @@
 
     <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">Gesture Anywhere</string>
-    <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
+    <string name="gesture_anywhere_enabled_title">Gesture Anywhere aktivieren</string>
     <string name="gesture_anywhere_enabled_summary">Überall Gesten erlauben</string>
     <string name="gesture_anywhere_position_title">Position</string>
     <string name="gesture_anywhere_position_left">Linker Rand</string>
@@ -422,11 +422,11 @@
     <string name="ga_gestures_error_loading">%s konnte nicht geladen werden. Speicher muss vorhanden sein.</string>
     <string name="trigger_category">Trigger Region</string>
     <string name="trigger_width_title">Trigger Breite</string>
-    <string name="trigger_width_summary">Breite der Trigger Region anpassen</string>
+    <string name="trigger_width_summary">Breite des Triggers anpassen</string>
     <string name="trigger_top_title">Trigger Position</string>
-    <string name="trigger_top_summary">Vertikale Position der Trigger Region anpassen</string>
+    <string name="trigger_top_summary">Vertikale Position des Triggers anpassen</string>
     <string name="trigger_bottom_title">Trigger Höhe</string>
-    <string name="trigger_bottom_summary">Höhe der Trigger Region anpassen</string>
+    <string name="trigger_bottom_summary">Höhe des Triggers anpassen</string>
     <string name="picker_activities">Aktion</string>
     <string name="select_custom_app_title">App auswählen</string>
     <string name="select_custom_activity_title">Aktion auswählen</string>
@@ -446,7 +446,7 @@
 
     <!--Power menu -->
     <string name="power_category">Power Menü</string>
-    <string name="lockscreen_enable_power_menu_title">Auf dem Sperrbildschirm einschalten</string>
+    <string name="lockscreen_enable_power_menu_title">Auf dem Sperrbildschirm erlauben</string>
     <string name="lockscreen_enable_power_menu_summary">Betrifft nur Sperrbildschirme mit Authentifizierung</string>
 
     <!-- MediaScanner behavior on boot -->
@@ -661,7 +661,7 @@
     <string name="shortcut_action_search">In app suchen</string>
     <string name="shortcut_action_ring_vib">Klingeln/Vib</string>
     <string name="shortcut_action_ring_silent">Klingeln/Still</string>
-    <string name="shortcut_action_ring_vib_silent">Klingeln/Vib/Lautlos</string>
+    <string name="shortcut_action_ring_vib_silent">Klingeln/Vib/Still</string>
     <string name="shortcut_action_camera">Kamera</string>
     <string name="shortcut_action_media_next">Musik - nächstes Lied</string>
     <string name="shortcut_action_media_play_pause">Musik - Start/Pause</string>
@@ -926,9 +926,9 @@
 
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Ambient Bildschirm</string>
-    <string name="doze_settings_title">Erweiterte doze Einstellungen</string>
-    <string name="doze_timeout_title">Doze pulsieren timeout</string>
-    <string name="doze_timeout_summary">Bildschirm an Timeout für das pulsieren der Benachrichtigungen</string>
+    <string name="doze_settings_title">Erweiterte Ambient Display Einstellungen</string>
+    <string name="doze_timeout_title">Pulsieren der Benachrichtigungen auf Bildschirm</string>
+    <string name="doze_timeout_summary">Zeit für das Pulsieren auf dem Display</string>
     <string name="doze_trigger_pickup_title">Pick up gesture trigger</string>
     <string name="doze_trigger_pickup_summary_on">Doze pulse will be triggered by pick up gesture sensor events</string>
     <string name="doze_trigger_pickup_summary_off">Pick up gesture sensor will not be utilized as a triggering mechanism</string>
