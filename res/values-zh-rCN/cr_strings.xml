@@ -121,10 +121,14 @@
     <string name="clock_font_thin_italic">瘦斜体</string>
     <string name="clock_font_condensed">简单体</string>
     <string name="clock_font_condensed_italic">简斜体</string>
+    <string name="clock_font_condensed_light">简细体</string>
+    <string name="clock_font_condensed_light_italic">简细斜体</string>
     <string name="clock_font_condensed_bold">简粗体</string>
     <string name="clock_font_condensed_bold_italic">简粗斜体</string>
     <string name="clock_font_medium">中等</string>
     <string name="clock_font_medium_italic">中斜体</string>
+    <string name="clock_font_black">黑体</string>
+    <string name="clock_font_black_italic">黑斜体</string>
     <string name="clock_font_size_title">字体大小</string>
     <string name="status_bar_show_clock_second_title">时钟秒数</string>
     <string name="clock_font_size_4">4</string>
@@ -257,10 +261,14 @@
     <string name="status_bar_weather_font_thin_italic">瘦斜体</string>
     <string name="status_bar_weather_font_condensed">简单体</string>
     <string name="status_bar_weather_font_condensed_italic">简斜体</string>
+    <string name="status_bar_weather_font_condensed_light">简细体</string>
+    <string name="status_bar_weather_font_condensed_light_italic">简细斜体</string>
     <string name="status_bar_weather_font_condensed_bold">简粗体</string>
     <string name="status_bar_weather_font_condensed_bold_italic">简斜粗体</string>
     <string name="status_bar_weather_font_medium">中等</string>
     <string name="status_bar_weather_font_medium_italic">中等斜体</string>
+    <string name="status_bar_weather_font_black">黑体</string>
+    <string name="status_bar_weather_font_black_italic">黑斜体</string>
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">天气</string>
     <string name="lock_screen_weather_settings_title">锁屏天气</string>
@@ -948,4 +956,7 @@
     <!-- Option to Disable Brightness Icon In Brightness Slider -->
     <string name="brightness_icon_title">亮度图标</string>
     <string name="brightness_icon_summary">亮度控制滑块上启用图标</string>
+    <!--Persist add tiles button-->
+    <string name="persist_add_title">始终显示添加磁贴图标</string>
+    <string name="persist_add_summary">即使亮度控制滑块禁用也启用使添加磁贴图标可见</string>
 </resources>

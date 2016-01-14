@@ -143,10 +143,14 @@
     <string name="clock_font_thin_italic">Тонкий Курсив</string>
     <string name="clock_font_condensed">Плотный</string>
     <string name="clock_font_condensed_italic">Плотный Курсив</string>
+    <string name="clock_font_condensed_light">Плотный Легкий</string>
+    <string name="clock_font_condensed_light_italic">Плотный Легкий Курсив</string>
     <string name="clock_font_condensed_bold">Плотный Жирный</string>
     <string name="clock_font_condensed_bold_italic">Плотный Жирный Курсив</string>
     <string name="clock_font_medium">Средний</string>
     <string name="clock_font_medium_italic">Средний Курсив</string>
+    <string name="clock_font_black">Чёрный</string>
+    <string name="clock_font_black_italic">Чёрный Курсив</string>
     <string name="clock_font_size_title">Размер шрифта</string>
     <string name="status_bar_show_clock_second_title">Показывать секунды</string>
     <string name="clock_font_size_4">4</string>
@@ -289,10 +293,14 @@
     <string name="status_bar_weather_font_thin_italic">Тонкий Курсив</string>
     <string name="status_bar_weather_font_condensed">Плотный</string>
     <string name="status_bar_weather_font_condensed_italic">Плотный Курсив</string>
+    <string name="status_bar_weather_font_condensed_light">Плотный Легкий</string>
+    <string name="status_bar_weather_font_condensed_light_italic">Плотный Легкий Курсив</string>
     <string name="status_bar_weather_font_condensed_bold">Плотный Жирный</string>
     <string name="status_bar_weather_font_condensed_bold_italic">Плотный Жирный Курсив</string>
     <string name="status_bar_weather_font_medium">Средний</string>
     <string name="status_bar_weather_font_medium_italic">Средний Курсив</string>
+    <string name="status_bar_weather_font_black">Чёрный</string>
+    <string name="status_bar_weather_font_black_italic">Чёрный Курсив</string>
 
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">Погода</string>
@@ -1054,5 +1062,9 @@
     <!-- Option to Disable Brightness Icon In Brightness Slider -->
     <string name="brightness_icon_title">Значок яркости </string>
     <string name="brightness_icon_summary">Отображать значок яркости на слайдере яркости</string>
+
+    <!--Persist add tiles button-->
+    <string name="persist_add_title">Persist add tiles icon </string>
+    <string name="persist_add_summary">Enable to make add tiles icon visible even with brightness slider disabled</string>
 
 </resources>
