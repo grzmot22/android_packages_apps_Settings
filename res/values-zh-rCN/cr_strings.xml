@@ -24,15 +24,10 @@
     <string name="quicksettings_title">快速设置</string>
     <string name="qs_brightness_slider_title">显示亮度调节滑块</string>
     <string name="statusbar_notifications_title">通知</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">拾色器</string>
-    <string name="press_color_to_apply">点击以应用该颜色</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">设置</string>
-    <string name="color_default">默认</string>
+    <string name="dlg_reset_temasek">Temasek</string>
+    <string name="cat_colors_title">自定义通知颜色</string>
+    <string name="background_title">背景</string>
+    <string name="icon_title">图标</string>
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">内存</string>
@@ -42,6 +37,14 @@
     <string name="viper_title">Viper4Android</string>
     <!-- OTA update -->
     <string name="ota_title">OTA更新</string>
+    <!-- Color picker -->
+    <string name="dialog_color_picker_title">拾色器</string>
+    <string name="press_color_to_apply">点击颜色以应用</string>
+    <string name="palette_darkkat_title">Temasek</string>
+    <string name="palette_material_title">Material</string>
+    <string name="palette_rgb_title">RGB</string>
+    <string name="reset_android_title">Android默认</string>
+    <string name="reset_darkkat_title">DarkKat默认</string>
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">超级用户指示器</string>
     <string name="su_indicator_summary_on">当一个会话是活动时超级用户指示器为可见</string>
@@ -959,4 +962,19 @@
     <!--Persist add tiles button-->
     <string name="persist_add_title">始终显示添加磁贴图标</string>
     <string name="persist_add_summary">即使亮度控制滑块禁用也启用使添加磁贴图标可见</string>
+    <!-- Quick settings disable on lockscreen -->
+    <string name="block_on_secure_keyguard_title">锁屏界面禁用快速设置</string>
+    <string name="block_on_secure_keyguard_summary">仅在安全锁屏界面禁用快速设置</string>
+    <!-- Notification color settings -->
+    <string name="notification_color_settings_title">通知颜色</string>
+    <string name="notification_media_bg_mode_title">媒体背景色彩化</string>
+    <string name="notification_app_icon_bg_mode_title">应用图标背景色彩化</string>
+    <string name="notification_app_icon_color_mode_title">应用图标色彩化</string>
+    <string name="notification_bg_guts_color_title">背景长按</string>
+    <string name="notification_app_icon_bg_color_title">应用图标背景</string>
+    <string name="notification_color_mode_never_title">从不</string>
+    <string name="notification_icon_color_mode_greyscale_title">如果图标为灰色图标</string>
+    <string name="notification_bg_color_mode_no_color_title">如果该通知不含自己的颜色</string>
+    <string name="notification_color_mode_always_title">总是</string>
+    <string name="notification_drawer_clear_all_icon_color_title">清除全部图标</string>
 </resources>

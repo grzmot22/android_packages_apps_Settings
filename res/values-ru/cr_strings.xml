@@ -29,16 +29,10 @@
     <string name="quicksettings_title">Быстрые настройки</string>
     <string name="qs_brightness_slider_title">Показывать регулятор яркости</string>
     <string name="statusbar_notifications_title">Уведомления</string>
-
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Палитра цветов</string>
-    <string name="press_color_to_apply">Нажмите на выбранный цвет для применения</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">Применить</string>
-    <string name="color_default">По умолчанию</string>
+    <string name="dlg_reset_temasek">Temasek</string>
+    <string name="cat_colors_title">Настроки цвета уведомлений</string>
+    <string name="background_title">Фон</string>
+    <string name="icon_title">Иконка</string>
 
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">Процессор</string>
@@ -52,6 +46,15 @@
 
     <!-- OTA update -->
     <string name="ota_title">OTA-обновление</string>
+
+    <!-- Color picker -->
+    <string name="dialog_color_picker_title">Палитра цветов</string>
+    <string name="press_color_to_apply">Нажмите на выбранный цвет для применения</string>
+    <string name="palette_darkkat_title">Temasek</string>
+    <string name="palette_material_title">Material</string>
+    <string name="palette_rgb_title">RGB</string>
+    <string name="reset_android_title">Android default</string>
+    <string name="reset_darkkat_title">DarkKat default</string>
 
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Индикатор суперпользователя</string>
@@ -286,21 +289,21 @@
     <string name="status_bar_weather_font_normal">Обычный</string>
     <string name="status_bar_weather_font_italic">Курсив</string>
     <string name="status_bar_weather_font_bold">Жирный</string>
-    <string name="status_bar_weather_font_bold_italic">Жирный Курсив</string>
+    <string name="status_bar_weather_font_bold_italic">Жирный курсив</string>
     <string name="status_bar_weather_font_light">Легкий</string>
-    <string name="status_bar_weather_font_light_italic">Легкий Курсив</string>
+    <string name="status_bar_weather_font_light_italic">Легкий курсив</string>
     <string name="status_bar_weather_font_thin">Тонкий</string>
-    <string name="status_bar_weather_font_thin_italic">Тонкий Курсив</string>
+    <string name="status_bar_weather_font_thin_italic">Тонкий курсив</string>
     <string name="status_bar_weather_font_condensed">Плотный</string>
-    <string name="status_bar_weather_font_condensed_italic">Плотный Курсив</string>
-    <string name="status_bar_weather_font_condensed_light">Плотный Легкий</string>
-    <string name="status_bar_weather_font_condensed_light_italic">Плотный Легкий Курсив</string>
-    <string name="status_bar_weather_font_condensed_bold">Плотный Жирный</string>
-    <string name="status_bar_weather_font_condensed_bold_italic">Плотный Жирный Курсив</string>
+    <string name="status_bar_weather_font_condensed_italic">Плотный курсив</string>
+    <string name="status_bar_weather_font_condensed_light">Плотный легкий</string>
+    <string name="status_bar_weather_font_condensed_light_italic">Плотный легкий курсив</string>
+    <string name="status_bar_weather_font_condensed_bold">Плотный жирный</string>
+    <string name="status_bar_weather_font_condensed_bold_italic">Плотный жирный курсив</string>
     <string name="status_bar_weather_font_medium">Средний</string>
-    <string name="status_bar_weather_font_medium_italic">Средний Курсив</string>
+    <string name="status_bar_weather_font_medium_italic">Средний курсив</string>
     <string name="status_bar_weather_font_black">Чёрный</string>
-    <string name="status_bar_weather_font_black_italic">Чёрный Курсив</string>
+    <string name="status_bar_weather_font_black_italic">Чёрный курсив</string>
 
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">Погода</string>
@@ -990,21 +993,25 @@
     <!-- Lock Clock Fonts -->
     <string name="lock_clock_font_title">Шрифт часов экрана блокировки</string>
     <string name="lock_clock_font_summary">Сменить шрифт часов на экране блокировки</string>
-    <string name="lock_clock_font_dialog_title">Выберите шрифт</string>
-    <string name="lock_clock_font_stock">Обычный (по умолчанию)</string>
+    <string name="lock_clock_font_dialog_title">Выберите шрифт Roboto</string>
+    <string name="lock_clock_font_normal">Обычный (по умолчанию)</string>
     <string name="lock_clock_font_bold">Жирный</string>
     <string name="lock_clock_font_italic">Курсив</string>
     <string name="lock_clock_font_bold_italic">Жирный курсив</string>
-    <string name="lock_clock_font_light">Легкий</string>
+    <string name="lock_clock_font_light_normal">Легкий</string>
     <string name="lock_clock_font_light_italic">Легкий курсив</string>
-    <string name="lock_clock_font_thin">Тонкий</string>
+    <string name="lock_clock_font_thin_normal">Тонкий</string>
     <string name="lock_clock_font_thin_italic">Тонкий курсив</string>
     <string name="lock_clock_font_condensed_normal">Плотный</string>
-    <string name="lock_clock_font_condensed_italic">Плотный курсив</string>
     <string name="lock_clock_font_condensed_bold">Плотный жирный</string>
+    <string name="lock_clock_font_condensed_italic">Плотный курсив</string>
     <string name="lock_clock_font_condensed_bold_italic">Плотный жирный курсив</string>
     <string name="lock_clock_font_medium_normal">Средний</string>
     <string name="lock_clock_font_medium_italic">Средний курсив</string>
+    <string name="lock_clock_font_black_normal">Чёрный</string>
+    <string name="lock_clock_font_black_italic">Чёрный курсив</string>
+    <string name="lock_clock_font_condensed_light_normal">Плотный легкий</string>
+    <string name="lock_clock_font_condensed_light_italic">Плотный легкий курсив</string>
 
     <!-- Slim Recents -->
     <string name="recent_panel_category">\"Недавние приложения\" от Slim</string>
@@ -1066,5 +1073,22 @@
     <!--Persist add tiles button-->
     <string name="persist_add_title">Persist add tiles icon </string>
     <string name="persist_add_summary">Enable to make add tiles icon visible even with brightness slider disabled</string>
+
+    <!-- Quick settings disable on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Отключить на экране блокировки</string>
+    <string name="block_on_secure_keyguard_summary">Отключить быстрые настройки на защищённом экране блокировки</string>
+
+    <!-- Notification color settings -->
+    <string name="notification_color_settings_title">Настройки цвета уведомлений</string>
+    <string name="notification_media_bg_mode_title">Цвет медиа в фоне</string>
+    <string name="notification_app_icon_bg_mode_title">Цвет иконки приложения в фоне</string>
+    <string name="notification_app_icon_color_mode_title">Цвет иконки приложения</string>
+    <string name="notification_bg_guts_color_title">Цвет фона при долгом нажатии</string>
+    <string name="notification_app_icon_bg_color_title">Цвет фона иконки приложения</string>
+    <string name="notification_color_mode_never_title">Никогда</string>
+    <string name="notification_icon_color_mode_greyscale_title">Если значок содержит оттенки серого</string>
+    <string name="notification_bg_color_mode_no_color_title">Если уведомление не содержит собственного цвета</string>
+    <string name="notification_color_mode_always_title">Всегда</string>
+    <string name="notification_drawer_clear_all_icon_color_title">Цвет кнопки \"Очистить всё\"</string>
 
 </resources>
