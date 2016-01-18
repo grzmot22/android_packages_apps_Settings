@@ -31,8 +31,6 @@
     <string name="statusbar_notifications_title">Уведомления</string>
     <string name="dlg_reset_temasek">Temasek</string>
     <string name="cat_colors_title">Настроки цвета уведомлений</string>
-    <string name="background_title">Фон</string>
-    <string name="icon_title">Иконка</string>
 
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">Процессор</string>
@@ -1079,16 +1077,9 @@
     <string name="block_on_secure_keyguard_summary">Отключить быстрые настройки на защищённом экране блокировки</string>
 
     <!-- Notification color settings -->
-    <string name="notification_color_settings_title">Настройки цвета уведомлений</string>
-    <string name="notification_media_bg_mode_title">Цвет медиа в фоне</string>
-    <string name="notification_app_icon_bg_mode_title">Цвет иконки приложения в фоне</string>
-    <string name="notification_app_icon_color_mode_title">Цвет иконки приложения</string>
-    <string name="notification_bg_guts_color_title">Цвет фона при долгом нажатии</string>
-    <string name="notification_app_icon_bg_color_title">Цвет фона иконки приложения</string>
-    <string name="notification_color_mode_never_title">Никогда</string>
-    <string name="notification_icon_color_mode_greyscale_title">Если значок содержит оттенки серого</string>
-    <string name="notification_bg_color_mode_no_color_title">Если уведомление не содержит собственного цвета</string>
-    <string name="notification_color_mode_always_title">Всегда</string>
     <string name="notification_drawer_clear_all_icon_color_title">Цвет кнопки \"Очистить всё\"</string>
+
+    <!-- QS shade transparency -->
+    <string name="qs_transparent_shade">Прозрачность</string>
 
 </resources>
