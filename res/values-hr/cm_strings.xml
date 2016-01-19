@@ -33,7 +33,7 @@
   <string name="root_access_apps">Samo aplikacije</string>
   <string name="root_access_adb">Samo ADB</string>
   <string name="root_access_all">Aplikacije i ADB</string>
-  <string name="mod_version">CyanogenMod verzija</string>
+  <string name="mod_version">ROM verzija</string>
   <string name="mod_version_default">Nepoznato</string>
   <string name="device_model">Model uređaja</string>
   <string name="device_name">Naziv uređaja</string>
