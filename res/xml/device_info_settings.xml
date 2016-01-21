@@ -179,12 +179,7 @@
 			android:title="@string/selinux_status"
 			android:summary="@string/selinux_status_enforcing"/>
 	</PreferenceScreen>
-	
-        <!-- Device FCC equipment id -->
-        <Preference android:key="fcc_equipment_id"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/fcc_equipment_id"
-                android:summary="@string/device_info_default"/>
+
 	<!-- More things -->
 	<PreferenceScreen
 		android:key="more_things"
