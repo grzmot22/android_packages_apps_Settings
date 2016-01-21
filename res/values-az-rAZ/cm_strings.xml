@@ -37,7 +37,7 @@
   <string name="device_name">Cihaz adı</string>
   <string name="mod_api_level_default">Bilinməyən</string>
   <string name="build_date">Quruluş tarixi</string>
-  <string name="cmupdate_settings_title">CyanogenMod yeniləmələri</string>
+  <string name="cmupdate_settings_title">ROM yeniləmələri</string>
   <string name="update_recovery_title">Cyanogen bərpa rejimini yenilə</string>
   <string name="update_recovery_summary">Sistem yeniləməsi ilə bərpa rejimini yenilə</string>
   <string name="update_recovery_on_warning">DİQQƏT: Bu özəllik fəal olduğu halda, quraşdırılmış bərpa rejiminiz hazırki ƏS versiyasındakı rejim ilə əvəz olunacaq.\n\nBərpa rejiminiz sistem yeniləmələri ilə birgə yeniləcək, beləliklə gələcək versiyalar ilə uyğunluq təmin ediləcək.\n\nBu özəlliyi fəallaşdırmaq istəyirsiniz?</string>

@@ -36,7 +36,7 @@
   <string name="root_access_apps">للتطبيقات فقط</string>
   <string name="root_access_adb">لـADB فقط</string>
   <string name="root_access_all">التطبيقات وADB</string>
-  <string name="mod_version">إصدار CyanogenMod</string>
+  <string name="mod_version">إصدار ROM</string>
   <string name="mod_version_default">مجهول</string>
   <string name="device_model">طراز الجهاز</string>
   <string name="device_name">اسم الجهاز</string>

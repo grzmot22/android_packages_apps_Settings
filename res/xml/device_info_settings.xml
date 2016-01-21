@@ -16,13 +16,30 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
-	
-	<!-- ROM Logo - launches thread on XDA -->
+
+	<!-- ROM Logo - launches JDCTeam Google+ Community -->
 	<PreferenceScreen android:key="rom_logo"
 		android:layout="@layout/rom_logo">
+	    <intent android:action="android.intent.action.VIEW"
+                    android:data="https://goo.gl/w5qIzy" />
 	</PreferenceScreen>
 
-        <!-- Temasek Extra Info -->
+        <!-- System update settings - launches activity -->
+        <PreferenceScreen android:key="system_update_settings"
+                android:title="@string/system_update_settings_list_item_title"
+                android:summary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"
+                    android:targetPackage="com.cyngn.fota"
+                    android:targetClass="com.cyngn.fota.SystemUpdateActivity" />
+        </PreferenceScreen>
+
+        <PreferenceScreen android:key="additional_system_update_settings"
+                          android:title="@string/additional_system_update_settings_list_item_title">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="@string/additional_system_update"
+                    android:targetClass="@string/additional_system_update_menu" />
+        </PreferenceScreen>
+                <!-- Temasek Extra Info -->
         <PreferenceScreen android:key="extrainfo"
                 android:title="@string/temaextrainfo"
                 android:summary="@string/temaextrainfo_summary">
@@ -36,93 +53,71 @@
                 android:title="@string/changelog_temasek_title"
                 android:fragment="com.android.settings.temasek.Changelog" />
 
-        <!-- Device status - launches activity -->
-        <PreferenceScreen android:key="status_info"
-                android:title="@string/device_status"
-                android:summary="@string/device_status_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.deviceinfo.Status" />
-        </PreferenceScreen>
+	<!-- Custom device info screen -->
+	<PreferenceScreen
+		android:key="custom_device_info"
+		android:title="@string/custom_device_info"
+		android:summary="@string/custom_device_info_summary">
 
-        <!-- Manual -->
-        <PreferenceScreen
-                android:key="manual"
-                android:title="@string/manual">
-            <intent android:action="android.settings.SHOW_MANUAL" />
-        </PreferenceScreen>
+		<!-- Device status - launches activity -->
+		<PreferenceScreen android:key="status_info"
+			android:title="@string/device_status"
+			android:summary="@string/device_status_summary">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.android.settings"
+				android:targetClass="com.android.settings.deviceinfo.Status" />
+		</PreferenceScreen>
 
-        <!-- Legal Information -->
-        <PreferenceScreen
-                android:key="container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
+		<!-- Device hardware model -->
+		<Preference android:key="device_model"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/device_model"
+			android:summary="@string/device_info_default"/>
 
-        <PreferenceScreen
-                android:key="regulatory_info"
-                android:title="@string/regulatory_information">
-            <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </PreferenceScreen>
+		<!-- Device Baseband version -->
+		<Preference android:key="baseband_version"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/baseband_version"
+			android:summary="@string/device_info_default"/>
+	</PreferenceScreen>
 
-        <!-- Feedback on the device -->
-        <PreferenceScreen android:key="device_feedback"
-                android:title="@string/device_feedback">
-        </PreferenceScreen>
+	<!-- Custom ROM info screen -->
+	<PreferenceScreen
+		android:key="custom_rom_info"
+		android:title="@string/custom_rom_info"
+		android:summary="@string/custom_rom_info_summary">
 
-        <!-- Contributors cloud -->
-        <PreferenceScreen android:key="contributors_cloud"
-            android:title="@string/contributors_cloud_fragment_title"
-            android:fragment="com.android.settings.contributors.ContributorsCloudFragment" >
-        </PreferenceScreen>
+	        <!-- Legal Information -->
+		<PreferenceScreen
+			android:key="container"
+			android:title="@string/legal_information"
+			android:fragment="com.android.settings.LegalSettings" />
 
-        <!-- Device name -->
-        <Preference android:key="device_name"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/device_name"
-                android:summary="@string/device_info_default"/>
+		<PreferenceScreen
+			android:key="regulatory_info"
+			android:title="@string/regulatory_information">
+			<intent android:action="android.settings.SHOW_REGULATORY_INFO" />
+		</PreferenceScreen>
 
-        <!-- Device hardware model -->
-        <Preference android:key="device_model"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/device_model"
-                android:summary="@string/device_info_default"/>
+	        <!-- Contributors cloud -->
+		<PreferenceScreen
+			android:key="contributors_cloud"
+			android:title="@string/contributors_cloud_fragment_title"
+			android:fragment="com.android.settings.contributors.ContributorsCloudFragment" >
+		</PreferenceScreen>
 
-        <!-- Device firmware version -->
-        <Preference android:key="firmware_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/firmware_version"
-                android:summary="@string/device_info_default"/>
+	        <!-- Device firmware version -->
+		<Preference android:key="firmware_version"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/firmware_version"
+			android:summary="@string/device_info_default"/>
 
-        <!-- CyanogenMod API Version -->
-        <Preference android:key="mod_api_level"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_api_level"
-                android:summary="@string/mod_api_level_default" />
-
-        <!-- Security patch level -->
-        <Preference android:key="security_patch"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/security_patch"
-                android:summary="@string/device_info_default"/>
-
-        <!-- Device FCC equipment id -->
-        <Preference android:key="fcc_equipment_id"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/fcc_equipment_id"
-                android:summary="@string/device_info_default"/>
-
-        <!-- Device Baseband version -->
-        <Preference android:key="baseband_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/baseband_version"
-                android:summary="@string/device_info_default"/>
-
-        <!-- Device Kernel version -->
-        <Preference android:key="kernel_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/kernel_version"
-                android:summary="@string/device_info_default"/>
-
+	        <!-- Device Kernel version -->
+		<Preference android:key="kernel_version"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/kernel_version"
+			android:summary="@string/device_info_default"/>
+			
         <!-- Device cpu info -->
         <Preference android:key="device_cpu"
                 style="?android:preferenceInformationStyle"
@@ -134,41 +129,97 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mem_info"
                 android:summary="@string/device_info_default"/>
-
-        <!-- Mod version -->
-        <Preference android:key="mod_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
-
-        <!-- Temasek version -->
+                
+	        <!-- Mod version -->
+		<Preference android:key="mod_version"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/mod_version"
+			android:summary="@string/mod_version_default" />
+            
+            <!-- Temasek version -->
         <Preference android:key="temasek_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/temasek_version_title"
-                android:summary="@string/temasek_version_default"/>
+            style="?android:preferenceInformationStyle"
+            android:title="@string/temasek_version_title"
+            android:summary="@string/temasek_version_default"/>
+                
+		<!-- CyanogenMod API Version -->
+		<Preference android:key="mod_api_level"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/mod_api_level"
+			android:summary="@string/mod_api_level_default" />
 
-        <!-- Android version -->
-        <Preference android:key="android_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/android_version_title"
-                android:summary="@string/android_version_default"/>
+		<!-- Build date -->
+		<Preference android:key="build_date"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/build_date"
+			android:summary="@string/build_date_default" />
 
-        <!-- Build date -->
-        <Preference android:key="build_date"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/build_date"
-                android:summary="@string/build_date_default" />
+		<!-- Detailed build version -->
+		<Preference android:key="build_number"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/build_number"
+			android:summary="@string/device_info_default"/>
+	</PreferenceScreen>
 
-        <!-- Detailed build version -->
-        <Preference android:key="build_number"
+	<!-- Custom security info screen -->
+	<PreferenceScreen
+		android:key="custom_security_info"
+		android:title="@string/custom_security_info"
+		android:summary="@string/custom_security_info_summary">
+	
+		<!-- Security patch level -->
+		<Preference android:key="security_patch"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/security_patch"
+			android:summary="@string/device_info_default"/>
+
+		<!-- SELinux status information -->
+		<Preference android:key="selinux_status"
+			style="?android:preferenceInformationStyle"
+			android:title="@string/selinux_status"
+			android:summary="@string/selinux_status_enforcing"/>
+	</PreferenceScreen>
+	
+        <!-- Device FCC equipment id -->
+        <Preference android:key="fcc_equipment_id"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/build_number"
+                android:title="@string/fcc_equipment_id"
                 android:summary="@string/device_info_default"/>
+	<!-- More things -->
+	<PreferenceScreen
+		android:key="more_things"
+		android:title="@string/more_things"
+		android:summary="@string/more_things_summary">
 
-        <!-- SELinux status information -->
-        <Preference android:key="selinux_status"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/selinux_status"
-                android:summary="@string/selinux_status_enforcing"/>
+		<!-- Issue report -->
+		<PreferenceScreen
+			android:key="issue_report"
+			android:title="@string/jdc_issue_tracker"
+			android:summary="@string/jdc_issue_tracker_summary">
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://goo.gl/njt0R0"/>
+		</PreferenceScreen>
+
+		<!-- Manual -->
+		<PreferenceScreen
+			android:key="manual"
+			android:title="@string/manual">
+		<intent android:action="android.settings.SHOW_MANUAL" />
+		</PreferenceScreen>
+
+		<!-- Feedback on the device -->
+		<PreferenceScreen
+			android:key="device_feedback"
+			android:title="@string/device_feedback">
+		</PreferenceScreen>
+
+		<!-- Anonymous statistics - (CMStats) -->
+		<PreferenceScreen
+			android:key="cmstats"
+			android:title="@string/anonymous_statistics_title"
+			android:summary="@string/anonymous_statistics_summary"
+			android:fragment="com.android.settings.cmstats.AnonymousStats" >
+		</PreferenceScreen>
+	</PreferenceScreen>
 
 </PreferenceScreen>
