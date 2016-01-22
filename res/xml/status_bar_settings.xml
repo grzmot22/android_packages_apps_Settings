@@ -206,11 +206,11 @@
     <PreferenceCategory
         android:title="@string/quicksettings_title" >
 
-        <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
+        <ListPreference
             android:key="qs_quick_pulldown"
             android:title="@string/status_bar_quick_qs_pulldown_title"
-            android:summary="@string/status_bar_quick_qs_pulldown_summary"
-            android:defaultValue="true" />
+            android:entries="@array/status_bar_quick_qs_pulldown_entries"
+            android:entryValues="@array/status_bar_quick_qs_pulldown_values" />
 
         <SwitchPreference
             android:key="block_on_secure_keyguard"
@@ -246,6 +246,15 @@
             settings:unitsRight=""
             android:persistent="false" />
 
+        <com.android.settings.temasek.SeekBarPreference
+            android:key="qs_transparent_header"
+            android:title="@string/qs_transparent_header"
+            android:max="255"
+            settings:minimum="0"
+            settings:unitsLeft=""
+            settings:unitsRight=""
+            android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -260,6 +269,18 @@
             android:key="disable_immersive_message"
             android:title="@string/disable_immersive_message_title"
             android:summary="@string/disable_immersive_message_summary" />
+
+        <SwitchPreference
+            android:key="missed_call_breath"
+            android:title="@string/missed_call_breath_title"
+            android:summary="@string/missed_call_breath_summary"
+            android:persistent="false"/>
+
+        <SwitchPreference
+            android:key="voicemail_breath"
+            android:title="@string/voicemail_breath_title"
+            android:summary="@string/voicemail_breath_summary"
+            android:persistent="false"/>
 
     </PreferenceCategory>
 </PreferenceScreen>

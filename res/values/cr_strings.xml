@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V3.0</string>
+    <string name="temasek_version_default">Build V3.2</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MMB29T Release 10</string>
 
@@ -1081,14 +1081,30 @@
     <string name="block_on_secure_keyguard_summary">Disables quick settings in the keyguard for a secure lock only</string>
 
     <!-- Notification color settings -->
+    <string name="notification_color_settings_title">Notification color</string>
     <string name="notification_drawer_clear_all_icon_color_title">Clear all icon</string>
 
     <!-- QS shade transparency -->
     <string name="qs_transparent_shade">QS shade transparency</string>
 
+    <!-- QS header transparency -->
+    <string name="qs_transparent_header">QS header transparency</string>
+
     <!-- Safe headset volume restore checkbox -->
     <string name="safe_headset_volume_title">Safe headset volume</string>
     <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
     <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
+
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Lockscreen torch</string>
+    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_category">Breathing Notifications</string>
+    <string name="breathing_notifications_title">Breathing notifications</string>
+    <string name="missed_call_breath_title">Breathing Missed Call</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
+    <string name="voicemail_breath_title">Breathing Voicemail</string>
+    <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
 
 </resources>

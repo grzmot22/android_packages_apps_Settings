@@ -26,6 +26,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.preference.ListPreference;
@@ -81,6 +82,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String PREF_ENABLE_TASK_MANAGER = "enable_task_manager";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String PREF_QS_TRANSPARENT_SHADE = "qs_transparent_shade";
+    private static final String PREF_QS_TRANSPARENT_HEADER = "qs_transparent_header";
+    private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+    private static final String MISSED_CALL_BREATH = "missed_call_breath";
+    private static final String VOICEMAIL_BREATH = "voicemail_breath";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -102,14 +107,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mFontStyle;
     private ListPreference mStatusBarClockFontSize;
     private ListPreference mCustomHeaderDefault;
-
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-
+    private ListPreference mQuickPulldown;
     private SwitchPreference mEnableTaskManager;
     private SwitchPreference mBlockOnSecureKeyguard;
+    private SwitchPreference mMissedCallBreath;
+    private SwitchPreference mVoicemailBreath;
 
     private SeekBarPreference mQSShadeAlpha;
+    private SeekBarPreference mQSHeaderAlpha;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -129,7 +136,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
         final CmLockPatternUtils lockPatternUtils = new CmLockPatternUtils(getActivity());
+        Context context = getActivity();
 
+        Resources res = getResources();
         PackageManager pm = getPackageManager();
         Resources systemUiResources;
         try {
@@ -147,6 +156,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBatteryShowPercent =
                 (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+        mQuickPulldown = (ListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
 
         int clockStyle = CMSettings.System.getInt(resolver,
                 CMSettings.System.STATUS_BAR_CLOCK, 1);
@@ -257,6 +267,51 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQSShadeAlpha.setValue(qSShadeAlpha / 1);
         mQSShadeAlpha.setOnPreferenceChangeListener(this);
 
+        // QS header alpha
+        mQSHeaderAlpha =
+                (SeekBarPreference) prefSet.findPreference(PREF_QS_TRANSPARENT_HEADER);
+        int qSHeaderAlpha = Settings.System.getInt(resolver,
+                Settings.System.QS_TRANSPARENT_HEADER, 255);
+        mQSHeaderAlpha.setValue(qSHeaderAlpha / 1);
+        mQSHeaderAlpha.setOnPreferenceChangeListener(this);
+
+        // QS quick pulldown
+        int quickPulldown = CMSettings.System.getInt(resolver,
+                CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
+        mQuickPulldown.setValue(String.valueOf(quickPulldown));
+        if (quickPulldown == 0) {
+            // quick pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
+        } else {
+            String direction = res.getString(quickPulldown == 2
+                    ? R.string.status_bar_quick_qs_pulldown_left
+                    : R.string.status_bar_quick_qs_pulldown_right);
+            mQuickPulldown.setSummary(
+                    res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
+        }
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+
+        // Breathing Notifications
+        mMissedCallBreath = (SwitchPreference) findPreference(MISSED_CALL_BREATH);
+        mVoicemailBreath = (SwitchPreference) findPreference(VOICEMAIL_BREATH);
+
+        ConnectivityManager cm = (ConnectivityManager)
+                context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if (cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE)) {
+
+            mMissedCallBreath.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.KEY_MISSED_CALL_BREATH, 0) == 1);
+            mMissedCallBreath.setOnPreferenceChangeListener(this);
+
+            mVoicemailBreath.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1);
+            mVoicemailBreath.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mMissedCallBreath);
+            prefSet.removePreference(mVoicemailBreath);
+        }
+
         setHasOptionsMenu(true);
         mCheckPreferences = true;
         return prefSet;
@@ -288,6 +343,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         AlertDialog dialog;
 
         ContentResolver resolver = getActivity().getContentResolver();
+        Resources res = getResources();
         if (preference == mStatusBarClock) {
             int clockStyle = Integer.parseInt((String) newValue);
             int index = mStatusBarClock.findIndexOfValue((String) newValue);
@@ -415,6 +471,34 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             int alpha = (Integer) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.QS_TRANSPARENT_SHADE, alpha * 1);
+            return true;
+        } else if (preference == mQSHeaderAlpha) {
+            int alpha = (Integer) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.QS_TRANSPARENT_HEADER, alpha * 1);
+            return true;
+        } else if (preference == mQuickPulldown) {
+            int quickPulldown = Integer.valueOf((String) newValue);
+            CMSettings.System.putInt(resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
+                    quickPulldown);
+            if (quickPulldown == 0) {
+                // quick pulldown deactivated
+                mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
+            } else {
+                String direction = res.getString(quickPulldown == 2
+                        ? R.string.status_bar_quick_qs_pulldown_left
+                        : R.string.status_bar_quick_qs_pulldown_right);
+                mQuickPulldown.setSummary(
+                        res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
+            }
+            return true;
+        } else if (preference == mMissedCallBreath) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver, Settings.System.KEY_MISSED_CALL_BREATH, value ? 1 : 0);
+            return true;
+        } else if (preference == mVoicemailBreath) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver, Settings.System.KEY_VOICEMAIL_BREATH, value ? 1 : 0);
             return true;
         }
         return false;

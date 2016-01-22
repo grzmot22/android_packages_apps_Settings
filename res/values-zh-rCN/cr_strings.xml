@@ -26,8 +26,6 @@
     <string name="statusbar_notifications_title">通知</string>
     <string name="dlg_reset_temasek">Temasek</string>
     <string name="cat_colors_title">自定义通知颜色</string>
-    <string name="background_title">背景</string>
-    <string name="icon_title">图标</string>
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">内存</string>
@@ -841,22 +839,22 @@
     <!-- Doze options -->
     <string name="display_category_doze_options_title">主动显示</string>
     <string name="doze_settings_title">Doze高级选项</string>
-    <string name="doze_timeout_title">Doze脉冲超时</string>
-    <string name="doze_timeout_summary">通知脉冲在屏幕上停留显示的时间</string>
+    <string name="doze_timeout_title">Doze显示超时</string>
+    <string name="doze_timeout_summary">通知显示在屏幕上停留显示的时间</string>
     <string name="doze_trigger_pickup_title">拿起手机触发</string>
-    <string name="doze_trigger_pickup_summary_on">Doze脉冲将在拿起手机被触发</string>
-    <string name="doze_trigger_pickup_summary_off">Doze脉冲在拿起手机时不会被触发</string>
+    <string name="doze_trigger_pickup_summary_on">Doze显示将在拿起手机被触发</string>
+    <string name="doze_trigger_pickup_summary_off">Doze显示在拿起手机时不会被触发</string>
     <string name="doze_trigger_sigmotion_title">特殊动作触发</string>
-    <string name="doze_trigger_sigmotion_summary_on">Doze脉冲将由特殊动作传感器事件触发</string>
-    <string name="doze_trigger_sigmotion_summary_off">Doze脉冲不会由特殊动作传感器事件触发</string>
+    <string name="doze_trigger_sigmotion_summary_on">Doze显示将由特殊动作传感器事件触发</string>
+    <string name="doze_trigger_sigmotion_summary_off">Doze显示不会由特殊动作传感器事件触发</string>
     <string name="doze_trigger_notification_title">通知触发</string>
-    <string name="doze_trigger_notification_summary_on">Doze脉冲将由通知消息触发</string>
-    <string name="doze_trigger_notification_summary_off">Doze脉冲不会由通知消息触发</string>
+    <string name="doze_trigger_notification_summary_on">Doze显示将由通知消息触发</string>
+    <string name="doze_trigger_notification_summary_off">Doze显示不会由通知消息触发</string>
     <string name="doze_schedule_title">Doze时间间隔</string>
     <string name="doze_schedule_summary_on">预定义Doze重复间隔(通常为[1s,10s,30,60,120s])将会应用(默认)</string>
-    <string name="doze_schedule_summary_off">Doze将仅脉冲每个通知一次</string>
+    <string name="doze_schedule_summary_off">Doze将仅显示每个通知一次</string>
     <string name="doze_brightness_title">Doze亮度水平</string>
-    <string name="doze_brightness_summary">Doze脉冲屏幕的亮度水平(最大允许亮度为%)</string>
+    <string name="doze_brightness_summary">Doze显示屏幕的亮度水平(最大允许亮度为%)</string>
     <!-- Doze notification color invert -->
     <string name="doze_notification_color_invert_title">颜色反转</string>
     <string name="doze_notification_color_invert_summary_off">主动显示通知不会反转颜色，将使用深色主题.</string>
@@ -896,20 +894,24 @@
     <string name="lock_clock_font_title">锁屏时钟字体</string>
     <string name="lock_clock_font_summary">更改默认的锁屏时钟部件的字体</string>
     <string name="lock_clock_font_dialog_title">选择锁屏时钟字体</string>
-    <string name="lock_clock_font_stock">标准(默认)</string>
-    <string name="lock_clock_font_bold">加粗</string>
-    <string name="lock_clock_font_italic">斜体</string>
-    <string name="lock_clock_font_bold_italic">粗斜体</string>
-    <string name="lock_clock_font_light">细体</string>
-    <string name="lock_clock_font_light_italic">细斜体</string>
-    <string name="lock_clock_font_thin">瘦体</string>
-    <string name="lock_clock_font_thin_italic">瘦斜体</string>
-    <string name="lock_clock_font_condensed_normal">简单体</string>
-    <string name="lock_clock_font_condensed_italic">简斜体</string>
-    <string name="lock_clock_font_condensed_bold">简粗体</string>
-    <string name="lock_clock_font_condensed_bold_italic">简粗斜体</string>
-    <string name="lock_clock_font_medium_normal">中等</string>
-    <string name="lock_clock_font_medium_italic">中斜体</string>
+    <string name="lock_clock_font_normal">Roboto(默认)</string>
+    <string name="lock_clock_font_bold">Roboto加粗</string>
+    <string name="lock_clock_font_italic">Roboto斜体</string>
+    <string name="lock_clock_font_bold_italic">Roboto粗斜体</string>
+    <string name="lock_clock_font_light_normal">Roboto细体</string>
+    <string name="lock_clock_font_light_italic">Roboto细斜体</string>
+    <string name="lock_clock_font_thin_normal">Roboto瘦体</string>
+    <string name="lock_clock_font_thin_italic">Roboto瘦斜体</string>
+    <string name="lock_clock_font_condensed_normal">Roboto简单体</string>
+    <string name="lock_clock_font_condensed_bold">Roboto简粗体</string>
+    <string name="lock_clock_font_condensed_italic">Roboto简斜体</string>
+    <string name="lock_clock_font_condensed_bold_italic">Roboto简斜粗体</string>
+    <string name="lock_clock_font_medium_normal">Roboto中等</string>
+    <string name="lock_clock_font_medium_italic">Roboto中斜体</string>
+    <string name="lock_clock_font_black_normal">Roboto黑体</string>
+    <string name="lock_clock_font_black_italic">Roboto黑斜体</string>
+    <string name="lock_clock_font_condensed_light_normal">Roboto简细</string>
+    <string name="lock_clock_font_condensed_light_italic">Roboto简细斜体</string>
     <!-- Slim Recents -->
     <string name="recent_panel_category">Slim最近任务</string>
     <string name="slim_recents_panel">Slim最近任务</string>
@@ -966,15 +968,23 @@
     <string name="block_on_secure_keyguard_title">锁屏界面禁用快速设置</string>
     <string name="block_on_secure_keyguard_summary">仅在安全锁屏界面禁用快速设置</string>
     <!-- Notification color settings -->
-    <string name="notification_color_settings_title">通知颜色</string>
-    <string name="notification_media_bg_mode_title">媒体背景色彩化</string>
-    <string name="notification_app_icon_bg_mode_title">应用图标背景色彩化</string>
-    <string name="notification_app_icon_color_mode_title">应用图标色彩化</string>
-    <string name="notification_bg_guts_color_title">背景长按</string>
-    <string name="notification_app_icon_bg_color_title">应用图标背景</string>
-    <string name="notification_color_mode_never_title">从不</string>
-    <string name="notification_icon_color_mode_greyscale_title">如果图标为灰色图标</string>
-    <string name="notification_bg_color_mode_no_color_title">如果该通知不含自己的颜色</string>
-    <string name="notification_color_mode_always_title">总是</string>
     <string name="notification_drawer_clear_all_icon_color_title">清除全部图标</string>
+    <!-- QS shade transparency -->
+    <string name="qs_transparent_shade">快速设置阴影透明度</string>
+    <!-- QS header transparency -->
+    <string name="qs_transparent_header">快速设置头图透明度</string>
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">安全耳机音量</string>
+    <string name="safe_headset_volume_summary">防止第一次插入耳机时音量过大</string>
+    <string name="safe_headset_volume_warning_dialog_text">长时间听过大音量可能会损害你的听力.禁用需谨慎.</string>
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">锁屏手电筒</string>
+    <string name="keyguard_torch_summary">屏幕关闭时长按电源键打开手电筒</string>
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_category">通知呼吸灯</string>
+    <string name="breathing_notifications_title">通知呼吸灯</string>
+    <string name="missed_call_breath_title">未接来电呼吸灯</string>
+    <string name="missed_call_breath_summary">在状态栏处呈现未接来电呼吸灯通知</string>
+    <string name="voicemail_breath_title">语音信箱呼吸灯</string>
+    <string name="voicemail_breath_summary">在状态栏处呈现语音信箱呼吸灯通知</string>
 </resources>
