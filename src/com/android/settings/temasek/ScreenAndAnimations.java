@@ -14,6 +14,7 @@ import android.provider.Settings;
 import android.widget.Toast;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.temasek.SeekBarPreference;
 import com.android.settings.R;
 
 import com.android.internal.logging.MetricsLogger;
@@ -28,7 +29,9 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
-    private static final String SCROLLINGCACHE_DEFAULT = "1";
+    private static final String SCROLLINGCACHE_DEFAULT = "2";
+    private static final String PREF_TRANSPARENT_VOLUME_DIALOG = "transparent_volume_dialog";
+    private static final String PREF_TRANSPARENT_POWER_MENU = "transparent_power_menu";
 
     private Context mContext;
 
@@ -36,6 +39,8 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;
     private ListPreference mScrollingCachePref;
+    private SeekBarPreference mVolumeDialogAlpha;
+    private SeekBarPreference mPowerMenuAlpha;
 
     @Override
     protected int getMetricsCategory() {
@@ -83,6 +88,22 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
         mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
                 SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
         mScrollingCachePref.setOnPreferenceChangeListener(this);
+
+        // Volume dialog alpha
+        mVolumeDialogAlpha =
+                (SeekBarPreference) prefSet.findPreference(PREF_TRANSPARENT_VOLUME_DIALOG);
+        int volumeDialogAlpha = Settings.System.getInt(resolver,
+                Settings.System.TRANSPARENT_VOLUME_DIALOG, 255);
+        mVolumeDialogAlpha.setValue(volumeDialogAlpha / 1);
+        mVolumeDialogAlpha.setOnPreferenceChangeListener(this);
+
+        // Power menu alpha
+        mPowerMenuAlpha =
+                (SeekBarPreference) prefSet.findPreference(PREF_TRANSPARENT_POWER_MENU);
+        int powerMenuAlpha = Settings.System.getInt(resolver,
+                Settings.System.TRANSPARENT_POWER_MENU, 100);
+        mPowerMenuAlpha.setValue(powerMenuAlpha / 1);
+        mPowerMenuAlpha.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -90,37 +111,44 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+            int alpha = (Integer) newValue;
         if (preference == mToastAnimation) {
-            int index = mToastAnimation.findIndexOfValue((String) objValue);
-            Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
+            int index = mToastAnimation.findIndexOfValue((String) newValue);
+            Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) newValue);
             mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
             Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
             return true;
-        }
-        if (KEY_LISTVIEW_ANIMATION.equals(key)) {
-            int value = Integer.parseInt((String) objValue);
-            int index = mListViewAnimation.findIndexOfValue((String) objValue);
+        } else if (preference == mListViewAnimation) {
+            int value = Integer.parseInt((String) newValue);
+            int index = mListViewAnimation.findIndexOfValue((String) newValue);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.LISTVIEW_ANIMATION,
-                    value);
+                    Settings.System.LISTVIEW_ANIMATION, value);
             mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
             mListViewInterpolator.setEnabled(value > 0);
-        }
-        if (KEY_LISTVIEW_INTERPOLATOR.equals(key)) {
-            int value = Integer.parseInt((String) objValue);
-            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LISTVIEW_INTERPOLATOR,
-                    value);
-            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
-        }
-        if (preference == mScrollingCachePref) {
-            if (objValue != null) {
-                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)objValue);
             return true;
+        } else if (preference == mListViewInterpolator) {
+            int value = Integer.parseInt((String) newValue);
+            int index = mListViewInterpolator.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LISTVIEW_INTERPOLATOR, value);
+            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true;
+        } else if (preference == mScrollingCachePref) {
+            if (newValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) newValue);
             }
+            return true;
+        } else if (preference == mVolumeDialogAlpha) {
+            Settings.System.putInt(resolver,
+                   Settings.System.TRANSPARENT_VOLUME_DIALOG, alpha * 1);
+            return true;
+       } else if (preference == mPowerMenuAlpha) {
+            Settings.System.putInt(resolver,
+                    Settings.System.TRANSPARENT_POWER_MENU, alpha * 1);
+            return true;
         }
         return false;
     }
