@@ -39,19 +39,6 @@
                     android:targetPackage="@string/additional_system_update"
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
-                <!-- Temasek Extra Info -->
-        <PreferenceScreen android:key="extrainfo"
-                android:title="@string/temaextrainfo"
-                android:summary="@string/temaextrainfo_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.temasek.extrainfo.MainActivity" />
-        </PreferenceScreen>
-
-        <!-- Changelog -->
-        <PreferenceScreen android:key="changelog"
-                android:title="@string/changelog_temasek_title"
-                android:fragment="com.android.settings.temasek.Changelog" />
 
 	<!-- Custom device info screen -->
 	<PreferenceScreen
@@ -79,6 +66,16 @@
 			style="?android:preferenceInformationStyle"
 			android:title="@string/baseband_version"
 			android:summary="@string/device_info_default"/>
+       
+        <!-- Temasek Extra Info -->
+        <PreferenceScreen android:key="extrainfo"
+                android:title="@string/temaextrainfo"
+                android:summary="@string/temaextrainfo_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.temasek.extrainfo.MainActivity" />
+        </PreferenceScreen>
+        
 	</PreferenceScreen>
 
 	<!-- Custom ROM info screen -->
@@ -106,6 +103,11 @@
 			android:fragment="com.android.settings.contributors.ContributorsCloudFragment" >
 		</PreferenceScreen>
 
+            <!-- Changelog -->
+        <PreferenceScreen android:key="changelog"
+                android:title="@string/changelog_temasek_title"
+                android:fragment="com.android.settings.temasek.Changelog" />
+                
 	        <!-- Device firmware version -->
 		<Preference android:key="firmware_version"
 			style="?android:preferenceInformationStyle"
