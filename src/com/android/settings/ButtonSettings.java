@@ -608,6 +608,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     @Override
     protected int getMetricsCategory() {
         return CMMetricsLogger.BUTTON_SETTINGS;
+
     }
 
    private void updateNavBarSettings() {
@@ -727,6 +728,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             CMSettings.Secure.putString(getContentResolver(),
                     CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
             return true;
+
         } else if (preference == mNavbarButtonTint) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));

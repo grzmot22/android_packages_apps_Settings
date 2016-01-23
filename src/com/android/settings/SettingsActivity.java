@@ -1323,6 +1323,10 @@ public class SettingsActivity extends Activity
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
                         removeTile = true;
                     }
+                } else if (id == R.id.button_settings) {
+                    boolean hasDeviceKeys = getResources().getInteger(
+                            com.android.internal.R.integer.config_deviceHardwareKeys) != 0;
+                    if (!hasDeviceKeys) {
                 } else if (id == R.id.ota_settings) {
                     // Embedding into Settings only if app exists (user could manually remove it)
                     boolean supported = false;
@@ -1370,12 +1374,6 @@ public class SettingsActivity extends Activity
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {
-                        removeTile = true;
-                    }
-                } else if (id == R.id.button_settings) {
-                    boolean hasDeviceKeys = getResources().getInteger(
-                            com.android.internal.R.integer.config_deviceHardwareKeys) != 0;
-                    if (!hasDeviceKeys) {
                         removeTile = true;
                     }
                 }

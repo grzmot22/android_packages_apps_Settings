@@ -61,6 +61,15 @@
     <string name="build_date">Build date</string>
     <string name="build_date_default" translatable="false">2015-01-01-0000</string>
 
+    <!-- CM Updater -->
+    <string name="cmupdate_settings_title">CyanogenMod updates</string>
+
+    <!-- Settings switch for updating Cyanogen recovery -->
+    <string name="update_recovery_title">Update Cyanogen recovery</string>
+    <string name="update_recovery_summary">Update recovery with system updates</string>
+    <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
+    <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
+
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
     <string name="themes_settings_title">Themes</string>
@@ -583,6 +592,9 @@
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
     <string name="power_menu_profiles_disabled">System profiles are disabled</string>
     <string name="powermenu_screenshot_delay_title">Set screenshot delay</string>
+    <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Enable on-screen nav bar</string>
+    <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
 
     <!-- tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
@@ -857,6 +869,11 @@
 
     <!-- lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Display music visualizer</string>
+
+    <!-- lock screen disabled by QS tile warning -->
+    <string name="lockscreen_disabled_by_qs_tile_title">Disabled by quick settings tile</string>
+    <string name="lockscreen_disabled_by_qs_tile_summary">Tap to enable the lock screen</string>
+    <string name="lockscreen_disabled_by_qs_tile_summary_enabled">Lock screen enabled!</string>
 
     <!-- Battery saver -->
     <string name="battery_saver_threshold">Battery saver threshold</string>

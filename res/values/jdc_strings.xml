@@ -27,8 +27,8 @@
     <string name="jdc_issue_tracker">JDCTeam Issue Tracker</string>
     <string name="jdc_issue_tracker_summary">Press here to go to our issue tracker</string>
     <!-- Team members under ROM logo -->
-    <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, smstiv, grzmot22</string>
-    <!-- ToolBox -->
+    <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, smstiv</string>
+        <!-- ToolBox -->
     <string name="toolbox_title">JDCTeam Toolbox</string>
     <!-- STweaks -->
     <string name="stweaks_title">STweaks</string>

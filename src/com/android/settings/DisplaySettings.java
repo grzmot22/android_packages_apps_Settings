@@ -264,7 +264,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 mLiftToWakePreference = null;
             }
         }
-
         mCameraGesturePreference = (SwitchPreference) findPreference(KEY_CAMERA_GESTURE);
         if (mCameraGesturePreference != null && isCameraGestureAvailable(getResources())) {
             mCameraGesturePreference.setOnPreferenceChangeListener(this);

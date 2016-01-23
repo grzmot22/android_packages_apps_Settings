@@ -273,6 +273,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
         if (mShowsOnlyFullImeAndKeyboardList && identifier != null) {
             showKeyboardLayoutDialog(identifier);
         }
+
         if (!Utils.isUserOwner() ||
                 !Utils.isPackageInstalled(getActivity(),
                         VoiceWakeupSettings.VOICE_WAKEUP_PACKAGE, false)) {
@@ -285,6 +286,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
                 }
             }
         }
+
     }
 
     private void updateInputMethodSelectorSummary(int value) {

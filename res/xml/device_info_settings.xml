@@ -28,17 +28,14 @@
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title"
                 android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"
-                    android:targetPackage="com.cyngn.fota"
-                    android:targetClass="com.cyngn.fota.SystemUpdateActivity" />
+            <intent android:action="android.intent.action.MAIN">
+                <categories android:name="android.settings.SYSTEM_UPDATE_SETTINGS" />
+                <categories android:name="com.android.settings.SHORTCUT" />
+            </intent>
         </PreferenceScreen>
 
         <PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="@string/additional_system_update"
-                    android:targetClass="@string/additional_system_update_menu" />
-        </PreferenceScreen>
 
 	<!-- Custom device info screen -->
 	<PreferenceScreen
@@ -66,7 +63,25 @@
 			style="?android:preferenceInformationStyle"
 			android:title="@string/baseband_version"
 			android:summary="@string/device_info_default"/>
-       
+          
+        <!-- Device FCC equipment id -->
+        <Preference android:key="fcc_equipment_id"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/fcc_equipment_id"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Device cpu info -->
+        <Preference android:key="device_cpu"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/cpu_info"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Device mem info -->
+        <Preference android:key="device_memory"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mem_info"
+                android:summary="@string/device_info_default"/>  
+                    
         <!-- Temasek Extra Info -->
         <PreferenceScreen android:key="extrainfo"
                 android:title="@string/temaextrainfo"
@@ -75,7 +90,6 @@
                     android:targetPackage="com.android.settings"
                     android:targetClass="com.android.settings.temasek.extrainfo.MainActivity" />
         </PreferenceScreen>
-        
 	</PreferenceScreen>
 
 	<!-- Custom ROM info screen -->
@@ -102,12 +116,12 @@
 			android:title="@string/contributors_cloud_fragment_title"
 			android:fragment="com.android.settings.contributors.ContributorsCloudFragment" >
 		</PreferenceScreen>
-
+        
             <!-- Changelog -->
         <PreferenceScreen android:key="changelog"
                 android:title="@string/changelog_temasek_title"
                 android:fragment="com.android.settings.temasek.Changelog" />
-                
+        
 	        <!-- Device firmware version -->
 		<Preference android:key="firmware_version"
 			style="?android:preferenceInformationStyle"
@@ -119,30 +133,24 @@
 			style="?android:preferenceInformationStyle"
 			android:title="@string/kernel_version"
 			android:summary="@string/device_info_default"/>
-			
-        <!-- Device cpu info -->
-        <Preference android:key="device_cpu"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/cpu_info"
-                android:summary="@string/device_info_default"/>
 
-        <!-- Device mem info -->
-        <Preference android:key="device_memory"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mem_info"
-                android:summary="@string/device_info_default"/>
-                
 	        <!-- Mod version -->
 		<Preference android:key="mod_version"
 			style="?android:preferenceInformationStyle"
 			android:title="@string/mod_version"
 			android:summary="@string/mod_version_default" />
-            
-            <!-- Temasek version -->
+			
+        <!-- Temasek version -->
         <Preference android:key="temasek_version"
-            style="?android:preferenceInformationStyle"
-            android:title="@string/temasek_version_title"
-            android:summary="@string/temasek_version_default"/>
+                style="?android:preferenceInformationStyle"
+                android:title="@string/temasek_version_title"
+                android:summary="@string/temasek_version_default"/>
+
+        <!-- Android version -->
+        <Preference android:key="android_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/android_version_title"
+                android:summary="@string/android_version_default"/>
                 
 		<!-- CyanogenMod API Version -->
 		<Preference android:key="mod_api_level"
@@ -218,5 +226,4 @@
 			android:fragment="com.android.settings.cmstats.AnonymousStats" >
 		</PreferenceScreen>
 	</PreferenceScreen>
-
 </PreferenceScreen>

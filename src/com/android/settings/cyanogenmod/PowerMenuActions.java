@@ -53,7 +53,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment
 
     private static final String PREF_ON_THE_GO_ALPHA = "on_the_go_alpha";
     private static final String SCREENSHOT_DELAY = "screenshot_delay";
-    
+
+    private SwitchPreference mPowerPref;
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
     private SwitchPreference mProfilePref;
@@ -101,8 +102,9 @@ public class PowerMenuActions extends SettingsPreferenceFragment
                 getPreferenceScreen().removePreference(findPreference(action));
                 continue;
             }
-
-            if (action.equals(GLOBAL_ACTION_KEY_REBOOT)) {
+            if (action.equals(GLOBAL_ACTION_KEY_POWER)) {
+                mPowerPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_POWER);
+            } else if (action.equals(GLOBAL_ACTION_KEY_REBOOT)) {
                 mRebootPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_REBOOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
