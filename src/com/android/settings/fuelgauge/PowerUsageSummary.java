@@ -551,11 +551,7 @@ public class PowerUsageSummary extends PowerUsageBase
                     if (percentOfTotal < 10) {
                         continue;
                     }
-<<<<<<< HEAD
-                    if ("user".equals(Build.TYPE) || "userdebug".equals(Build.TYPE)) {
-=======
                     if (!showUnacAndOvercounted) {
->>>>>>> ca77a21e7214535f2d5be6f86ad4b5e0b49b8736
                         continue;
                     }
                 }
@@ -568,11 +564,7 @@ public class PowerUsageSummary extends PowerUsageBase
                     if (percentOfTotal < 5) {
                         continue;
                     }
-<<<<<<< HEAD
-                    if ("user".equals(Build.TYPE) || "userdebug".equals(Build.TYPE)) {
-=======
                     if (!showUnacAndOvercounted) {
->>>>>>> ca77a21e7214535f2d5be6f86ad4b5e0b49b8736
                         continue;
                     }
                 }

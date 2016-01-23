@@ -67,7 +67,6 @@
             android:summary="@string/owner_info_settings_summary"/>
 
         <PreferenceScreen
-<<<<<<< HEAD
             android:key="lockscreen_shortcuts_settings"
             android:title="@string/lockscreen_targets_message" >
             <intent
@@ -75,7 +74,7 @@
                 android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
         </PreferenceScreen>
 
-=======
+        <PreferenceScreen
             android:key="lockscreen_wallpaper"
             android:title="@string/lockscreen_wallpaper_title"
             android:summary="@string/lockscreen_wallpaper_summary"
@@ -89,7 +88,6 @@
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
 
->>>>>>> ca77a21e7214535f2d5be6f86ad4b5e0b49b8736
         <Preference android:key="manage_trust_agents"
                     android:title="@string/manage_trust_agents"
                     android:summary="@string/manage_trust_agents_summary"

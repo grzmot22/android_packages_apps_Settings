@@ -293,7 +293,9 @@ public class SettingsActivity extends Activity
             R.id.print_settings,
             R.id.home_settings,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod
+            R.id.privacy_settings_cyanogenmod,
+            R.id.stweaks,
+            R.id.toolbox
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
