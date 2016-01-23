@@ -293,9 +293,7 @@ public class SettingsActivity extends Activity
             R.id.print_settings,
             R.id.home_settings,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod,
-            R.id.stweaks,
-            R.id.toolbox
+            R.id.privacy_settings_cyanogenmod
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -1327,7 +1325,7 @@ public class SettingsActivity extends Activity
                     boolean hasDeviceKeys = getResources().getInteger(
                             com.android.internal.R.integer.config_deviceHardwareKeys) != 0;
                     if (!hasDeviceKeys) {
-						removeTile = true
+                        removeTile = true;
                     }
                 } else if (id == R.id.ota_settings) {
                     // Embedding into Settings only if app exists (user could manually remove it)

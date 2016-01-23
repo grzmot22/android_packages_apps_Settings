@@ -46,7 +46,7 @@
                 android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
         </PreferenceScreen>
 
-		<PreferenceScreen
+        <PreferenceScreen
             android:key="lockscreen_wallpaper"
             android:title="@string/lockscreen_wallpaper_title"
             android:summary="@string/lockscreen_wallpaper_summary"

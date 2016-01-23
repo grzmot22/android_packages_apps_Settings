@@ -375,6 +375,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 root.findPreference(KEY_SCREEN_PINNING).setSummary(
                         getResources().getString(R.string.switch_on_text));
             }
+            
             // SMS rate limit security check
             boolean isTelephony = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
             if (isTelephony) {

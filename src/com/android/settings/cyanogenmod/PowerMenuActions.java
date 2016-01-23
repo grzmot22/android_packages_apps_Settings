@@ -102,6 +102,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment
                 getPreferenceScreen().removePreference(findPreference(action));
                 continue;
             }
+
             if (action.equals(GLOBAL_ACTION_KEY_POWER)) {
                 mPowerPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_POWER);
             } else if (action.equals(GLOBAL_ACTION_KEY_REBOOT)) {

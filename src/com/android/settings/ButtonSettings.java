@@ -608,7 +608,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     @Override
     protected int getMetricsCategory() {
         return CMMetricsLogger.BUTTON_SETTINGS;
-
     }
 
    private void updateNavBarSettings() {
@@ -728,7 +727,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             CMSettings.Secure.putString(getContentResolver(),
                     CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
             return true;
-
         } else if (preference == mNavbarButtonTint) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
@@ -870,7 +868,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         if (!hardware.isSupported(CMHardwareManager.FEATURE_KEY_DISABLE)) {
             return;
         }
-
         writeDisableHwKeysOption(context, Settings.System.getInt(context.getContentResolver(),
                 Settings.System.ENABLE_HW_KEYS, 1) == 1);
     }

@@ -138,7 +138,6 @@ public class AppOpsSummary extends InstrumentedFragment {
         if (bundle != null) {
             defaultTab = Arrays.asList(mPageNames).indexOf(bundle.getString("appops_tab", ""));
         }
-
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
         mAdapter = new MyPagerAdapter(getChildFragmentManager(),
                 filterTemplates(AppOpsState.ALL_TEMPLATES));

@@ -90,7 +90,7 @@
         android:key="update_recovery"
         android:title="@string/update_recovery_title"
         android:summary="@string/update_recovery_summary" />
-        
+
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="disable_fc_notifications"
         android:title="@string/disable_fc_notifications_title"
@@ -105,6 +105,7 @@
 
     <Preference android:key="restart_systemui"
         android:title="@string/restart_systemui" />
+
 
     <com.android.settings.ColorModePreference
         android:key="color_mode"
