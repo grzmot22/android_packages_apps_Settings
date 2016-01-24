@@ -208,11 +208,11 @@
     <PreferenceCategory
         android:title="@string/quicksettings_title" >
 
-        <ListPreference
-            android:key="qs_quick_pulldown"
-            android:title="@string/status_bar_quick_qs_pulldown_title"
-            android:entries="@array/status_bar_quick_qs_pulldown_entries"
-            android:entryValues="@array/status_bar_quick_qs_pulldown_values" />
+		<ListPreference
+			android:key="qs_quick_pulldown"
+			android:title="@string/status_bar_quick_qs_pulldown_title"
+			android:entries="@array/status_bar_quick_qs_pulldown_entries"
+			android:entryValues="@array/status_bar_quick_qs_pulldown_values" />
 
         <SwitchPreference
             android:key="block_on_secure_keyguard"

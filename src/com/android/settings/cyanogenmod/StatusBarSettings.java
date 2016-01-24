@@ -279,16 +279,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         int quickPulldown = CMSettings.System.getInt(resolver,
                 CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
         mQuickPulldown.setValue(String.valueOf(quickPulldown));
-        if (quickPulldown == 0) {
-            // quick pulldown deactivated
-            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
-        } else {
-            String direction = res.getString(quickPulldown == 2
-                    ? R.string.status_bar_quick_qs_pulldown_left
-                    : R.string.status_bar_quick_qs_pulldown_right);
-            mQuickPulldown.setSummary(
-                    res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
-        }
+        updatePulldownSummary(quickPulldown);
         mQuickPulldown.setOnPreferenceChangeListener(this);
 
         // Breathing Notifications
@@ -432,6 +423,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarBatteryShowPercent.setSummary(
                     mStatusBarBatteryShowPercent.getEntries()[index]);
             return true;
+
         } else if (preference == mColorPicker) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
@@ -477,20 +469,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             Settings.System.putInt(resolver,
                     Settings.System.QS_TRANSPARENT_HEADER, alpha * 1);
             return true;
-        } else if (preference == mQuickPulldown) {
+       } else if (preference == mQuickPulldown) {
             int quickPulldown = Integer.valueOf((String) newValue);
-            CMSettings.System.putInt(resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
-                    quickPulldown);
-            if (quickPulldown == 0) {
-                // quick pulldown deactivated
-                mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
-            } else {
-                String direction = res.getString(quickPulldown == 2
-                        ? R.string.status_bar_quick_qs_pulldown_left
-                        : R.string.status_bar_quick_qs_pulldown_right);
-                mQuickPulldown.setSummary(
-                        res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
-            }
+            CMSettings.System.putInt(
+                    resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
+            updatePulldownSummary(quickPulldown);
             return true;
         } else if (preference == mMissedCallBreath) {
             boolean value = (Boolean) newValue;
@@ -541,6 +524,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
     }
 
+    private void updatePulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // quick pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
+        } else {
+            String direction = res.getString(value == 2
+                    ? R.string.status_bar_quick_qs_pulldown_summary_left
+                    : R.string.status_bar_quick_qs_pulldown_summary_right);
+            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
+		}
+	}
+	
     private void enableStatusBarClockDependents() {
         int clockStyle = CMSettings.System.getInt(getActivity()
                 .getContentResolver(), CMSettings.System.STATUS_BAR_CLOCK, 1);
@@ -629,7 +626,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         @Override
         public void onCancel(DialogInterface dialog) {
-
         }
     }
 
