@@ -71,15 +71,6 @@
             settings:unitsRight=""
             android:persistent="false" />
 
-        <com.android.settings.temasek.SeekBarPreference
-            android:key="transparent_power_menu"
-            android:title="@string/power_menu_transparency"
-            android:max="255"
-            settings:minimum="0"
-            settings:unitsLeft=""
-            settings:unitsRight=""
-            android:persistent="false" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

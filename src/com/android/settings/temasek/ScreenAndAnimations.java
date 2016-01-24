@@ -31,7 +31,6 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "2";
     private static final String PREF_TRANSPARENT_VOLUME_DIALOG = "transparent_volume_dialog";
-    private static final String PREF_TRANSPARENT_POWER_MENU = "transparent_power_menu";
 
     private Context mContext;
 
@@ -40,7 +39,6 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
     private ListPreference mListViewInterpolator;
     private ListPreference mScrollingCachePref;
     private SeekBarPreference mVolumeDialogAlpha;
-    private SeekBarPreference mPowerMenuAlpha;
 
     @Override
     protected int getMetricsCategory() {
@@ -96,14 +94,6 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
                 Settings.System.TRANSPARENT_VOLUME_DIALOG, 255);
         mVolumeDialogAlpha.setValue(volumeDialogAlpha / 1);
         mVolumeDialogAlpha.setOnPreferenceChangeListener(this);
-
-        // Power menu alpha
-        mPowerMenuAlpha =
-                (SeekBarPreference) prefSet.findPreference(PREF_TRANSPARENT_POWER_MENU);
-        int powerMenuAlpha = Settings.System.getInt(resolver,
-                Settings.System.TRANSPARENT_POWER_MENU, 100);
-        mPowerMenuAlpha.setValue(powerMenuAlpha / 1);
-        mPowerMenuAlpha.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -114,7 +104,6 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-            int alpha = (Integer) newValue;
         if (preference == mToastAnimation) {
             int index = mToastAnimation.findIndexOfValue((String) newValue);
             Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) newValue);
@@ -142,12 +131,9 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
             }
             return true;
         } else if (preference == mVolumeDialogAlpha) {
+            int alpha = (Integer) newValue;
             Settings.System.putInt(resolver,
                    Settings.System.TRANSPARENT_VOLUME_DIALOG, alpha * 1);
-            return true;
-       } else if (preference == mPowerMenuAlpha) {
-            Settings.System.putInt(resolver,
-                    Settings.System.TRANSPARENT_POWER_MENU, alpha * 1);
             return true;
         }
         return false;
