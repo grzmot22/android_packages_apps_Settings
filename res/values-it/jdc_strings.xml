@@ -26,4 +26,9 @@
     <string name="more_things_summary">Segnalazione problemi, statistiche ecc.</string>
     <string name="jdc_issue_tracker">JDCTeam Issue Tracker</string>
     <string name="jdc_issue_tracker_summary">Premi qui per collegarti al nostro issue tracker</string>
+        <!-- QS -->
+    <string name="qs_fast_data_enable">Nascondi utilizzo dati</string>
+    <string name="qs_fast_data_enable_sum_on">Abilita o disabilita la connessione dati quando l\'icona è premuta</string>
+    <string name="qs_fast_data_enable_sum_off">Mostra l\'utilizzo dei dati mobili quando l\'icona connessione dati è premuta</string>
 </resources>
+

@@ -26,6 +26,10 @@
     <string name="more_things_summary">Issue report, stats etc.</string>
     <string name="jdc_issue_tracker">JDCTeam Issue Tracker</string>
     <string name="jdc_issue_tracker_summary">Press here to go to our issue tracker</string>
+    <!-- QS -->
+    <string name="qs_fast_data_enable">Hide data usage summary</string>
+    <string name="qs_fast_data_enable_sum_on">Enable or disable mobile data when the mobile data icon is pressed</string>
+    <string name="qs_fast_data_enable_sum_off">Show mobile data usage summary when the mobile data icon is pressed</string>
     <!-- Team members under ROM logo -->
     <string name="jdcteam">alucard_24, angelcalibur, AntaresOne, -+BB+-, FernBch, franzyroy, hawkerpaul, javelinanddart, Jimsilver73, josegalre, MattBooth, side, smeroni68, smstiv</string>
         <!-- ToolBox -->
