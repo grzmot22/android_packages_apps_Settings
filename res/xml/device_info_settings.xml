@@ -76,12 +76,6 @@
 			android:title="@string/baseband_version"
 			android:summary="@string/device_info_default"/>
           
-        <!-- Device FCC equipment id -->
-        <Preference android:key="fcc_equipment_id"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/fcc_equipment_id"
-                android:summary="@string/device_info_default"/>
-
         <!-- Device cpu info -->
         <Preference android:key="device_cpu"
                 style="?android:preferenceInformationStyle"
@@ -228,14 +222,6 @@
 		<PreferenceScreen
 			android:key="device_feedback"
 			android:title="@string/device_feedback">
-		</PreferenceScreen>
-
-		<!-- Anonymous statistics - (CMStats) -->
-		<PreferenceScreen
-			android:key="cmstats"
-			android:title="@string/anonymous_statistics_title"
-			android:summary="@string/anonymous_statistics_summary"
-			android:fragment="com.android.settings.cmstats.AnonymousStats" >
 		</PreferenceScreen>
 	</PreferenceScreen>
 </PreferenceScreen>
