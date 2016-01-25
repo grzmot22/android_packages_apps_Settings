@@ -36,5 +36,5 @@
     <string name="toolbox_title">JDCTeam Toolbox</string>
     <!-- STweaks -->
     <string name="stweaks_title">STweaks</string>
-    <string name="stweaks_summary">Zmień konfiguracje jądra(Alucard's kernel)</string>
+    <string name="stweaks_summary">Zmień konfiguracje jądra Alucard kernel</string>
 </resources>

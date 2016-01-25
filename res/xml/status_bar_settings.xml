@@ -257,6 +257,13 @@
             settings:unitsRight=""
             android:persistent="false" />
 
+	<com.android.settings.cyanogenmod.CMSecureSettingSwitchPreference
+	    android:key="qs_fast_data_enable"
+	    android:title="@string/qs_fast_data_enable"
+	    android:summaryOn="@string/qs_fast_data_enable_sum_on"
+	    android:summaryOff="@string/qs_fast_data_enable_sum_off"
+	    android:defaultValue="false"/>
+	    
     </PreferenceCategory>
 
     <PreferenceCategory
