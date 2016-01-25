@@ -1081,10 +1081,10 @@
     <string name="notification_drawer_clear_all_icon_color_title">Цвет кнопки \"Очистить всё\"</string>
 
     <!-- QS shade transparency -->
-    <string name="qs_transparent_shade">Прозрачность</string>
+    <string name="qs_transparent_shade">Прозрачность панели быстрых настроек</string>
 
     <!-- QS header transparency -->
-    <string name="qs_transparent_header">QS header transparency</string>
+    <string name="qs_transparent_header">Прозрачность шапки быстрых настроек</string>
 
     <!-- Safe headset volume restore checkbox -->
     <string name="safe_headset_volume_title">Безопасная громкость</string>
@@ -1102,5 +1102,19 @@
     <string name="missed_call_breath_summary">Придаст \"эффект дыхания\" вашему сообщению о пропущенных звонках в строке состояния</string>
     <string name="voicemail_breath_title">\"Живая\" голосовая почта</string>
     <string name="voicemail_breath_summary">Придаст \"эффект дыхания\" вашему сообщению о голосовой почте в строке состояния</string>
+
+    <!-- Dashboard columns -->
+    <string name="dashboard_columns_title">Колонки \"Панели настроек\"</string>
+    <string name="dashboard_columns_summary">Изменение количества колонок отображаемых на панели настроек</string>
+    <string name="dashboard_columns_dialog_title">Выберите количество колонок</string>
+    <string name="dashboard_columns_default">Одна (по умолчанию)</string>
+    <string name="dashboard_columns_two">Две</string>
+    <string name="dashboard_columns_three">Три</string>
+
+    <!-- Dashboard tileview double lines -->
+    <string name="dashboard_category">Настройки \"Панели настроек\"</string>
+    <string name="dashboard_tileview_double_lines_title">Отображение названия пунктов \"Панели настроек\"</string>
+    <string name="dashboard_tileview_double_lines_summary_on">Отображать названия пунктов в одну строку</string>
+    <string name="dashboard_tileview_double_lines_summary_off">Отображать названия пунктов в две строки</string>
 
 </resources>
