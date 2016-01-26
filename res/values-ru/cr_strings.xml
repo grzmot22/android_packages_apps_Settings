@@ -310,6 +310,8 @@
     <string name="weather_show_weather_summary">Включить отображение информации о погоде</string>
     <string name="weather_show_location_title">Показывать местоположение</string>
     <string name="weather_show_location_summary">Включить отображение местоположения</string>
+    <string name="weather_show_timestamp_title">Показывать время</string>
+    <string name="weather_show_timestamp_summary">Включить отображение времени</string>
     <string name="weather_condition_icon_title">Стиль иконок</string>
     <string name="weather_condition_icon_dlg_title">Выберете стиль иконок для отображения погоды</string>
     <string name="weather_condition_icon_monochrome_title">Монохромные</string>
@@ -1067,10 +1069,6 @@
     <!-- Option to Disable Brightness Icon In Brightness Slider -->
     <string name="brightness_icon_title">Значок яркости </string>
     <string name="brightness_icon_summary">Отображать значок яркости на слайдере яркости</string>
-
-    <!--Persist add tiles button-->
-    <string name="persist_add_title">Отображать значок \"Изменить плитки\"</string>
-    <string name="persist_add_summary">Отображать значок \"Изменить плитки\" даже при отключенном слайдере яркости</string>
 
     <!-- Quick settings disable on lockscreen -->
     <string name="block_on_secure_keyguard_title">Отключить на экране блокировки</string>

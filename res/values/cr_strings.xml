@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V3.4</string>
+    <string name="temasek_version_default">Build V3.5</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MMB29T Release 10</string>
 
@@ -314,6 +314,8 @@
     <string name="weather_show_weather_summary">Enable to show weather informations</string>
     <string name="weather_show_location_title">Show location</string>
     <string name="weather_show_location_summary">Enable to show the location</string>
+    <string name="weather_show_timestamp_title">Show timestamp</string>
+    <string name="weather_show_timestamp_summary">Enable to show the timestamp</string>
     <string name="weather_condition_icon_title">Condition icon</string>
     <string name="weather_condition_icon_dlg_title">Choose an icon for displaying the weather condition</string>
     <string name="weather_condition_icon_monochrome_title">Monochrome</string>
@@ -1071,10 +1073,6 @@
     <!-- Option to Disable Brightness Icon In Brightness Slider -->
     <string name="brightness_icon_title">Brightness icon </string>
     <string name="brightness_icon_summary">Enable brightness icon at brightness slider</string>
-
-    <!--Persist add tiles button-->
-    <string name="persist_add_title">Persist add tiles icon </string>
-    <string name="persist_add_summary">Enable to make add tiles icon visible even with brightness slider disabled</string>
 
     <!-- Quick settings disable on lockscreen -->
     <string name="block_on_secure_keyguard_title">Disable quick settings on lockscreen</string>
