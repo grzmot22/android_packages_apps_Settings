@@ -1102,7 +1102,6 @@
         You may forcibly move it regardless but app data may need to be cleared in order for it to function correctly.</string>
     <string name="storage_wizard_move_confirm_body_cm">Moving <xliff:g id="app" example="Calculator">^1</xliff:g> and its data to <xliff:g id="name" example="SD card">^2</xliff:g> will take only a few moments. You won\u2019t be able to use the app until the move is complete.
 \n\nDon\u2019t remove the <xliff:g id="name" example="SD card">^2</xliff:g> during the move.<xliff:g id="forcetext">^3</xliff:g>
-    </string>
 
     <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
     <string name="master_clear_desc_cm" product="tablet">This will erase all data from your tablet\'s <b>internal storage</b>, including:\n\n<li>Your device accounts</li>\n<li>System and app data and settings</li>\n<li>Downloaded apps</li></string>
