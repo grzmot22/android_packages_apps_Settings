@@ -225,6 +225,8 @@
     <string name="show_network_traffic_2000">2000 毫秒</string>
     <string name="network_traffic_autohide">自动隐藏</string>
     <string name="network_traffic_autohide_summary">当没有网络活动时，自动隐藏流量监测</string>
+    <string name="network_traffic_hidearrow">隐藏箭头</string>
+    <string name="network_traffic_hidearrow_summary">网络活动时隐藏箭头</string>
     <string name="network_traffic_autohide_threshold">活动阀值</string>
     <string name="network_traffic_color_style">颜色样式</string>
     <string name="network_traffic_color_reset">重置颜色</string>
@@ -277,6 +279,8 @@
     <string name="weather_show_weather_summary">启用显示天气信息</string>
     <string name="weather_show_location_title">显示位置</string>
     <string name="weather_show_location_summary">启用显示位置</string>
+    <string name="weather_show_timestamp_title">显示时间戳</string>
+    <string name="weather_show_timestamp_summary">启用显示时间戳</string>
     <string name="weather_condition_icon_title">状态图标</string>
     <string name="weather_condition_icon_dlg_title">选择一个图标用于显示天气状况</string>
     <string name="weather_condition_icon_monochrome_title">黑白</string>
@@ -961,13 +965,11 @@
     <!-- Option to Disable Brightness Icon In Brightness Slider -->
     <string name="brightness_icon_title">亮度图标</string>
     <string name="brightness_icon_summary">亮度控制滑块上启用图标</string>
-    <!--Persist add tiles button-->
-    <string name="persist_add_title">始终显示添加磁贴图标</string>
-    <string name="persist_add_summary">即使亮度控制滑块禁用也启用使添加磁贴图标可见</string>
     <!-- Quick settings disable on lockscreen -->
     <string name="block_on_secure_keyguard_title">锁屏界面禁用快速设置</string>
     <string name="block_on_secure_keyguard_summary">仅在安全锁屏界面禁用快速设置</string>
     <!-- Notification color settings -->
+    <string name="notification_color_settings_title">通知颜色</string>
     <string name="notification_drawer_clear_all_icon_color_title">清除全部图标</string>
     <!-- QS shade transparency -->
     <string name="qs_transparent_shade">快速设置阴影透明度</string>
@@ -987,4 +989,23 @@
     <string name="missed_call_breath_summary">在状态栏处呈现未接来电呼吸灯通知</string>
     <string name="voicemail_breath_title">语音信箱呼吸灯</string>
     <string name="voicemail_breath_summary">在状态栏处呈现语音信箱呼吸灯通知</string>
+    <!-- Dashboard columns -->
+    <string name="dashboard_columns_title">设置界面列数</string>
+    <string name="dashboard_columns_summary">更改设置界面显示的列数</string>
+    <string name="dashboard_columns_dialog_title">选择设置界面列数</string>
+    <string name="dashboard_columns_default">一列(默认)</string>
+    <string name="dashboard_columns_two">两列</string>
+    <string name="dashboard_columns_three">三列</string>
+    <!-- Dashboard tileview double lines -->
+    <string name="dashboard_category">仪表盘设置</string>
+    <string name="dashboard_tileview_double_lines_title">仪表盘标题视图标题</string>
+    <string name="dashboard_tileview_double_lines_summary_on">单行显示仪表盘标题</string>
+    <string name="dashboard_tileview_double_lines_summary_off">双行显示仪表盘标题</string>
+    <!-- Selinux Switch -->
+    <string name="selinux_switch_title">Selinux切换选项</string>
+    <string name="selinux_switch_summary">SELinux是设置修改内核和用户空间的工具,更改模式可能会导致不可预料的结果，是否启用由你决定.</string>
+    <string name="selinux_title">Selinux模式</string>
+    <string name="selinux_permissive_title">Permissive</string>
+    <string name="selinux_enforcing_title">Enforcing</string>
+    <string name="selinux_permissive_toast_title">Selinux模式设置为permissive!</string>
 </resources>
