@@ -137,21 +137,28 @@
     <string name="clock_font_normal">Обычный</string>
     <string name="clock_font_italic">Курсив</string>
     <string name="clock_font_bold">Жирный</string>
-    <string name="clock_font_bold_italic">Жирный Курсив</string>
+    <string name="clock_font_bold_italic">Жирный курсив</string>
     <string name="clock_font_light">Легкий</string>
-    <string name="clock_font_light_italic">Легкий Курсив</string>
+    <string name="clock_font_light_italic">Легкий курсив</string>
     <string name="clock_font_thin">Тонкий</string>
-    <string name="clock_font_thin_italic">Тонкий Курсив</string>
+    <string name="clock_font_thin_italic">Тонкий курсив</string>
     <string name="clock_font_condensed">Плотный</string>
-    <string name="clock_font_condensed_italic">Плотный Курсив</string>
-    <string name="clock_font_condensed_light">Плотный Легкий</string>
-    <string name="clock_font_condensed_light_italic">Плотный Легкий Курсив</string>
-    <string name="clock_font_condensed_bold">Плотный Жирный</string>
-    <string name="clock_font_condensed_bold_italic">Плотный Жирный Курсив</string>
+    <string name="clock_font_condensed_italic">Плотный курсив</string>
+    <string name="clock_font_condensed_light">Плотный легкий</string>
+    <string name="clock_font_condensed_light_italic">Плотный легкий курсив</string>
+    <string name="clock_font_condensed_bold">Плотный жирный</string>
+    <string name="clock_font_condensed_bold_italic">Плотный жирный курсив</string>
     <string name="clock_font_medium">Средний</string>
-    <string name="clock_font_medium_italic">Средний Курсив</string>
+    <string name="clock_font_medium_italic">Средний курсив</string>
     <string name="clock_font_black">Чёрный</string>
-    <string name="clock_font_black_italic">Чёрный Курсив</string>
+    <string name="clock_font_black_italic">Чёрный курсив</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript жирный</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif обычный</string>
+    <string name="clock_font_notoserif_italic">NotoSerif курсив</string>
+    <string name="clock_font_notoserif_bold">NotoSerif жирный</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif жирный курсив</string>
     <string name="clock_font_size_title">Размер шрифта</string>
     <string name="status_bar_show_clock_second_title">Показывать секунды</string>
     <string name="clock_font_size_4">4</string>
@@ -304,6 +311,13 @@
     <string name="status_bar_weather_font_medium_italic">Средний курсив</string>
     <string name="status_bar_weather_font_black">Чёрный</string>
     <string name="status_bar_weather_font_black_italic">Чёрный курсив</string>
+    <string name="status_bar_weather_font_dancingscript">DancingScript</string>
+    <string name="status_bar_weather_font_dancingscript_bold">DancingScript жирный</string>
+    <string name="status_bar_weather_font_comingsoon">ComingSoon</string>
+    <string name="status_bar_weather_font_notoserif">NotoSerif обычный</string>
+    <string name="status_bar_weather_font_notoserif_italic">NotoSerif курсив</string>
+    <string name="status_bar_weather_font_notoserif_bold">NotoSerif жирный</string>
+    <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif жирный курсив</string>
 
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">Погода</string>
@@ -996,11 +1010,11 @@
     <string name="lock_clock_font_title">Шрифт часов экрана блокировки</string>
     <string name="lock_clock_font_summary">Сменить шрифт часов на экране блокировки</string>
     <string name="lock_clock_font_dialog_title">Выберите шрифт Roboto</string>
-    <string name="lock_clock_font_normal">Обычный (по умолчанию)</string>
+    <string name="lock_clock_font_normal">Обычный</string>
     <string name="lock_clock_font_bold">Жирный</string>
     <string name="lock_clock_font_italic">Курсив</string>
     <string name="lock_clock_font_bold_italic">Жирный курсив</string>
-    <string name="lock_clock_font_light_normal">Легкий</string>
+    <string name="lock_clock_font_light_normal">Легкий (по умолчанию)</string>
     <string name="lock_clock_font_light_italic">Легкий курсив</string>
     <string name="lock_clock_font_thin_normal">Тонкий</string>
     <string name="lock_clock_font_thin_italic">Тонкий курсив</string>
@@ -1104,7 +1118,7 @@
     <string name="voicemail_breath_summary">Придаст \"эффект дыхания\" вашему сообщению о голосовой почте в строке состояния</string>
 
     <!-- Dashboard columns -->
-    <string name="dashboard_columns_title">Колонки \"Панели настроек\"</string>
+    <string name="dashboard_columns_title">Колонки</string>
     <string name="dashboard_columns_summary">Изменение количества колонок отображаемых на панели настроек</string>
     <string name="dashboard_columns_dialog_title">Выберите количество колонок</string>
     <string name="dashboard_columns_default">Одна (по умолчанию)</string>
@@ -1112,9 +1126,17 @@
     <string name="dashboard_columns_three">Три</string>
 
     <!-- Dashboard tileview double lines -->
-    <string name="dashboard_category">Настройки \"Панели настроек\"</string>
+    <string name="dashboard_category">Панель настроек</string>
     <string name="dashboard_tileview_double_lines_title">Отображение названия пунктов \"Панели настроек\"</string>
     <string name="dashboard_tileview_double_lines_summary_on">Отображать названия пунктов в одну строку</string>
     <string name="dashboard_tileview_double_lines_summary_off">Отображать названия пунктов в две строки</string>
+
+    <!-- Selinux Switch -->
+    <string name="selinux_switch_title">Переключение режимов Selinux</string>
+    <string name="selinux_switch_summary">SELinux это набор модификаций ядра и инструментов пользовательского пространства. Изменение режимов может привести к нежелательным последствиям. Используйте на свой риск.</string>
+    <string name="selinux_title">Режим Selinux</string>
+    <string name="selinux_permissive_title">Только предупреждение</string>
+    <string name="selinux_enforcing_title">Блокировка</string>
+    <string name="selinux_permissive_toast_title">Режим Selinux - только предупреждение!</string>
 
 </resources>
