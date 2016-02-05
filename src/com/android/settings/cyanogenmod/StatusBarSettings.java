@@ -317,7 +317,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         setHasOptionsMenu(true);
         mCheckPreferences = true;
-        return prMove "Show 4G" settings to Statusbar Settings (1/2)efSet;
+        return prefSet;
     }
 
     @Override
