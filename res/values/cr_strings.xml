@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V3.9</string>
+    <string name="temasek_version_default">Build V4.0</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MMB29U Release 13</string>
 
@@ -366,6 +366,9 @@
     <string name="show_carrier_keyguard">Keyguard carrier</string>
     <string name="show_carrier_statusbar">Status bar carrier</string>
     <string name="show_carrier_enabled">Enabled</string>
+    <string name="status_bar_carrier_position">Status bar location</string>
+    <string name="status_bar_logo_position_left">Left</string>
+    <string name="status_bar_logo_position_right">Right</string>
 
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">Wallpaper</string>
@@ -1148,7 +1151,7 @@
 
     <!-- 4G LTE switch -->
     <string name="show_fourg_title">Show 4G instead of LTE</string>
-    <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G</string>
+    <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G. Reboot is required to take effect.</string>
     <string name="statusbar_tuner_category_title">Hide items from statusbar</string>
 
 </resources>
