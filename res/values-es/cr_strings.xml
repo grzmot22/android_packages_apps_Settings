@@ -342,6 +342,10 @@
     <string name="show_carrier_keyguard">Operador en bloqueo de pantalla</string>
     <string name="show_carrier_statusbar">Operador en la barra de estado</string>
     <string name="show_carrier_enabled">Habilitado</string>
+    <string name="status_bar_carrier_position">Ubicación de la etiqueta</string>
+    <string name="status_bar_logo_position_left">Izquierda</string>
+    <string name="status_bar_logo_position_right">Derecha</string>
+    <string name="status_bar_carrier_font_style_title">Estilo de fuente</string>
 
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">Fondo de pantalla de bloqueo</string>
@@ -988,5 +992,143 @@
     <!-- Device policy override -->
     <string name="device_policy_override_title">Anulación de la política de dispositivos</string>
     <string name="device_policy_override_summary">Permitir a las aplicaciones obligar la pantalla de bloqueo y anular la configuración del perfiles</string>
+
+<!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Bloquear las fuentes del reloj</string>
+    <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj de la pantalla de bloqueo</string>
+    <string name="lock_clock_font_dialog_title">Seleccione la fuente de reloj de bloqueo</string>
+    <string name="lock_clock_font_normal">Roboto</string>
+    <string name="lock_clock_font_bold">Roboto Negrita</string>
+    <string name="lock_clock_font_italic">Roboto Italic</string>
+    <string name="lock_clock_font_bold_italic">Roboto Negrita Italic</string>
+    <string name="lock_clock_font_light_normal">Roboto Suave (por defecto)</string>
+    <string name="lock_clock_font_light_italic">Roboto Suave Italic</string>
+    <string name="lock_clock_font_thin_normal">Roboto Delgado</string>
+    <string name="lock_clock_font_thin_italic">Roboto Delgado Italic</string>
+    <string name="lock_clock_font_condensed_normal">Roboto Condensado</string>
+    <string name="lock_clock_font_condensed_bold">Roboto Condensado Negrita</string>
+    <string name="lock_clock_font_condensed_italic">Roboto Condensado Italic</string>
+    <string name="lock_clock_font_condensed_bold_italic">Roboto Condensado Negrita Italic</string>
+    <string name="lock_clock_font_medium_normal">Roboto Medio</string>
+    <string name="lock_clock_font_medium_italic">Roboto Medio Italic</string>
+    <string name="lock_clock_font_black_normal">Roboto Negro</string>
+    <string name="lock_clock_font_black_italic">Roboto Negro Italic</string>
+    <string name="lock_clock_font_condensed_light_normal">Roboto Condensado Suave</string>
+    <string name="lock_clock_font_condensed_light_italic">Roboto Condensado Suave Italic</string>
+
+    <!-- Slim Recents -->
+    <string name="recent_panel_category">Recientes Slim</string>
+    <string name="slim_recents_panel">Recientes Slim</string>
+    <string name="use_slim_recents_title">Slim recentes</string>
+    <string name="show_running_tasks_title">Solo mostrar aplicaciones funcionando</string>
+    <string name="recents_max_apps_title">Aplicaciones máximas permitidas</string>
+    <string name="recent_panel_scale_title">Tamaño</string>
+    <string name="recent_panel_expanded_mode_title">Modo expandido</string>
+    <string name="recent_panel_expanded_mode_summary">tareas recientes expandido modo de vista previa</string>
+    <string name="recent_panel_expanded_mode_auto">Automático (por defecto)</string>
+    <string name="recent_panel_expanded_mode_always">Siempre</string>
+    <string name="recent_panel_expanded_mode_never">Nunca</string>
+    <string name="recent_panel_show_topmost_title">Mostrar tarea superior</string>
+    <string name="recent_panel_show_topmost_summary">No excluimos la tarea más elevada en vistas recientes</string>
+    <string name="recent_panel_bg_color_title">Color de fondo del panel</string>
+    <string name="recent_card_bg_color_title">Color de fondo de la tarjeta</string>
+    <string name="recent_card_text_color_title">Texto de color de tarjeta</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Mostrar en el borde izquierdo</string>
+    <string name="recent_panel_lefty_mode_summary">Mostrar panel de aplicaciones recientes a el borde izquierdo</string>
+
+    <!-- Slim Recent App Sidebar  -->
+    <string name="recent_app_sidebar_title">Barra lateral de Apps</string>
+    <string name="recent_app_sidebar_summary">Mostrar accesos directos de aplicaciones en el otro borde</string>
+    <string name="recent_app_sidebar_style_title">Estilo de la barra lateral</string>
+    <string name="recent_app_sidebar_style_summary">Cambiar el estilo barra lateral de aplicación reciente</string>
+    <string name="recent_app_sidebar_hide_labels_title">Ocultar etiquetas de los iconos</string>
+    <string name="recent_app_sidebar_label_color_title">Color de la etiqueta</string>
+    <string name="recent_app_sidebar_bg_color_title">Color de fondo</string>
+    <string name="recent_app_sidebar_scale_title">Tamaño</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Sonido de captura</string>
+    <string name="screenshot_sound_summary">Reproducir efecto de sonido cuando se tome una captura de pantalla</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Estadísticas de reinio</string>
+    <string name="battery_stats_message">El historial de estadísticas de la batería va a ser reiniciado</string>
+    <string name="ok_string">Ok</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Información de CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Recubrimiento que muestra información de la CPU</string>
+
+    <!-- app notifications hide on lockscreen -->
+    <string name="app_notification_no_keyguard_title">Ocultar una vez cerradas</string>
+    <string name="app_notification_no_keyguard_summary">Ocultar notificaciones de esta aplicación cuando el dispositivo está bloqueado</string>
+    <string name="filter_notif_no_keyguard">Oculta cuando está bloqueado</string>
+    <string name="notifications_no_keyguard">Oculta cuando está bloqueado</string>
+    <string name="notifications_four_items"><xliff:g id="notif_state" example="Priority">%1$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%2$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%3$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%4$s</xliff:g></string>
+
+    <!-- Option to Disable Brightness Icon In Brightness Slider -->
+    <string name="brightness_icon_title">Icono de brillo </string>
+    <string name="brightness_icon_summary">Habilitar icono de brillo en el control deslizante de brillo</string>
+
+    <!-- Quick settings disable on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Desactivar los ajustes rápidos en la pantalla de bloqueo</string>
+    <string name="block_on_secure_keyguard_summary">Desactivar los ajustes rápidos en el teclado protegido por un cierre de seguridad</string>
+
+    <!-- Notification color settings -->
+    <string name="notification_color_settings_title">Color de notification</string>
+    <string name="notification_drawer_clear_all_icon_color_title">Icono de borrar todas</string>
+
+    <!-- QS shade transparency -->
+    <string name="qs_transparent_shade">QS transparencia de sombra</string>
+
+    <!-- QS header transparency -->
+    <string name="qs_transparent_header">QS transparencia de cabecera</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Volumen seguro de auriculares</string>
+    <string name="safe_headset_volume_summary">Evitar los niveles de volumen fuertes cuando el auricular se conecta por primera vez</string>
+    <string name="safe_headset_volume_warning_dialog_text">Si escucha a un volumen alto durante largos periodos de tiempo puede dañar su audición. Desactivarlo con precaución.</string>
+
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Antorcha en pantalla de bloqueo</string>
+    <string name="keyguard_torch_summary">Mantener pulsado el botón de encendido mientras la pantalla está apagada para encender la linterna</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_category">Notificaciones de respiración</string>
+    <string name="breathing_notifications_title">Notificaciones de respiración</string>
+    <string name="missed_call_breath_title">Respiración en llamada perdida</string>
+    <string name="missed_call_breath_summary">Dará a sus notificaciones de llamadas perdidas un efecto de respiración en la barra de estado</string>
+    <string name="voicemail_breath_title">Respirar con correo de voz</string>
+    <string name="voicemail_breath_summary">Dará a sus notificaciones de correo de voz un efecto de la respiración en la barra de estado</string>
+
+    <!-- Dashboard columns -->
+    <string name="dashboard_columns_title">Las columnas del tablero de instrumentos</string>
+    <string name="dashboard_columns_summary">Cambiar el número de columnas que se muestran en el tablero de instrumentos</string>
+    <string name="dashboard_columns_dialog_title">Seleccionar columnas del tablero de instrumentos</string>
+    <string name="dashboard_columns_default">Una (por defecto)</string>
+    <string name="dashboard_columns_two">Dos</string>
+    <string name="dashboard_columns_three">Tres</string>
+
+    <!-- Dashboard tileview double lines -->
+    <string name="dashboard_category">Configuraciones del tablero</string>
+    <string name="dashboard_tileview_double_lines_title">Vista del panel de títulos</string>
+    <string name="dashboard_tileview_double_lines_summary_on">Mostrar como títulos del panel en 1 línea</string>
+    <string name="dashboard_tileview_double_lines_summary_off">Mostrar como títulos del panel en 2 líneas</string>
+
+    <!-- Selinux Switch -->
+    <string name="selinux_switch_title">Funciones posibles SELinux</string>
+    <string name="selinux_switch_summary">SELinux es un conjunto de modificaciones del núcleo y herramientas de espacio de usuario. Los cambios de modos pueden causar efectos no deseados. Úselo bajo su propio riesgo.</string>
+    <string name="selinux_title">Modo Selinux</string>
+    <string name="selinux_permissive_title">Permisivo</string>
+    <string name="selinux_enforcing_title">Forzado</string>
+    <string name="selinux_permissive_toast_title">Selinux cambiado a permisivo!</string>
+
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Mostrar 4G en vez de LTE</string>
+    <string name="show_fourg_summary">Reemplaza LTE por 4G en el indicador de la barra de estado. Se requiere reiniciar el sistema para surgirr efecto.</string>
+    <string name="statusbar_tuner_category_title">Ocultar los elementos de la barra de estado</string>
 
 </resources>
