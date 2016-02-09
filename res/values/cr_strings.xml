@@ -239,8 +239,9 @@
     <string name="dim_nav_buttons_touch_anywhere_summary_on">Touching anywhere on the screen will cause buttons to un-dim</string>
     <string name="dim_nav_buttons_touch_anywhere_summary_off">Only touches on the navbar will cause buttons to un-dim</string>
 
-    <!-- Time-context headers in notification header -->
-    <string name="contextual_title">Contextual headers</string>
+    <!-- Status bar header -->
+    <string name="status_bar_header_title">Status bar header</string>
+    <string name="status_bar_header_font_style_title">Header font style</string>
     <string name="status_bar_custom_header_title">Custom header image</string>
     <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
     <string name="status_bar_custom_header_default_title">Select your images</string>
@@ -1154,5 +1155,10 @@
     <string name="show_fourg_title">Show 4G instead of LTE</string>
     <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G. Reboot is required to take effect.</string>
     <string name="statusbar_tuner_category_title">Hide items from statusbar</string>
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Lockscreen items</string>
+    <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
+    <string name="hide_lockscreen_date_title">Show lockscreen date</string>
 
 </resources>
