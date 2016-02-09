@@ -68,7 +68,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment
     private SwitchPreference mVoiceAssistPref;
     private SwitchPreference mAssistPref;
     private SlimSeekBarPreference mOnTheGoAlphaPref;
-
     Context mContext;
     private ArrayList<String> mLocalUserConfig = new ArrayList<String>();
     private String[] mAvailableActions;

@@ -62,6 +62,9 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Index;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
+
+import org.cyanogenmod.internal.util.CmLockPatternUtils;
+
 import cyanogenmod.providers.CMSettings;
 
 import org.cyanogenmod.internal.util.CmLockPatternUtils;
