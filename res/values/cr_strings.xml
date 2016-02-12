@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V4.1</string>
+    <string name="temasek_version_default">Build V4.2</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MMB29U Release 13</string>
 
@@ -36,6 +36,16 @@
     <string name="dlg_reset_temasek">Temasek</string>
     <string name="cat_colors_title">Customize notification colors</string>
 
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
@@ -48,15 +58,6 @@
 
     <!-- OTA update -->
     <string name="ota_title">OTA update</string>
-
-    <!-- Color picker -->
-    <string name="dialog_color_picker_title">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="palette_darkkat_title">Temasek</string>
-    <string name="palette_material_title">Material</string>
-    <string name="palette_rgb_title">RGB</string>
-    <string name="reset_android_title">Android default</string>
-    <string name="reset_darkkat_title">DarkKat default</string>
 
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Superuser indicator</string>
@@ -819,25 +820,6 @@
     <string name="pref_scrollingcache_default_enable">Default enable</string>
     <string name="pref_scrollingcache_default_disable">Default disable</string>
     <string name="pref_scrollingcache_force_disable">Force disable</string>
-
-    <!-- AOKP custom system animations -->  
-    <string name="aokp_animation_title">System animations</string>
-    <string name="aokp_animation_summary">AOKP custom animation</string>
-    <string name="animation_exit_only_title">Enter only animation</string>
-    <string name="animation_reverse_exit_title">Reverse exit animation</string>
-    <string name="activity_open_title">Activity open animation</string>
-    <string name="activity_close_title">Activity close animation</string>
-    <string name="task_open_title">Task open animation</string>
-    <string name="task_close_title">Task close animation</string>
-    <string name="task_move_to_front_title">Move to front animation</string>
-    <string name="task_move_to_back_title">Move to back animation</string>
-    <string name="wallpaper_open_title">Wallpaper open animation</string>
-    <string name="wallpaper_close_title">Wallpaper close animation</string>
-    <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
-    <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
-    <string name="task_open_behind_title">Task open behind animation</string>
-    <string name="animation_duration_title">Animation duration</string>
-    <string name="animation_duration_default">Default</string>
 
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Advanced options</string>

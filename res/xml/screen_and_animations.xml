@@ -42,13 +42,6 @@
             android:entries="@array/entries_scrollingcache"
             android:entryValues="@array/values_scrollingcache" />
 
-        <!-- AOKP custom animations -->
-        <PreferenceScreen
-            android:key="aokp_animation"
-            android:title="@string/aokp_animation_title"
-            android:summary="@string/aokp_animation_summary"
-            android:fragment="com.android.settings.temasek.fragments.AnimationControls" />
-
         <!-- Three-fingers-swipe to screenshot -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="three_finger_gesture"

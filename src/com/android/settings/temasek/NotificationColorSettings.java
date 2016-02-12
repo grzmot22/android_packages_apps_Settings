@@ -84,7 +84,7 @@ public class NotificationColorSettings extends SettingsPreferenceFragment implem
         mClearAllIconColor.setNewPreviewColor(intColor);
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mClearAllIconColor.setSummary(hexColor);
-        mClearAllIconColor.setDefaultColors(WHITE, HOLO_BLUE_LIGHT);
+        //mClearAllIconColor.setDefaultColors(WHITE, HOLO_BLUE_LIGHT);
         mClearAllIconColor.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(true);
@@ -93,7 +93,7 @@ public class NotificationColorSettings extends SettingsPreferenceFragment implem
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.add(0, MENU_RESET, 0, R.string.reset)
-                .setIcon(R.drawable.ic_action_reset) // use the KitKat backup icon
+                .setIcon(R.drawable.ic_settings_reset) // use the KitKat backup icon
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 

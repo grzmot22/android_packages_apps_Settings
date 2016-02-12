@@ -1,7 +1,6 @@
 /*
  * Copyright (C) 2011 Sergey Margaritov
  * Copyright (C) 2013 Slimroms
- * Copyright (C) 2015 DarkKat
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,16 +17,16 @@
 
 package net.margaritov.preference.colorpicker;
 
-import android.app.Dialog;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.preference.DialogPreference;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.preference.Preference;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -36,25 +35,19 @@ import android.widget.LinearLayout;
 import com.android.settings.R;
 
 /**
- * A preference type that allows a user to choose a color
- * 
+ * A preference type that allows a user to choose a time
+ *
  * @author Sergey Margaritov
  */
-public class ColorPickerPreference extends DialogPreference implements
-        ColorPickerDialog.OnColorChangedListener {
+public class ColorPickerPreference extends Preference implements
+        Preference.OnPreferenceClickListener, ColorPickerDialog.OnColorChangedListener {
 
     View mView;
-    LinearLayout widgetFrameView;
     ColorPickerDialog mDialog;
-
-    int mDefaultValue = Color.BLACK;
-    int mAndroidColor = 0x00000000;
-    int mDarkKatColor = mAndroidColor;
+    LinearLayout widgetFrameView;
     private int mValue = Color.BLACK;
     private float mDensity = 0;
-    private boolean mAlphaSliderEnabled = false;
-
-    private static final String androidns = "http://schemas.android.com/apk/res/android";
+    private boolean mAlphaSliderEnabled = true;
 
     private EditText mEditText;
 
@@ -74,30 +67,21 @@ public class ColorPickerPreference extends DialogPreference implements
     }
 
     @Override
+    protected Object onGetDefaultValue(TypedArray a, int index) {
+        return a.getInt(index, Color.BLACK);
+    }
+
+    @Override
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
-        onColorChanged(restoreValue ? getValue() : (Integer) defaultValue);
+        onColorChanged(restoreValue ? getPersistedInt(mValue) : (Integer) defaultValue);
     }
 
     private void init(Context context, AttributeSet attrs) {
         mDensity = getContext().getResources().getDisplayMetrics().density;
+        setOnPreferenceClickListener(this);
         if (attrs != null) {
-            String defaultValue = attrs.getAttributeValue(androidns, "defaultValue");
-            if (defaultValue.startsWith("#")) {
-                try {
-                    mDefaultValue = convertToColorInt(defaultValue);
-                } catch (NumberFormatException e) {
-                    Log.e("ColorPickerPreference", "Wrong color: " + defaultValue);
-                    mDefaultValue = convertToColorInt("#FF000000");
-                }
-            } else {
-                int resourceId = attrs.getAttributeResourceValue(androidns, "defaultValue", 0);
-                if (resourceId != 0) {
-                    mDefaultValue = context.getResources().getInteger(resourceId);
-                }
-            }
-            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", true);
+            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", false);
         }
-        mValue = mDefaultValue;
     }
 
     @Override
@@ -141,7 +125,7 @@ public class ColorPickerPreference extends DialogPreference implements
 
     private Bitmap getPreviewBitmap() {
         int d = (int) (mDensity * 31); // 30dip
-        int color = getValue();
+        int color = mValue;
         Bitmap bm = Bitmap.createBitmap(d, d, Config.ARGB_8888);
         int w = bm.getWidth();
         int h = bm.getHeight();
@@ -157,18 +141,6 @@ public class ColorPickerPreference extends DialogPreference implements
         }
 
         return bm;
-    }
-
-    public int getValue() {
-        try {
-            if (isPersistent()) {
-                mValue = getPersistedInt(mDefaultValue);
-            }
-        } catch (ClassCastException e) {
-            mValue = mDefaultValue;
-        }
-
-        return mValue;
     }
 
     @Override
@@ -188,39 +160,31 @@ public class ColorPickerPreference extends DialogPreference implements
         }
     }
 
-    @Override
+    public boolean onPreferenceClick(Preference preference) {
+        showDialog(null);
+        return false;
+    }
+
     protected void showDialog(Bundle state) {
-        super.showDialog(state);
-
-        final ColorPickerDialog pickerDialog = (ColorPickerDialog) getDialog();
-    }
-
-    @Override
-    protected Dialog createDialog() {
-        final ColorPickerDialog pickerDialog = new ColorPickerDialog(
-                getContext(), R.style.Theme_ColorPickerDialog,
-                getValue(), mAndroidColor, mDarkKatColor);
-
+        mDialog = new ColorPickerDialog(getContext(), mValue);
+        mDialog.setOnColorChangedListener(this);
         if (mAlphaSliderEnabled) {
-            pickerDialog.setAlphaSliderVisible(true);
+            mDialog.setAlphaSliderVisible(true);
         }
-        pickerDialog.setOnColorChangedListener(this);
-
-        return pickerDialog;
+        if (state != null) {
+            mDialog.onRestoreInstanceState(state);
+        }
+        mDialog.show();
     }
+
 
     /**
      * Toggle Alpha Slider visibility (by default it's disabled)
-     * 
+     *
      * @param enable
      */
     public void setAlphaSliderEnabled(boolean enable) {
         mAlphaSliderEnabled = enable;
-    }
-
-    public void setDefaultColors(int androidColor, int darkkatColor) {
-        mAndroidColor = androidColor;
-        mDarkKatColor = darkkatColor;
     }
 
     /**
@@ -235,7 +199,7 @@ public class ColorPickerPreference extends DialogPreference implements
 
     /**
      * For custom purposes. Not used by ColorPickerPreferrence
-     * 
+     *
      * @param color
      * @author Unknown
      */
@@ -266,7 +230,7 @@ public class ColorPickerPreference extends DialogPreference implements
 
     /**
      * For custom purposes. Not used by ColorPickerPreferrence
-     * 
+     *
      * @param argb
      * @throws NumberFormatException
      * @author Unknown
@@ -294,5 +258,60 @@ public class ColorPickerPreference extends DialogPreference implements
 
         return Color.argb(alpha, red, green, blue);
     }
-}
 
+    @Override
+    protected Parcelable onSaveInstanceState() {
+        final Parcelable superState = super.onSaveInstanceState();
+        if (mDialog == null || !mDialog.isShowing()) {
+            return superState;
+        }
+
+        final SavedState myState = new SavedState(superState);
+        myState.dialogBundle = mDialog.onSaveInstanceState();
+        return myState;
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Parcelable state) {
+        if (state == null || !(state instanceof SavedState)) {
+            // Didn't save state for us in onSaveInstanceState
+            super.onRestoreInstanceState(state);
+            return;
+        }
+
+        SavedState myState = (SavedState) state;
+        super.onRestoreInstanceState(myState.getSuperState());
+        showDialog(myState.dialogBundle);
+    }
+
+    private static class SavedState extends BaseSavedState {
+        Bundle dialogBundle;
+
+        public SavedState(Parcel source) {
+            super(source);
+            dialogBundle = source.readBundle();
+        }
+
+        @Override
+        public void writeToParcel(Parcel dest, int flags) {
+            super.writeToParcel(dest, flags);
+            dest.writeBundle(dialogBundle);
+        }
+
+        public SavedState(Parcelable superState) {
+            super(superState);
+        }
+
+        @SuppressWarnings("unused")
+        public static final Parcelable.Creator<SavedState> CREATOR =
+                new Parcelable.Creator<SavedState>() {
+            public SavedState createFromParcel(Parcel in) {
+                return new SavedState(in);
+            }
+
+            public SavedState[] newArray(int size) {
+                return new SavedState[size];
+            }
+        };
+    }
+}

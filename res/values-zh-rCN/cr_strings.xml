@@ -130,6 +130,13 @@
     <string name="clock_font_medium_italic">中斜体</string>
     <string name="clock_font_black">黑体</string>
     <string name="clock_font_black_italic">黑斜体</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript黑体</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif标准</string>
+    <string name="clock_font_notoserif_italic">NotoSerif斜体</string>
+    <string name="clock_font_notoserif_bold">NotoSerif黑体</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif黑斜体</string>
     <string name="clock_font_size_title">字体大小</string>
     <string name="status_bar_show_clock_second_title">时钟秒数</string>
     <string name="clock_font_size_4">4</string>
@@ -199,8 +206,9 @@
     <string name="dim_nav_buttons_touch_anywhere_title">监听整个触摸屏</string>
     <string name="dim_nav_buttons_touch_anywhere_summary_on">触摸屏幕的任意位置将取消降低按钮亮度</string>
     <string name="dim_nav_buttons_touch_anywhere_summary_off">只有触摸导航栏才会取消降低按钮亮度</string>
-    <!-- Time-context headers in notification header -->
-    <string name="contextual_title">上下文标题</string>
+    <!-- Status bar header -->
+    <string name="status_bar_header_title">状态栏标头</string>
+    <string name="status_bar_header_font_style_title">标头字体样式</string>
     <string name="status_bar_custom_header_title">自定义标题图片</string>
     <string name="status_bar_custom_header_summary">启用通知面板标题图片</string>
     <string name="status_bar_custom_header_default_title">选择你的图片</string>
@@ -272,6 +280,13 @@
     <string name="status_bar_weather_font_medium_italic">中等斜体</string>
     <string name="status_bar_weather_font_black">黑体</string>
     <string name="status_bar_weather_font_black_italic">黑斜体</string>
+    <string name="status_bar_weather_font_dancingscript">DancingScript</string>
+    <string name="status_bar_weather_font_dancingscript_bold">DancingScript黑体</string>
+    <string name="status_bar_weather_font_comingsoon">ComingSoon</string>
+    <string name="status_bar_weather_font_notoserif">NotoSerif标准</string>
+    <string name="status_bar_weather_font_notoserif_italic">NotoSerif斜体</string>
+    <string name="status_bar_weather_font_notoserif_bold">NotoSerif黑体</string>
+    <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif黑斜体</string>
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">天气</string>
     <string name="lock_screen_weather_settings_title">锁屏天气</string>
@@ -313,6 +328,10 @@
     <string name="show_carrier_keyguard">锁屏状态运营商</string>
     <string name="show_carrier_statusbar">状态栏运营商</string>
     <string name="show_carrier_enabled">启用</string>
+    <string name="status_bar_carrier_position">标签位置</string>
+    <string name="status_bar_logo_position_left">左侧</string>
+    <string name="status_bar_logo_position_right">右侧</string>
+    <string name="status_bar_carrier_font_style_title">字体样式</string>
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">壁纸</string>
     <string name="lockscreen_wallpaper_summary">设置锁屏壁纸</string>
@@ -898,11 +917,11 @@
     <string name="lock_clock_font_title">锁屏时钟字体</string>
     <string name="lock_clock_font_summary">更改默认的锁屏时钟部件的字体</string>
     <string name="lock_clock_font_dialog_title">选择锁屏时钟字体</string>
-    <string name="lock_clock_font_normal">Roboto(默认)</string>
+    <string name="lock_clock_font_normal">Roboto</string>
     <string name="lock_clock_font_bold">Roboto加粗</string>
     <string name="lock_clock_font_italic">Roboto斜体</string>
     <string name="lock_clock_font_bold_italic">Roboto粗斜体</string>
-    <string name="lock_clock_font_light_normal">Roboto细体</string>
+    <string name="lock_clock_font_light_normal">Roboto细体(默认)</string>
     <string name="lock_clock_font_light_italic">Roboto细斜体</string>
     <string name="lock_clock_font_thin_normal">Roboto瘦体</string>
     <string name="lock_clock_font_thin_italic">Roboto瘦斜体</string>
@@ -1008,4 +1027,12 @@
     <string name="selinux_permissive_title">Permissive</string>
     <string name="selinux_enforcing_title">Enforcing</string>
     <string name="selinux_permissive_toast_title">Selinux模式设置为permissive!</string>
+     <!-- 4G LTE switch -->
+    <string name="show_fourg_title">显示4G替代LTE</string>
+    <string name="show_fourg_summary">状态栏指示器显示4G,需要重新启动生效.</string>
+    <string name="statusbar_tuner_category_title">状态栏处隐藏</string>
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">锁屏条目</string>
+    <string name="hide_lockscreen_clock_title">显示锁屏时钟</string>
+    <string name="hide_lockscreen_date_title">显示锁屏日期</string>
 </resources>

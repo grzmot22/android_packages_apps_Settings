@@ -32,6 +32,16 @@
     <string name="dlg_reset_temasek">Temasek</string>
     <string name="cat_colors_title">Настроки цвета уведомлений</string>
 
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Палитра цветов</string>
+    <string name="press_color_to_apply">Нажмите на выбранный цвет для применения</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Применить</string>
+    <string name="color_default">По умолчанию</string>
+
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">Процессор</string>
     <string name="mem_info">Память</string>
@@ -44,15 +54,6 @@
 
     <!-- OTA update -->
     <string name="ota_title">OTA-обновление</string>
-
-    <!-- Color picker -->
-    <string name="dialog_color_picker_title">Палитра цветов</string>
-    <string name="press_color_to_apply">Нажмите на выбранный цвет для применения</string>
-    <string name="palette_darkkat_title">Temasek</string>
-    <string name="palette_material_title">Material</string>
-    <string name="palette_rgb_title">RGB</string>
-    <string name="reset_android_title">Android по умолчанию</string>
-    <string name="reset_darkkat_title">DarkKat по умолчанию</string>
 
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Индикатор суперпользователя</string>
@@ -235,9 +236,10 @@
     <string name="dim_nav_buttons_touch_anywhere_summary_on">Прикосновение к любой части экрана зажжет кнопки обратно</string>
     <string name="dim_nav_buttons_touch_anywhere_summary_off">Только прикосновение к панели навигации зажигает кнопки</string>
 
-    <!-- Time-context headers in notification header -->
-    <string name="contextual_title">Динамические заголовки</string>
-    <string name="status_bar_custom_header_title">Динамический фон заголовка</string>
+    <!-- Status bar header -->
+    <string name="status_bar_header_title">Заголовок быстрых настроек</string>
+    <string name="status_bar_header_font_style_title">Стиль шрифта</string>
+    <string name="status_bar_custom_header_title">Динамический фон</string>
     <string name="status_bar_custom_header_summary">Изменение заголовка панели уведомлений в зависимости от времени суток</string>
     <string name="status_bar_custom_header_default_title">Выбрать изображения</string>
     <string name="custom_header_image_0">По умолчанию</string>
@@ -365,6 +367,7 @@
     <string name="status_bar_carrier_position">Расположение в строке состояния</string>
     <string name="status_bar_logo_position_left">Слева</string>
     <string name="status_bar_logo_position_right">Справа</string>
+    <string name="status_bar_carrier_font_style_title">Стиль шрифта</string>
 
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">Обои</string>
@@ -814,25 +817,6 @@
     <string name="pref_scrollingcache_default_disable">Отключить по умолчанию</string>
     <string name="pref_scrollingcache_force_disable">Принудительно отключить</string>
 
-    <!-- AOKP custom system animations -->  
-    <string name="aokp_animation_title">Системные анимации</string>
-    <string name="aokp_animation_summary">Настройка анимации от AOKP</string>
-    <string name="animation_exit_only_title">Только анимация входа</string>
-    <string name="animation_reverse_exit_title">Обратная анимация выхода</string>
-    <string name="activity_open_title">Анимация открытия раздела</string>
-    <string name="activity_close_title">Анимация закрытия раздела</string>
-    <string name="task_open_title">Анимация открытия задачи</string>
-    <string name="task_close_title">Анимация закрытия задачи</string>
-    <string name="task_move_to_front_title">Анимация перехода на передний план</string>
-    <string name="task_move_to_back_title">Анимация возврата на задний план</string>
-    <string name="wallpaper_open_title">Анимация открытия обоев</string>
-    <string name="wallpaper_close_title">Анимация закрытия обоев</string>
-    <string name="wallpaper_intra_open_title">Анимация открытия меню запущеных приложений</string>
-    <string name="wallpaper_intra_close_title">Анимация закрытия меню запущеных приложений</string>
-    <string name="task_open_behind_title">Анимация фонового открытия приложения</string>
-    <string name="animation_duration_title">Продолжительность анимации</string>
-    <string name="animation_duration_default">По умолчанию</string>
-
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Расширенные настройки</string>
     <string name="disable_fullscreen_keyboard_title">Отключить полноэкранную клавиатуру</string>
@@ -1130,7 +1114,7 @@
 
     <!-- Dashboard tileview double lines -->
     <string name="dashboard_category">Панель настроек</string>
-    <string name="dashboard_tileview_double_lines_title">Отображение названия пунктов \"Панели настроек\"</string>
+    <string name="dashboard_tileview_double_lines_title">Отображение названия пунктов</string>
     <string name="dashboard_tileview_double_lines_summary_on">Отображать названия пунктов в одну строку</string>
     <string name="dashboard_tileview_double_lines_summary_off">Отображать названия пунктов в две строки</string>
 
@@ -1146,5 +1130,10 @@
     <string name="show_fourg_title">Показать 4G вместо LTE</string>
     <string name="show_fourg_summary">Заменяет LTE индикатор в строке состояния на 4G. Необходима перезагрузка.</string>
     <string name="statusbar_tuner_category_title">Настройка строки состояния</string>
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Элементы экрана блокировки</string>
+    <string name="hide_lockscreen_clock_title">Показывать часы</string>
+    <string name="hide_lockscreen_date_title">Показывать дату</string>
 
 </resources>
