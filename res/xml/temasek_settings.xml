@@ -25,12 +25,6 @@
          android:fragment="com.android.settings.temasek.AppCircleBar"
          android:title="@string/app_circle_bar_title"/>
 
-    <!-- App sidebar -->
-    <PreferenceScreen
-         android:key="app_sidebar"
-         android:fragment="com.android.settings.temasek.AppSidebar"
-         android:title="@string/app_sidebar_title"/>
-
     <!-- Clock widget -->
     <PreferenceScreen
          android:key="lock_clock"
