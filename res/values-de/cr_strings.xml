@@ -26,10 +26,16 @@
     <string name="additional_options_title">Zusätzliche Optionen</string>
     <string name="general_options_title">Allgemein</string>
     <string name="screen_and_animations_title">Bildschirm und Animationen</string>
+    <string name="quicksettings_title">Schnelleinstellungen</string>
+    <string name="qs_brightness_slider_title">Zeige Helligkeitsregler</string>
+    <string name="statusbar_notifications_title">Benachrichtigungen</string>
+    <string name="dlg_reset_temasek">Temasek</string>
+    <string name="cat_colors_title">Benachrichtigungsfarben anpassen</string>
+
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Farbauswahl</string>
-    <string name="press_color_to_apply">Tippen um Farbe zu wählen</string>
+    <string name="press_color_to_apply">Tippen, um Farbe zu wählen</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -90,6 +96,10 @@
     <string name="recents_show_fullscreen">Anwendungsverlauf im Vollbildschirm-Modus</string>
     <string name="recents_fullscreen_summary_enabled">Vollbild-Modus deaktivieren</string>
     <string name="recents_fullscreen_summary_disabled">Vollbild-Modus aktivieren</string>
+    <string name="recents_full_screen_clock_title">Zeige Uhr</string>
+    <string name="recents_full_screen_clock_summary">Zeige Uhr im Vollbildmodus</string>
+    <string name="recents_full_screen_date_title">Zeige Datum</string>
+    <string name="recents_full_screen_date_summary">Zeige Datum im Vollbildmodus</string>
 
     <!-- OmniSwitch -->
     <string name="omniswitch_settings_title">OmniSwitch</string>
@@ -186,7 +196,7 @@
     <string name="navbar_button_tint_title">Navigations Button Farbe</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Stanby bei doppeltem tippen der Navigationsleiste</string>
+    <string name="double_tap_sleep_nav_bar_title">Standby bei doppeltem tippen der Navigationsleiste</string>
     <string name="double_tap_sleep_nav_bar_summary">Navigationsleiste doppeltippen, um das Gerät in Standby zu versetzen</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
@@ -283,6 +293,15 @@
     <string name="status_bar_weather_font_condensed_bold_italic">Schmal, fett und kursiv</string>
     <string name="status_bar_weather_font_medium">Mittel</string>
     <string name="status_bar_weather_font_medium_italic">Mittel und kursiv</string>
+    <string name="status_bar_weather_font_black">Schwarz</string>
+    <string name="status_bar_weather_font_black_italic">Schwarz und kursiv</string>
+    <string name="status_bar_weather_font_dancingscript">DancingScript</string>
+    <string name="status_bar_weather_font_dancingscript_bold">DancingScript Fett</string>
+    <string name="status_bar_weather_font_comingsoon">Kommt später</string>
+    <string name="status_bar_weather_font_notoserif">NotoSerif Normal</string>
+    <string name="status_bar_weather_font_notoserif_italic">NotoSerif Kursiv</string>
+    <string name="status_bar_weather_font_notoserif_bold">NotoSerif Fett</string>
+    <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif Fett und Kursiv</string>
 
     <!-- Lockscreen weather -->
     <string name="status_bar_show_weather_category">Wetter</string>
@@ -325,6 +344,13 @@
     <string name="dlg_reset_android">Ok</string>
     <string name="colors_title">Farben</string>
     <string name="text_title">Text</string>
+    
+    
+    <!-- Max Lockscreen Notification count -->
+    <string name="weather_cat_notifications_title">Benachrichtigungen</string>
+    <string name="lockscreen_maxnotif_title">Sperrbildschirm Benachrichtigungszähler</string>
+    <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
+    <string name="lockscreen_maxnotif_config">Maximale Benachrichtigungen auf dem Sperbildschirm</string>
 
     <!-- Show carrier label and custom -->
 
@@ -339,6 +365,10 @@
     <string name="show_carrier_keyguard">Nur Sperrbildschirm</string>
     <string name="show_carrier_statusbar">Nur Statusleiste</string>
     <string name="show_carrier_enabled">Sperrbildschirm &amp; Statusleiste</string>
+    <string name="status_bar_carrier_position">Label Ort</string>
+    <string name="status_bar_logo_position_left">Links</string>
+    <string name="status_bar_logo_position_right">Rechts</string>
+    <string name="status_bar_carrier_font_style_title">Schriftart</string>
 
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">Hintergrundbild</string>
@@ -922,10 +952,10 @@
 
     <!-- Temasek Extra Info -->
     <string name="temaextrainfo">Weitere Informationen</string>
-    <string name="temaextrainfo_summary">Weitere Informationen für das Gerät</string>
+    <string name="temaextrainfo_summary">Weitere Informationen über CPU, Display etc.</string>
 
     <!-- Doze options -->
-    <string name="display_category_doze_options_title">Ambient Bildschirm</string>
+    <string name="display_category_doze_options_title">Ambient Display</string>
     <string name="doze_settings_title">Erweiterte Ambient Display Einstellungen</string>
     <string name="doze_timeout_title">Pulsieren der Benachrichtigungen auf Bildschirm</string>
     <string name="doze_timeout_summary">Zeit für das Pulsieren auf dem Display</string>
@@ -935,14 +965,14 @@
     <string name="doze_trigger_sigmotion_title">Significant motion trigger</string>
     <string name="doze_trigger_sigmotion_summary_on">Doze pulse will be triggered by significant motion sensor events</string>
     <string name="doze_trigger_sigmotion_summary_off">Significant motion sensor will not be utilized as a triggering mechanism</string>
-    <string name="doze_trigger_notification_title">Notification trigger</string>
-    <string name="doze_trigger_notification_summary_on">Doze pulse will be triggered by notifications</string>
+    <string name="doze_trigger_notification_title">Benachrichtigungsauslöser</string>
+    <string name="doze_trigger_notification_summary_on">Doze Puls wird durch Benachrichtigungen ausgelöst</string>
     <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
     <string name="doze_schedule_title">Doze schedule</string>
     <string name="doze_schedule_summary_on">Predefined doze repeat intervals (normally [1s,10s,30s,60s,120s]) will be used (default)</string>
-    <string name="doze_schedule_summary_off">Doze will only pulse once per notification</string>
-    <string name="doze_brightness_title">Helligkeits Level</string>
-    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
+    <string name="doze_schedule_summary_off">Schlaf wird nur einmal pro Benachrichtigung unterbrochen</string>
+    <string name="doze_brightness_title">Helligkeitsstufe</string>
+    <string name="doze_brightness_summary">Helligkeitsstufe von Displays (% von maximal erlaubter Helligkeit)</string>
 
     <!-- Doze notification color invert -->
     <string name="doze_notification_color_invert_title">Farbumkehrung</string>
@@ -951,6 +981,81 @@
 
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Task Manager</string>
-    <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area.</string>
+    <string name="enable_task_manager_summary">Task Manager Button in der Statusleiste aktivieren oder deaktivieren</string>
+    
+    <!-- Notification fragment -->
+    <string name="battery_saver_notif_title">Energiespar-Benachrichtigung</string>
+    <string name="battery_saver_notif_summary">Zeige Energiespar-Benachrichtigung, wenn aktiviert</string>
+    <string name="battery_low_notif_title">Niedriger Akkustand Benachrichtigung</string>
+    <string name="battery_low_notif_summary">Zeige Benachrichtigung für niedrigen Akkustand</string>
+    
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot Ton</string>
+    <string name="screenshot_sound_summary">Spielt einen Ton ab, wenn ein Screenshot aufgenommen wird</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Statistik zurücksetzen</string>
+    <string name="battery_stats_message">Akkustatistik wird zurückgesetzt</string>
+    <string name="ok_string">OK</string>
+    
+    <!-- Notification color settings -->
+    <string name="notification_color_settings_title">Benachrichtigungsfarbe</string>
+    <string name="notification_drawer_clear_all_icon_color_title">Lösche alle Symbole</string>
+
+    <!-- QS shade transparency -->
+    <string name="qs_transparent_shade">QS Schatten Transparenz</string>
+
+    <!-- QS header transparency -->
+    <string name="qs_transparent_header">QS Kopf Transparenz</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Sichere Headset Lautstärke</string>
+    <string name="safe_headset_volume_summary">Verhindet laute Töne, wenn das Headset das erste mal verbunden wird</string>
+    <string name="safe_headset_volume_warning_dialog_text">Das Anhören von lauten Tönen kann das Gehör schädigen. Deaktiviere es auf eigene Gefahr!</string>
+    
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Sperrbildschirm Taschenlampe</string>
+    <string name="keyguard_torch_summary">Langes Drücken des Power-Buttons schaltet die Taschenlampe an.</string>
+    
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_category">Atmende Benachrichtigungen</string>
+    <string name="breathing_notifications_title">Atmende Benachrichtigungen</string>
+    <string name="missed_call_breath_title">Atmende Benachrichtigungen für verpassten Anruf</string>
+    <string name="missed_call_breath_summary">Zeigt eine atmnde Benachrichtigung für verpasste Anrufe</string>
+    <string name="voicemail_breath_title">Atmende Benachrichtigungen für verpasste Voicemail</string>
+    <string name="voicemail_breath_summary">Zeigt eine atmnde Benachrichtigung für verpasste Voicemail</string>
+    
+    <!-- Dashboard columns -->
+    <string name="dashboard_columns_title">Instrumentenspalte</string>
+    <string name="dashboard_columns_summary">Änder die Anzahl der angezeigten Spalten in der Instrumentenanzeige</string>
+    <string name="dashboard_columns_dialog_title">Wähle Instrumenten SPalten</string>
+    <string name="dashboard_columns_default">Eine (standart)</string>
+    <string name="dashboard_columns_two">Zwei</string>
+    <string name="dashboard_columns_three">Drei</string>
+
+    <!-- Dashboard tileview double lines -->
+    <string name="dashboard_category">Instrumenten-Einstellungen</string>
+    <string name="dashboard_tileview_double_lines_title">Dashboard tile view title</string>
+    <string name="dashboard_tileview_double_lines_summary_on">Show dashboard tile titles in 1 line</string>
+    <string name="dashboard_tileview_double_lines_summary_off">Show dashboard tile titles in 2 lines</string>
+    
+        <!-- Selinux Switch -->
+    <string name="selinux_switch_title">Selinux Schalter Optionen</string>
+    <string name="selinux_switch_summary">SELinux bringt einige Kernel Modifikationen. Das Umschalten kann einige unerwünschte Effekte nach sich ziehen. Benutzen auf eigene Gefahr.</string>
+    <string name="selinux_title">Selinux Modus</string>
+    <string name="selinux_permissive_title">Permissive</string>
+    <string name="selinux_enforcing_title">Enforcing</string>
+    <string name="selinux_permissive_toast_title">Selinux wurde auf permissive gestellt!</string>
+    
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Zeig 4G anstatt LTE</string>
+    <string name="show_fourg_summary">Ersetzt LTE Indikator mit 4G. Neustart wird benötigt.</string>
+    <string name="statusbar_tuner_category_title">Verstecke von der Statusleiste</string>
+    
+        <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Sperrbildschirm Gegenstände</string>
+    <string name="hide_lockscreen_clock_title">Zeige Sperrbildschirm Uhrzeit</string>
+    <string name="hide_lockscreen_date_title">Zeige Sperrbildschirm Datum</string>
+
 
 </resources>
