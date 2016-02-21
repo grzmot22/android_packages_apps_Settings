@@ -1166,7 +1166,7 @@
 
     <!-- Dashboard columns -->
     <string-array name="dashboard_columns_entries">
-        <item>@string/dashboard_columns_default</item>
+        <item>@string/dashboard_columns_one</item>
         <item>@string/dashboard_columns_two</item>
         <item>@string/dashboard_columns_three</item>
     </string-array>
@@ -1190,6 +1190,30 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <!-- QS Tiles Columns -->
+    <string-array name="qs_num_columns_values" translatable="false">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="qs_num_columns_entries">
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
+
+    <!-- QS Tiles Rows -->
+    <string-array name="qs_num_rows_values" translatable="false">
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="qs_num_rows_entries">
+        <item>Three</item>
+        <item>Four</item>
     </string-array>
 
 </resources>

@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V4.3</string>
+    <string name="temasek_version_default">Build V4.5</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MMB29U Release 13</string>
 
@@ -1082,18 +1082,17 @@
     <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
 
     <!-- Dashboard columns -->
+    <string name="dashboard_category">Dashboard settings</string>
     <string name="dashboard_columns_title">Dashboard Columns</string>
     <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
     <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
-    <string name="dashboard_columns_default">One (default)</string>
+    <string name="dashboard_columns_one">One</string>
     <string name="dashboard_columns_two">Two</string>
     <string name="dashboard_columns_three">Three</string>
-
-    <!-- Dashboard tileview double lines -->
-    <string name="dashboard_category">Dashboard settings</string>
-    <string name="dashboard_tileview_double_lines_title">Dashboard tile view title</string>
-    <string name="dashboard_tileview_double_lines_summary_on">Show dashboard tile titles in 1 line</string>
-    <string name="dashboard_tileview_double_lines_summary_off">Show dashboard tile titles in 2 lines</string>
+    <string name="dashboard_tileview_double_lines_title">Dashboard title view</string>
+    <string name="dashboard_tileview_double_lines_summary">Show dashboard tile titles in 2 lines</string>
+    <string name="dashboard_tileview_dividers_title">Dashboard dividers</string>
+    <string name="dashboard_tileview_dividers_summary">Hide dashboard tile dividers</string>
 
     <!-- Selinux Switch -->
     <string name="selinux_switch_title">Selinux Switch options</string>
@@ -1120,5 +1119,13 @@
     <string name="smart_pulldown_dismissable">No dismissable</string>
     <string name="smart_pulldown_persistent">No persistent</string>
     <string name="smart_pulldown_all">No dismissable or persistent</string>
+
+    <!-- QS Tiles Columns -->
+    <string name="qs_num_columns_title">Number of QS tiles per row</string>
+    <string name="qs_num_columns_showing">%1$s tiles per row are shown</string>
+
+    <!-- QS Tiles Rows -->
+    <string name="qs_num_rows_title">Number of QS rows</string>
+    <string name="qs_num_rows_showing">%1$s rows are shown</string>
 
 </resources>
