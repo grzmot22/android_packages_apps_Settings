@@ -31,6 +31,7 @@
     <string name="statusbar_notifications_title">Уведомления</string>
     <string name="dlg_reset_temasek">Temasek</string>
     <string name="cat_colors_title">Настроки цвета уведомлений</string>
+    <string name="cancel">Отмена</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Палитра цветов</string>
@@ -1120,5 +1121,15 @@
     <!-- QS Tiles Rows -->
     <string name="qs_num_rows_title">Количество строк</string>
     <string name="qs_num_rows_showing">Отображать строк: %1$s</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors_title">Цвета экрана блокировки</string>
+    <string name="lockscreen_owner_info_color">Сведения о владельце</string>
+    <string name="lockscreen_alarm_color">Будильник</string>
+    <string name="lockscreen_clock_color">Часы</string>
+    <string name="lockscreen_clock_date_color">Дата</string>
+    <string name="lockscreen_colors_reset_title">Сброс текущих настроек цвета</string>
+    <string name="lockscreen_colors_reset_message">Сбросить цвета на значения по умолчанию?</string>
+    <string name="yes">Да</string>
 
 </resources>
