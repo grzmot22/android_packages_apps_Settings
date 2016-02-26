@@ -9,15 +9,15 @@
     <string name="changelog_temasek_error">無法加載更新日誌</string>
     <!-- General strings -->
     <string name="attention">注意</string>
-    <string name="reset">重置</string>
+    <string name="reset">重設</string>
     <string name="help">幫助</string>
     <string name="default_string">默認</string>
     <string name="enabled">啟用</string>
     <string name="disabled">禁用</string>
     <string name="ok">是</string>
-    <string name="reset_message">重置全部選項為默認值?</string>
+    <string name="reset_message">重設全部選項為默認值?</string>
     <string name="extras_temasek_settings">Temasek擴展</string>
-    <string name="reset_default_message">重置為默認值</string>
+    <string name="reset_default_message">重設為默認值</string>
     <string name="additional_options_title">附加選項</string>
     <string name="general_options_title">一般</string>
     <string name="screen_and_animations_title">屏幕和動畫</string>
@@ -109,8 +109,8 @@
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">時鐘</string>
     <string name="clock_color_title">顏色</string>
-    <string name="status_bar_clock_style_reset">重置顏色</string>
-    <string name="status_bar_clock_style_reset_message">重置時鐘顏色?</string>
+    <string name="status_bar_clock_style_reset">重設顏色</string>
+    <string name="status_bar_clock_style_reset_message">重設時鐘顏色?</string>
     <string name="clock_font_style_title">字體</string>
     <string name="clock_font_normal">標準</string>
     <string name="clock_font_italic">斜體</string>
@@ -164,7 +164,7 @@
     <string name="navbar_enable_bar_title">導航欄按鈕</string>
     <string name="navbar_enable_bar_summary">啟用屏幕導航欄按鈕</string>
     <string name="navbar_style_dimen_title">導航欄尺寸</string>
-    <string name="navbar_dimensions_reset_message">重置所有條目尺寸為默認值?</string>
+    <string name="navbar_dimensions_reset_message">重設所有條目尺寸為默認值?</string>
     <string name="navigation_bar_height_title">導航欄高度</string>
     <string name="navigation_bar_height_summary">當橫屏時導航欄的高度</string>
     <string name="navigation_bar_height_landscape_title">豎屏導航欄高度</string>
@@ -237,8 +237,8 @@
     <string name="network_traffic_hidearrow_summary">網絡活動時隱藏箭頭</string>
     <string name="network_traffic_autohide_threshold">活動閥值</string>
     <string name="network_traffic_color_style">顏色樣式</string>
-    <string name="network_traffic_color_reset">重置顏色</string>
-    <string name="network_traffic_color_reset_message">重置網絡流量顏色為默認值?</string>
+    <string name="network_traffic_color_reset">重設顏色</string>
+    <string name="network_traffic_color_reset_message">重設網絡流量顏色為默認值?</string>
     <!-- Battery Bar -->
     <string name="battery_icon">電池圖標樣式</string>
     <string name="battery_not_title">在下拉通知中顯示電池圖標</string>
@@ -307,7 +307,7 @@
     <string name="position_right_title">右側</string>
     <string name="position_centered_title">居中</string>
     <string name="hidden_title">隱藏</string>
-    <string name="dlg_reset_values_message">重置為默認值?</string>
+    <string name="dlg_reset_values_message">重設為默認值?</string>
     <string name="dlg_reset_android">是</string>
     <string name="colors_title">顏色</string>
     <string name="text_title">文本</string>
@@ -337,7 +337,7 @@
     <string name="lockscreen_wallpaper_summary">設定鎖定螢幕界面壁紙</string>
     <string name="lockscreen_wallpaper_set_title">設定鎖定螢幕界面壁紙</string>
     <string name="lockscreen_wallpaper_clear_title">清除鎖定螢幕界面壁紙</string>
-    <string name="reset_lockscreen_wallpaper">重置為默認值</string>
+    <string name="reset_lockscreen_wallpaper">重設為默認值</string>
     <!-- Lockscreen see through -->
     <string name="lockscreen_see_through_title">鎖定螢幕界面模糊</string>
     <string name="lockscreen_see_through_summary">模糊顯示鎖定螢幕界面之後的內容.</string>
@@ -441,9 +441,9 @@
     <string name="shortcut_action_select_action_longpress">選擇長按操作:</string>
     <string name="shortcut_action_select_action">選擇操作:</string>
     <string name="shortcut_action_select_action_newaction">選擇新的操作:</string>
-    <string name="shortcut_action_reset">重置</string>
+    <string name="shortcut_action_reset">重設</string>
     <string name="shortcut_action_add">添加</string>
-    <string name="shortcut_action_reset_message">重置所有條目為默認值?</string>
+    <string name="shortcut_action_reset_message">重設所有條目為默認值?</string>
     <string name="shortcut_action_max">已達到最大輸入條目</string>
     <string name="shortcut_action_warning">警告</string>
     <string name="shortcut_action_warning_message">不能刪除最後一個條目</string>
@@ -454,7 +454,7 @@
     <string name="shortcut_action_help_button">按鈕</string>
     <string name="shortcut_action_help_app">應用程式</string>
     <string name="shortcut_action_help_icon">在選擇圖標時，會帶來定制選項</string>
-    <string name="shortcut_action_help_main">要添加一個 %1$s, 可選擇添加圖標. 如果 %1$s 是已添加過的, 選擇行將會改變目標%2$s\n\n要移除一個 %1$s, 可水平向左或者向右滑動. 想重新排列列表中的 %1$s,可按住左側圖標垂直拖拽更改順序.\n\n想清除或重置為默認，可選擇重置選項.</string>
+    <string name="shortcut_action_help_main">要添加一個 %1$s, 可選擇添加圖標. 如果 %1$s 是已添加過的, 選擇行將會改變目標%2$s\n\n要移除一個 %1$s, 可水平向左或者向右滑動. 想重新排列列表中的 %1$s,可按住左側圖標垂直拖拽更改順序.\n\n想清除或重設為默認，可選擇重設選項.</string>
     <string name="shortcut_action_help_delete_last_entry">移除列表中的全部%1$s 將會完全禁用該功能.</string>
     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">移除列表中的全部 %1$s 將會完全禁用第二層pie.</string>
     <string name="shortcuts_applications">應用程式程序</string>
@@ -754,7 +754,7 @@
     <string name="volume_steps_ring_title">音量級別: 鈴聲</string>
     <string name="volume_steps_system_title">音量級別: 系統</string>
     <string name="volume_steps_voice_call_title">音量級別: 語音呼叫</string>
-    <string name="volume_steps_reset">重置</string>
+    <string name="volume_steps_reset">重設</string>
     <string name="volume_steps_60">60</string>
     <string name="volume_steps_45">45</string>
     <string name="volume_steps_30">30</string>
@@ -939,8 +939,8 @@
     <string name="screenshot_sound_title">截圖聲音</string>
     <string name="screenshot_sound_summary">截圖時播放音效</string>
      <!-- Battery stats reset -->
-    <string name="battery_stats_reset">重置統計數據</string>
-    <string name="battery_stats_message">電池歷史統計記錄將會被重置</string>
+    <string name="battery_stats_reset">重設統計數據</string>
+    <string name="battery_stats_message">電池歷史統計記錄將會被重設</string>
     <string name="ok_string">確定</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">顯示CPU信息</string>
@@ -1014,6 +1014,18 @@
     <string name="smart_pulldown_persistent">非持久</string>
     <string name="smart_pulldown_all">不可取消或非持久</string>
     <!-- QS Tiles Columns -->
-    <string name="qs_num_columns_title">快速設定每行磁貼數</string>
-    <string name="qs_num_columns_showing">每行顯示%1$s個磁貼</string>
+    <string name="qs_num_columns_title">快速設定每行瓷磚數</string>
+    <string name="qs_num_columns_showing">每行顯示%1$s個瓷磚</string>
+	<!-- QS Tiles Rows -->
+    <string name="qs_num_rows_title">瓷磚數目</string>
+    <string name="qs_num_rows_showing">已顯示%1$s個瓷磚</string>
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors_title">鎖定螢幕界面顏色</string>
+    <string name="lockscreen_owner_info_color">持有者信息</string>
+    <string name="lockscreen_alarm_color">鬧鐘</string>
+    <string name="lockscreen_clock_color">時鐘</string>
+    <string name="lockscreen_clock_date_color">日期</string>
+    <string name="lockscreen_colors_reset_title">重設鎖定螢幕界面顏色</string>
+    <string name="lockscreen_colors_reset_message">你確定要重設這些顏色為默認?</string>
+    <string name="yes">是</string>
 </resources>
