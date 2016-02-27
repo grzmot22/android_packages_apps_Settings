@@ -26,6 +26,7 @@
     <string name="statusbar_notifications_title">通知</string>
     <string name="dlg_reset_temasek">Temasek</string>
     <string name="cat_colors_title">自定义通知颜色</string>
+    <string name="cancel">取消</string>
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">内存</string>
@@ -1016,4 +1017,16 @@
     <!-- QS Tiles Columns -->
     <string name="qs_num_columns_title">快速设置每行磁贴数</string>
     <string name="qs_num_columns_showing">每行显示%1$s个磁贴</string>
+    <!-- QS Tiles Rows -->
+    <string name="qs_num_rows_title">快速设置行数</string>
+    <string name="qs_num_rows_showing">显示%1$s行</string>
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors_title">锁屏界面颜色</string>
+    <string name="lockscreen_owner_info_color">所有人信息</string>
+    <string name="lockscreen_alarm_color">闹钟</string>
+    <string name="lockscreen_clock_color">时钟</string>
+    <string name="lockscreen_clock_date_color">日期</string>
+    <string name="lockscreen_colors_reset_title">重置锁屏界面颜色</string>
+    <string name="lockscreen_colors_reset_message">你确定想要重置颜色为默认值?</string>
+    <string name="yes">确定</string>
 </resources>
