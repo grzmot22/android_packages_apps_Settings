@@ -333,7 +333,7 @@
 
     <string name="carrier_options">Nombre de operador</string>
     <string name="custom_carrier_label_title">Nombre de operador personalizado</string>
-    <string name="custom_carrier_label_explain">Por favor, introduzca una nueva etiqueta. Dejar en blanco para volver las predetermiandas.</string>
+    <string name="custom_carrier_label_explain">Por favor, introduzca una nueva etiqueta. Dejar en blanco para volver a las predeterminadas.</string>
     <string name="custom_carrier_label_notset">Nombre de operador personalizado no elegido</string>
     <string name="status_bar_carrier_color">Color de nombre de operador</string>
     <string name="status_bar_carrier_size">Tamaño del texto del nombre de operador</string>
@@ -1131,4 +1131,35 @@
     <string name="show_fourg_summary">Reemplaza LTE por 4G en el indicador de la barra de estado. Se requiere reiniciar el sistema para surgirr efecto.</string>
     <string name="statusbar_tuner_category_title">Ocultar los elementos de la barra de estado</string>
 
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Elementos en pantalla de bloqueo</string>
+    <string name="hide_lockscreen_clock_title">Mostrar reloj en pantalla de bloqueo</string>
+    <string name="hide_lockscreen_date_title">Mostrar fecha en pantalla de bloqueo</string>
+
+    <!-- Smart pulldown -->
+    <string name="smart_pulldown_title">Desplegable inteligente</string>
+    <string name="smart_pulldown_summary">Abrir ajustes rápidos cuando hay %1$s notificaciones presentes</string>
+    <string name="smart_pulldown_off">Apagado</string>
+    <string name="smart_pulldown_dismissable">No descartable</string>
+    <string name="smart_pulldown_persistent">No persistente</string>
+    <string name="smart_pulldown_all">No descartable o persistente</string>
+
+    <!-- QS Tiles Columns -->
+    <string name="qs_num_columns_title">Número de azulejos QS  por fila</string>
+    <string name="qs_num_columns_showing">Se muestran %1$s azulejos por fila</string>
+
+    <!-- QS Tiles Rows -->
+    <string name="qs_num_rows_title">Número de filas QS</string>
+    <string name="qs_num_rows_showing">Se muestran %1$s filas</string>
+
+    <!-- Lockscreen Colors -->
+    <string name="lockscreen_colors_title">Colores de pantalla de bloqueo</string>
+    <string name="lockscreen_owner_info_color">Información de dueño</string>
+    <string name="lockscreen_alarm_color">Alarma</string>
+    <string name="lockscreen_clock_color">Reloj</string>
+    <string name="lockscreen_clock_date_color">Fecha</string>
+    <string name="lockscreen_colors_reset_title">Restablecer colores de la pantalla de bloqueo</string>
+    <string name="lockscreen_colors_reset_message">¿Está seguro de que desea restablecer estos colores por defecto?</string>
+    <string name="yes">SÍ</string>
+    
 </resources>
