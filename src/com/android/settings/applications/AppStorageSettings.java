@@ -345,15 +345,8 @@ public class AppStorageSettings extends AppInfoWithHeader
         final Context context = getActivity();
         final StorageManager storage = context.getSystemService(StorageManager.class);
 
-        boolean requiresForce = false;
-        List<VolumeInfo> candidates = context.getPackageManager()
+        final List<VolumeInfo> candidates = context.getPackageManager()
                 .getPackageCandidateVolumes(mAppEntry.info);
-        if (candidates.size() < 2) {
-            // try forceable volume list
-            candidates = context.getPackageManager()
-                .getPackageCandidateVolumesForceable(mAppEntry.info);
-            requiresForce = true;
-        }
         if (candidates.size() > 1) {
             Collections.sort(candidates, VolumeInfo.getDescriptionComparator());
 
@@ -366,12 +359,9 @@ public class AppStorageSettings extends AppInfoWithHeader
                 }
                 labels[i] = volDescrip;
             }
-            if (requiresForce) {
-                mChangeStorageButton.setText(R.string.force_change);
-            }
             mCandidates = candidates.toArray(new VolumeInfo[candidates.size()]);
             mDialogBuilder = new AlertDialog.Builder(getContext())
-                    .setTitle(requiresForce ? R.string.force_change_storage : R.string.change_storage)
+                    .setTitle(R.string.change_storage)
                     .setSingleChoiceItems(labels, current, this)
                     .setNegativeButton(R.string.cancel, null);
         } else {

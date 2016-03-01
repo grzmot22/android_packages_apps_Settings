@@ -51,22 +51,15 @@ public class StorageWizardMoveConfirm extends StorageWizardBase {
         }
 
         // Sanity check that target volume is candidate
-        // and determine if the move was forced
-        boolean forcedMove = false;
-        if (!getPackageManager().getPackageCandidateVolumes(mApp).contains(mVolume)) {
-            Preconditions.checkState(
-                    getPackageManager().getPackageCandidateVolumesForceable(mApp).contains(mVolume));
-            forcedMove = true;
-        }
+        Preconditions.checkState(
+                getPackageManager().getPackageCandidateVolumes(mApp).contains(mVolume));
 
         final String appName = getPackageManager().getApplicationLabel(mApp).toString();
         final String volumeName = mStorage.getBestVolumeDescription(mVolume);
 
         setIllustrationInternal(true);
         setHeaderText(R.string.storage_wizard_move_confirm_title, appName);
-        final String forceText = forcedMove ?
-                getString(R.string.storage_wizard_move_confirm_force_info) : "";
-        setBodyText(R.string.storage_wizard_move_confirm_body_cm, appName, volumeName, forceText);
+        setBodyText(R.string.storage_wizard_move_confirm_body, appName, volumeName);
 
         getNextButton().setText(R.string.move_app);
     }

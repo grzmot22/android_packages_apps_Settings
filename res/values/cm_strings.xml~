@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
 
@@ -45,8 +44,8 @@
     <!-- NFC PreferenceCategory title -->
     <string name="nfc_title_category">NFC</string>
 
-    <!-- About phone screen, ROM version -->
-    <string name="mod_version">ROM version</string>
+    <!-- About phone screen, CyanogenMod version -->
+    <string name="mod_version">CyanogenMod version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- About phone screen, Device model -->
@@ -61,15 +60,6 @@
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
     <string name="build_date_default" translatable="false">2015-01-01-0000</string>
-
-    <!-- CM Updater -->
-    <string name="cmupdate_settings_title">CyanogenMod updates</string>
-
-    <!-- Settings switch for updating Cyanogen recovery -->
-    <string name="update_recovery_title">Update Cyanogen recovery</string>
-    <string name="update_recovery_summary">Update recovery with system updates</string>
-    <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
-    <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
 
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
@@ -572,6 +562,7 @@
 
     <!-- Power menu -->
     <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_power_title">Power off</string>
     <string name="power_menu_reboot_title">Reboot menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_airplane_title">Airplane mode</string>
@@ -582,10 +573,6 @@
     <string name="power_menu_sound_title">Sound panel</string>
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
     <string name="powermenu_screenshot_delay_title">Set screenshot delay</string>
-
-    <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Enable on-screen nav bar</string>
-    <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
 
     <!-- tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
@@ -878,11 +865,6 @@
     <!-- lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Display music visualizer</string>
 
-    <!-- lock screen disabled by QS tile warning -->
-    <string name="lockscreen_disabled_by_qs_tile_title">Disabled by quick settings tile</string>
-    <string name="lockscreen_disabled_by_qs_tile_summary">Tap to enable the lock screen</string>
-    <string name="lockscreen_disabled_by_qs_tile_summary_enabled">Lock screen enabled!</string>
-
     <!-- Battery saver -->
     <string name="battery_saver_threshold">Battery saver threshold</string>
     <string name="battery_saver_summary">Reduce performance and limit background data</string>
@@ -923,13 +905,6 @@
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Show search bar in recents menu</string>
     <string name="keywords_recents_show_searchbar">recent recents disable enable show hide search bar searchbar</string>
-
-    <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Voice wakeup</string>
-    <string name="voice_wakeup_retrain_title">Retrain your voice</string>
-    <string name="voice_wakeup_activity_title">Activity to launch</string>
-    <string name="voice_wakeup_default_activity">Google Now</string>
-    <string name="voice_wakeup_needs_dial_permission_warning">Voice Wakeup needs to have phone call permissions to select a Direct Dial contact.</string>
 
     <string name="picker_activities">Activities</string>
     <string name="select_custom_app_title">Select custom app</string>
@@ -978,28 +953,6 @@
     <string name="block_notifications_title">Filter notifications</string>
     <string name="block_notifications_summary">Manage ignored notifications and filters</string>
     <string name="no_filters_title">No filters set</string>
-
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanogenMod statistics</string>
-    <string name="anonymous_statistics_summary">Help make CyanogenMod better by opting into anonymous statistics reporting</string>
-    <string name="anonymous_statistics_warning_title">About</string>
-    <string name="anonymous_statistics_warning">Opting into CyanogenMod Statistics will allow non-personal data to be submitted to the
-        developers of CyanogenMod to track unique installations across devices. The information submitted includes an unique identifier,
-        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
-    <string name="enable_reporting_title">Enable reporting</string>
-    <string name="preview_data_title">Preview data</string>
-    <string name="view_stats_title">View stats</string>
-    <string name="anonymous_learn_more">Learn more</string>
-
-    <!-- Anonymous Statistics - Preview -->
-    <string name="preview_id_title">Unique ID</string>
-    <string name="preview_device_title">Device</string>
-    <string name="preview_version_title">Version</string>
-    <string name="preview_country_title">Country</string>
-    <string name="preview_carrier_title">Carrier</string>
-    <string name="stats_collection_title">Stats collection</string>
-    <string name="stats_collection_summary">When enabled, allows metrics collection</string>
 
     <!-- Protected apps lockpattern reset button -->
     <string name="lockpattern_reset_button">Reset pattern</string>
@@ -1108,6 +1061,17 @@
     <string name="last_time_used_label_cm">Last time used:</string>
     <!-- label for usage time -->
     <string name="usage_time_label_cm">Usage time:</string>
+<<<<<<< HEAD
+
+    <!-- Title of dialog to force change [CHAR LIMIT=25] -->
+    <string name="force_change">Force change</string>
+    <!-- Title of dialog to force change storage [CHAR LIMIT=25] -->
+    <string name="force_change_storage">Force change storage</string>
+    <string name="storage_wizard_move_confirm_force_info">\n\nWARNING: This app does not declare the ability for it to be moved to adopted storage.
+        You may forcibly move it regardless but app data may need to be cleared in order for it to function correctly.</string>
+    <string name="storage_wizard_move_confirm_body_cm">Moving <xliff:g id="app" example="Calculator">^1</xliff:g> and its data to <xliff:g id="name" example="SD card">^2</xliff:g> will take only a few moments. You won\u2019t be able to use the app until the move is complete.
+\n\nDon\u2019t remove the <xliff:g id="name" example="SD card">^2</xliff:g> during the move.<xliff:g id="forcetext">^3</xliff:g>
+    </string>
 
     <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
     <string name="master_clear_desc_cm" product="tablet">This will erase all data from your tablet\'s <b>internal storage</b>, including:\n\n<li>Your device accounts</li>\n<li>System and app data and settings</li>\n<li>Downloaded apps</li></string>
@@ -1152,4 +1116,6 @@
 
     <!-- CM Legal -->
     <string name="cmlicense_title">CyanogenMod legal</string>
+=======
+>>>>>>> parent of 6fd3563... Add force move app storage option.
 </resources>
