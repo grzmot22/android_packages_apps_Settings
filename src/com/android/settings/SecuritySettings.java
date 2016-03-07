@@ -296,8 +296,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 });
             }
         }
-        if (mIsPrimary  && securityOrExternal && mFilterType == TYPE_SECURITY_EXTRA
-                || mFilterType == TYPE_EXTERNAL_RESOLUTION) {
+        if (mIsPrimary && securityOrExternal) {
             if (LockPatternUtils.isDeviceEncryptionEnabled()) {
                 // The device is currently encrypted.
                 addPreferencesFromResource(R.xml.security_settings_encrypted);
@@ -307,7 +306,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
 
-        if (mFilterType == TYPE_LOCKSCREEN_EXTRA || mFilterType == TYPE_EXTERNAL_RESOLUTION) {
+        if (lockscreenOrExternal) {
             // Fingerprint and trust agents
             PreferenceGroup securityCategory = (PreferenceGroup)
                     root.findPreference(KEY_SECURITY_CATEGORY);
