@@ -258,7 +258,7 @@ public class PowerUsageSummary extends PowerUsageBase
                     .setAlphabeticShortcut('t');
         }
 
-        MenuItem reset = menu.add(0, MENU_STATS_RESET, 0, R.string.battery_stats_reset)
+        MenuItem reset = menu.add(0, MENU_STATS_RESET, 0, R.string.menu_stats_reset)
                 .setIcon(R.drawable.ic_actionbar_delete)
                 .setAlphabeticShortcut('d');
         reset.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |
@@ -285,6 +285,9 @@ public class PowerUsageSummary extends PowerUsageBase
                     mStatsType = BatteryStats.STATS_SINCE_CHARGED;
                 }
                 refreshStats();
+                return true;
+            case MENU_STATS_RESET:
+                 resetStats();
                 return true;
             case MENU_BATTERY_SAVER:
                 Resources res = getResources();
@@ -346,9 +349,9 @@ public class PowerUsageSummary extends PowerUsageBase
 
     private void resetStats() {
         AlertDialog dialog = new AlertDialog.Builder(getActivity())
-            .setTitle(R.string.battery_stats_reset)
-            .setMessage(R.string.battery_stats_message)
-            .setPositiveButton(R.string.ok_string, new OnClickListener() {
+            .setTitle(R.string.menu_stats_reset)
+            .setMessage(R.string.reset_stats_msg)
+            .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     // Reset stats and request a refresh to initialize vars
