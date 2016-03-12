@@ -129,5 +129,4 @@
 
     <!-- When true enable color temperature setting. -->
     <bool name="config_enableColorTemperature">false</bool>
-
 </resources>

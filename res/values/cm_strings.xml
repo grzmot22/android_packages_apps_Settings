@@ -1151,7 +1151,7 @@
 
     <!-- CM Legal -->
     <string name="cmlicense_title">CyanogenMod legal</string>
-    
+
     <!-- Menu label for reset the battery stats -->
     <string name="menu_stats_reset">Reset stats</string>
     <!-- Reset stats confirmation dialog's message -->
