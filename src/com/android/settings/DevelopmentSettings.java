@@ -789,6 +789,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateAdvancedRebootOptions();
         updateDevelopmentShortcutOptions();
         updateUpdateRecoveryOptions();
+<<<<<<< HEAD
         updateMSOBOptions();
         if (mColorTemperaturePreference != null) {
             updateColorTemperature();
@@ -812,6 +813,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
         mMSOB.setValue(String.valueOf(value));
         mMSOB.setSummary(mMSOB.getEntry());
+        if (mColorTemperaturePreference != null) {
+            updateColorTemperature();
+        }
     }
 
     private void writeAdvancedRebootOptions() {
