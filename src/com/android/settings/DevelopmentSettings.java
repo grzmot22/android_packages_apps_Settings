@@ -789,7 +789,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateAdvancedRebootOptions();
         updateDevelopmentShortcutOptions();
         updateUpdateRecoveryOptions();
-<<<<<<< HEAD
         updateMSOBOptions();
         if (mColorTemperaturePreference != null) {
             updateColorTemperature();
