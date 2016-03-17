@@ -51,11 +51,6 @@
             android:key="power_button_instantly_locks"
             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
 
-	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="lockscreen_quick_unlock_control"
-            android:title="@string/unlock_quick_unlock_control_title"
-            android:summary="@string/unlock_quick_unlock_control_summary" />
-
         <Preference
             android:key="manage_trust_agents"
             android:title="@string/manage_trust_agents"
