@@ -793,7 +793,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static void writeDisableHwKeysOption(Context context, boolean enabled) {
         Settings.System.putInt(context.getContentResolver(),
                 Settings.System.ENABLE_HW_KEYS, enabled ? 1 : 0);
-
+	}
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
         CMSettings.Secure.putInt(context.getContentResolver(),
                 CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
