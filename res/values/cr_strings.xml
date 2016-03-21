@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V5.2</string>
+    <string name="temasek_version_default">Build V5.3</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MHC19J Release 22</string>
 
@@ -1135,5 +1135,9 @@
     <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
     <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
     <string name="yes">YES</string>
+
+    <!-- Header image shadow -->
+    <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
 
 </resources>
