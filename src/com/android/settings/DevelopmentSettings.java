@@ -322,7 +322,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private ListPreference mMSOB;
 
     private SwitchPreference mSelinux;
-
+    
     private SwitchPreference mColorTemperaturePreference;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
