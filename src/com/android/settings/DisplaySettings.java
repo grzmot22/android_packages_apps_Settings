@@ -264,6 +264,25 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 mLiftToWakePreference = null;
             }
         }
+
+        mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
+        if (mDozePreference != null && Utils.isDozeAvailable(activity)) {
+        boolean supported = false;
+
+        try {
+            supported = (getPackageManager().getPackageInfo("com.cyanogenmod.settings.device", 0).versionCode > 0);
+            } catch (PackageManager.NameNotFoundException e) {
+            } if (!supported) {
+                mDozePreference.setOnPreferenceChangeListener(this);
+                } else {
+                displayPrefs.removePreference(mDozePreference);
+            }
+        } else {
+            if (displayPrefs != null && mDozePreference != null) {
+                displayPrefs.removePreference(mDozePreference);
+            }
+        }
+
         mCameraGesturePreference = (SwitchPreference) findPreference(KEY_CAMERA_GESTURE);
         if (mCameraGesturePreference != null && isCameraGestureAvailable(getResources())) {
             mCameraGesturePreference.setOnPreferenceChangeListener(this);
