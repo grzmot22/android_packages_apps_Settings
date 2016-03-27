@@ -132,6 +132,7 @@
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Время и дата</string>
+    <string name="clock_color_switch">Цвет часов</string>
     <string name="clock_color_title">Цвет</string>
     <string name="status_bar_clock_style_reset">Сбросить цвет</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
@@ -1131,5 +1132,9 @@
     <string name="lockscreen_colors_reset_title">Сброс текущих настроек цвета</string>
     <string name="lockscreen_colors_reset_message">Сбросить цвета на значения по умолчанию?</string>
     <string name="yes">Да</string>
+
+    <!-- Header image shadow -->
+    <string name="status_bar_custom_header_shadow_title">Затемнение изображения</string>
+    <string name="status_bar_custom_header_shadow_summary">Для лучшей видимости на светлых изображениях</string>
 
 </resources>
