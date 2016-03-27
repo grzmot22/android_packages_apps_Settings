@@ -45,11 +45,7 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">الاتصال بالحقل القريب</string>
   <!-- About phone screen, CyanogenMod version -->
-<<<<<<< HEAD
   <string name="mod_version">إصدار ROM</string>
-=======
-  <string name="mod_version">إصدار CyanogenMod</string>
->>>>>>> 83f421f7a60c0502a5310decf6dcd7856ae8d5f9
   <string name="mod_version_default">مجهول</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">طراز الجهاز</string>
