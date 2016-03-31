@@ -25,10 +25,21 @@
     <string name="more_things">Altro</string>
     <string name="more_things_summary">Segnalazione problemi, statistiche ecc.</string>
     <string name="jdc_issue_tracker">JDCTeam Issue Tracker</string>
-    <string name="jdc_issue_tracker_summary">Premi qui per collegarti al nostro issue tracker</string>
-        <!-- QS -->
+    <string name="jdc_issue_tracker_summary">Premi qui per collegarti al nostro issue tracker</string>    
+    <string name="rom_thread">Thread</string>
+    <string name="rom_thread_summary">Discuti di questa ROM su XDA-Developers</string>
+    <!-- QS -->
     <string name="qs_fast_data_enable">Nascondi utilizzo dati</string>
     <string name="qs_fast_data_enable_sum_on">Abilita o disabilita la connessione dati quando l\'icona è premuta</string>
     <string name="qs_fast_data_enable_sum_off">Mostra l\'utilizzo dei dati mobili quando l\'icona connessione dati è premuta</string>
+    <!-- SWAG stuff -->
+    <string name="missing_clicks">Mancano 3 pressioni</string>
+    <string name="weird_shit_summary">Triste per il problema riscontrato? Prova a premere qui...</string>
+    <string name="toast_higgs">Congratulazioni, hai appena scoperto la Madre dell\'Universo!</string>
+    <string name="toast_info">Hai trovato qualche info utile? :P</string>
+    <string name="toast_oncreate">Premi qualcosa!</string>
+    <string name="url1">https://goo.gl/RhIoKt</string>
+    <string name="url2">https://goo.gl/SVWg6S</string>
+    <string name="url3">https://goo.gl/EANNlw</string>
 </resources>
 

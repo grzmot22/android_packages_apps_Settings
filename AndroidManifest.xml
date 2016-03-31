@@ -2584,7 +2584,14 @@
                 android:value="true" />
         </activity>
 
-        <!-- Notification manager -->
+        <!--Optimized CM Settings-->
+	 <activity android:name="Settings$OptCMSettings"
+                android:label="@string/optcm_settings"
+                android:exported="true"
+                android:taskAffinity="">
+	</activity>
+	
+	<!-- Notification manager -->
         <activity android:name="Settings$NotificationManagerActivity"
                 android:label="@string/notification_manager"
                 android:exported="true"

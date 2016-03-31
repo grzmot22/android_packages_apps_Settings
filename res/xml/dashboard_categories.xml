@@ -339,7 +339,15 @@
                 android:targetPackage="eu.chainfire.supersu"
                 android:targetClass="eu.chainfire.supersu.MainActivity" />
         </dashboard-tile>
-
+		
+	<!--Optimized CM Settings-->
+	<dashboard-tile
+                android:id="@+id/optcm_settings"
+                android:title="@string/optcm_settings"
+                android:fragment="com.android.settings.OptCMSettings"
+                android:icon="@drawable/ic_optcm_settings"
+                />
+		
         <!-- Development -->
         <dashboard-tile
                 android:id="@+id/development_settings"
