@@ -1562,6 +1562,8 @@
         <activity android:name=".deviceinfo.Status"
                 android:label="@string/device_status_activity_title"
                 android:theme="@style/Theme.SubSettingsDialogWhenLarge"
+                android:taskAffinity="com.android.settings"
+                android:parentActivityName="Settings$DeviceInfoSettingsActivity"
                 android:process="com.android.phone">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2793,6 +2795,23 @@
                        android:value="com.android.settings.SecuritySettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/lockscreen_settings" />
+        </activity>
+
+        <activity android:name=".Settings$LiveLockScreenSettingsActivity"
+                  android:label="@string/live_lock_screen_title"
+                  android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.SHORTCUT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cyanogenmod.intent.action.OPEN_LIVE_LOCKSCREEN_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.cyanogenmod.LiveLockScreenSettings" />
         </activity>
 
         <provider
