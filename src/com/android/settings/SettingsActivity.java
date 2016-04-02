@@ -297,6 +297,8 @@ public class SettingsActivity extends Activity
             R.id.home_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod,
+            R.id.stweaks,
+            R.id.toolbox,
             R.id.button_settings
     };
 
@@ -1351,6 +1353,24 @@ public class SettingsActivity extends Activity
                     boolean supported = false;
                     try {
                         supported = (getPackageManager().getPackageInfo("com.vipercn.viper4android_v2", 0).versionCode >= 18);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.stweaks) {
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.gokhanmoral.stweaks.app", 0).versionCode > 0);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.toolbox) {
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.jdcteam.toolbox", 0).versionCode > 0);
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {
