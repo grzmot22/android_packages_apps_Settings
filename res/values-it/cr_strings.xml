@@ -1133,4 +1133,26 @@
     <string name="lockscreen_colors_reset_message">Sei sicuro di voler ripristinare i colori predefiniti?</string>
     <string name="yes">Si</string>
     
+    <!-- Header image shadow -->
+    <string name="status_bar_custom_header_shadow_title">Immagine d\'intestazione scura</string>
+    <string name="status_bar_custom_header_shadow_summary">Per una migliore visibilità sulle immagini luminose</string>
+    
+    <!-- Captive Portal -->
+    <string name="captive_portal_detection">Rilevazione portale</string>
+    <string name="captive_portal_detection_summary">Se abilitato, è necessaria una connessione ai server di Google al fine di rilevare una connessione dati</string>
+
+    <!-- Heads Up Timeout -->
+    <string name="heads_up_time_out_title">Tempi di disattivazione</string>
+    <string name="heads_up_time_out_summary">Mostrerà la notifica per <xliff:g id="number">%d</xliff:g> secondi</string>
+    <string name="heads_up_time_out_2sec">2 secondi</string>
+    <string name="heads_up_time_out_4sec">4 secondi</string>
+    <string name="heads_up_time_out_5sec">5 secondi</string>
+    <string name="heads_up_time_out_6sec">6 secondi</string>
+    <string name="heads_up_time_out_8sec">8 secondi</string>
+    <string name="heads_up_time_out_10sec">10 secondi</string>
+    
+    <!-- Battery light settings -->
+    <string name="battery_light_full_color_title">Carico al (90%)</string>
+    <string name="battery_light_really_full_color_title">Carico al (100%)</string>
+    
 </resources>

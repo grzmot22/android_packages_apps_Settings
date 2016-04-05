@@ -348,12 +348,6 @@
     <string name="colors_title">Цвета</string>
     <string name="text_title">Текст</string>
 
-    <!-- Max Lockscreen Notification count -->
-    <string name="weather_cat_notifications_title">Уведомления</string>
-    <string name="lockscreen_maxnotif_title">Количество уведомлений на экране блокировки</string>
-    <string name="lockscreen_maxnotif_sumary">Включить регулировку максимального количества уведомлений</string>
-    <string name="lockscreen_maxnotif_config">Максимальное количество уведомлений</string>
-
     <!-- Show carrier label and custom -->
     <string name="carrier_options">Логотип оператора</string>
     <string name="custom_carrier_label_title">Свой логотип</string>
@@ -470,10 +464,6 @@
     <!-- Headphones icon switch -->
     <string name="show_headset_icon_title">Значок гарнитуры</string>
     <string name="show_headset_icon_summary">Показывать значок, когда гарнитура подключена</string>
-
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
     <!--Power menu -->
     <string name="power_category">Кнопка питания</string>
@@ -1136,5 +1126,23 @@
     <!-- Header image shadow -->
     <string name="status_bar_custom_header_shadow_title">Затемнение изображения</string>
     <string name="status_bar_custom_header_shadow_summary">Для лучшей видимости на светлых изображениях</string>
+
+    <!-- Captive Portal -->
+    <string name="captive_portal_detection">Captive portal detection</string>
+    <string name="captive_portal_detection_summary">If enabled, a connection to Google servers is required in order to detect data connection</string>
+
+    <!-- Heads Up Timeout -->
+    <string name="heads_up_time_out_title">Тайм-аут</string>
+    <string name="heads_up_time_out_summary">Уведомление будет отображаться в течение <xliff:g id="number">%d</xliff:g> секунд(ы)</string>
+    <string name="heads_up_time_out_2sec">2 секунды</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_5sec">5 секунд</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+
+    <!-- Battery light settings -->
+    <string name="battery_light_full_color_title">Индикация при 90%</string>
+    <string name="battery_light_really_full_color_title">Индикация при 100%</string>
 
 </resources>

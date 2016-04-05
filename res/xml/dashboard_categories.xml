@@ -289,14 +289,6 @@
                 android:icon="@drawable/ic_settings_date_time"
                 />
 
-        <!-- Weather -->
-        <dashboard-tile
-                android:id="@+id/weather_settings"
-                android:title="@string/weather_settings_title"
-                android:fragment="com.android.settings.cyanogenmod.WeatherServiceSettings"
-                android:icon="@drawable/ic_settings_weather"
-                />
-
         <!-- Accessibility feedback -->
         <dashboard-tile
                 android:id="@+id/accessibility_settings"
@@ -363,39 +355,6 @@
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development"
                 />
-
-        <!-- OTA Update -->
-        <dashboard-tile
-            android:id="@+id/ota_settings"
-            android:icon="@drawable/ic_sysbar_quicksettings"
-            android:title="@string/ota_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.ota.updates"
-                android:targetClass="com.ota.updates.activities.MainActivity" />
-        </dashboard-tile>
-        
-		<!-- STweaks -->
-        <dashboard-tile
-                android:id="@+id/stweaks"
-                android:title="@string/stweaks_title"
-                android:icon="@drawable/ic_settings_stweaks">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.gokhanmoral.stweaks.app"
-                android:targetClass="com.gokhanmoral.stweaks.app.MainActivity"/>
-        </dashboard-tile>
-        
-        <!-- ToolBox -->
-        <dashboard-tile
-                android:id="@+id/toolbox"
-                android:icon="@drawable/ic_settings_toolbox"
-                android:title="@string/toolbox_title">
-                 <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.jdcteam.toolbox"
-                    android:targetClass="com.jdcteam.toolbox.ToolboxMain" />
-        </dashboard-tile>
         
         <!-- About Device -->
         <dashboard-tile
