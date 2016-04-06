@@ -5,9 +5,9 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V5.9</string>
+    <string name="temasek_version_default">Build V6.0</string>
     <string name="android_version_title">Marshmallow</string>
-    <string name="android_version_default">6.0.1 MHC19J Release 22</string>
+    <string name="android_version_default">6.0.1 MHC19Q Release 24</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek spare parts</string>
@@ -136,7 +136,6 @@
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Clock</string>
-    <string name="clock_color_switch">Enable clock color</string>
     <string name="clock_color_title">Color</string>
     <string name="status_bar_clock_style_reset">Reset color</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
@@ -167,7 +166,6 @@
     <string name="clock_font_notoserif_bold">NotoSerif Bold</string>
     <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
     <string name="clock_font_size_title">Font size</string>
-    <string name="status_bar_show_clock_second_title">Clock seconds</string>
     <string name="clock_font_size_4">4</string>
     <string name="clock_font_size_5">5</string>
     <string name="clock_font_size_6">6</string>
@@ -1153,6 +1151,18 @@
     <string name="heads_up_time_out_6sec">6 seconds</string>
     <string name="heads_up_time_out_8sec">8 seconds</string>
     <string name="heads_up_time_out_10sec">10 seconds</string>
+
+    <!-- Heads Up Snooze -->
+    <string name="heads_up_snooze">Snooze</string>
+    <string name="heads_up_snooze_summary">Notifications will NOT be shown for the next <xliff:g id="number">%d</xliff:g> minutes</string>
+    <string name="heads_up_snooze_1min">1 minute</string>
+    <string name="heads_up_snooze_5min">5 minutes</string>
+    <string name="heads_up_snooze_10min">10 minutes</string>
+    <string name="heads_up_snooze_15min">15 minutes</string>
+    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_30min">30 minutes</string>
+    <string name="heads_up_snooze_45min">45 minutes</string>
+    <string name="heads_up_snooze_60min">60 minutes</string>
 
     <!-- Battery light settings -->
     <string name="battery_light_full_color_title">Charged (90%)</string>

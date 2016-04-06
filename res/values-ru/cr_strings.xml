@@ -348,6 +348,12 @@
     <string name="colors_title">Цвета</string>
     <string name="text_title">Текст</string>
 
+    <!-- Max Lockscreen Notification count -->
+    <string name="weather_cat_notifications_title">Уведомления</string>
+    <string name="lockscreen_maxnotif_title">Количество уведомлений на экране блокировки</string>
+    <string name="lockscreen_maxnotif_sumary">Включить регулировку максимального количества уведомлений</string>
+    <string name="lockscreen_maxnotif_config">Максимальное количество уведомлений</string>
+
     <!-- Show carrier label and custom -->
     <string name="carrier_options">Логотип оператора</string>
     <string name="custom_carrier_label_title">Свой логотип</string>
@@ -1140,6 +1146,18 @@
     <string name="heads_up_time_out_6sec">6 секунд</string>
     <string name="heads_up_time_out_8sec">8 секунд</string>
     <string name="heads_up_time_out_10sec">10 секунд</string>
+
+    <!-- Heads Up Snooze -->
+    <string name="heads_up_snooze">Отложить</string>
+    <string name="heads_up_snooze_summary">Уведомления не будут отображаться следующие(ю) <xliff:g id="number">%d</xliff:g> минут(у)</string>
+    <string name="heads_up_snooze_1min">1 минута</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
+    <string name="heads_up_snooze_30min">30 минут</string>
+    <string name="heads_up_snooze_45min">45 минут</string>
+    <string name="heads_up_snooze_60min">60 минут</string>
 
     <!-- Battery light settings -->
     <string name="battery_light_full_color_title">Индикация при 90%</string>
