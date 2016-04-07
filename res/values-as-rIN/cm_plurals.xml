@@ -16,7 +16,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
   <plurals name="backlight_timeout_time">
     <item quantity="one"><xliff:g id="seconds">%d</xliff:g> ছেকেণ্ড</item>
     <item quantity="other"><xliff:g id="seconds">%d</xliff:g> ছেকেণ্ড</item>
@@ -25,6 +24,4 @@
     <item quantity="one">এবাৰ</item>
     <item quantity="other">%d বাৰ</item>
   </plurals>
-
-
 </resources>

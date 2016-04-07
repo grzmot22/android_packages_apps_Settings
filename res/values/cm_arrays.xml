@@ -596,8 +596,7 @@
         <item>Only over WiFi</item>
         <item>No access</item>
     </string-array>
-    
-    
+
     <!-- Network Traffic Display States -->
     <string-array name="show_network_traffic_state_entries" translatable="false">
         <item>@string/show_network_traffic_disable</item>
