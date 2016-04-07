@@ -132,7 +132,6 @@
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Время и дата</string>
-    <string name="clock_color_switch">Цвет часов</string>
     <string name="clock_color_title">Цвет</string>
     <string name="status_bar_clock_style_reset">Сбросить цвет</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
@@ -163,7 +162,6 @@
     <string name="clock_font_notoserif_bold">NotoSerif жирный</string>
     <string name="clock_font_notoserif_bold_italic">NotoSerif жирный курсив</string>
     <string name="clock_font_size_title">Размер шрифта</string>
-    <string name="status_bar_show_clock_second_title">Показывать секунды</string>
     <string name="clock_font_size_4">4</string>
     <string name="clock_font_size_5">5</string>
     <string name="clock_font_size_6">6</string>
@@ -1132,10 +1130,6 @@
     <!-- Header image shadow -->
     <string name="status_bar_custom_header_shadow_title">Затемнение изображения</string>
     <string name="status_bar_custom_header_shadow_summary">Для лучшей видимости на светлых изображениях</string>
-
-    <!-- Captive Portal -->
-    <string name="captive_portal_detection">Captive portal detection</string>
-    <string name="captive_portal_detection_summary">If enabled, a connection to Google servers is required in order to detect data connection</string>
 
     <!-- Heads Up Timeout -->
     <string name="heads_up_time_out_title">Тайм-аут</string>

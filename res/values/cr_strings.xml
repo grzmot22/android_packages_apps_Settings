@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V6.0</string>
+    <string name="temasek_version_default">Build V6.1</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MHC19Q Release 24</string>
 
@@ -1137,10 +1137,6 @@
     <!-- Header image shadow -->
     <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
     <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
-
-    <!-- Captive Portal -->
-    <string name="captive_portal_detection">Captive portal detection</string>
-    <string name="captive_portal_detection_summary">If enabled, a connection to Google servers is required in order to detect data connection</string>
 
     <!-- Heads Up Timeout -->
     <string name="heads_up_time_out_title">Time out</string>
