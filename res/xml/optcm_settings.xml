@@ -50,6 +50,15 @@
 	    android:summaryOff="@string/qs_fast_data_enable_sum_off"
 	    android:defaultValue="false"/>
 	    
+	    <PreferenceScreen
+		android:id="@+id/development_settings"
+                android:title="@string/development_settings_title"
+                android:fragment="com.android.settings.DevelopmentSettings"/>
+		
+	    <PreferenceScreen
+	    android:key="More"
+	    android:title="More tweaks will come soon!"/>
+	    
      </PreferenceCategory>
      
 </PreferenceScreen>
