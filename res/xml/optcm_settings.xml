@@ -40,6 +40,7 @@
 	
      </PreferenceCategory>
      
+     <!--OptCM Tweaks-->
      <PreferenceCategory
         android:title="@string/optcm_tweaks">
 	
@@ -55,6 +56,12 @@
                 android:title="@string/development_settings_title"
                 android:fragment="com.android.settings.DevelopmentSettings"/>
 		
+	    <PreferenceScreen
+		android:key="network_traffic"
+		android:title="Network Traffic"
+		android:fragment="com.android.settings.NetworkTraffic"/>
+	    
+	
 	    <PreferenceScreen
 	    android:key="More"
 	    android:title="More tweaks will come soon!"/>
