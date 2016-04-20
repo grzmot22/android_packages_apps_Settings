@@ -57,4 +57,6 @@
     <string name="ui_preferences">UI Preferences</string>
     <string name="optcm_settings">Optimized CM Settings</string>
     <string name="optcm_apps">Optimized CM Applications</string>
+    <string name="optcm_tweaks">Optimized CM Tweaks</string>
+
 </resources>

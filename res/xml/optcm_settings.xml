@@ -39,5 +39,33 @@
 	</PreferenceScreen>
 	
      </PreferenceCategory>
+     
+     <!--OptCM Tweaks-->
+     <PreferenceCategory
+        android:title="@string/optcm_tweaks">
 	
+	<com.android.settings.cyanogenmod.CMSecureSettingSwitchPreference
+	    android:key="qs_fast_data_enable"
+	    android:title="@string/qs_fast_data_enable"
+	    android:summaryOn="@string/qs_fast_data_enable_sum_on"
+	    android:summaryOff="@string/qs_fast_data_enable_sum_off"
+	    android:defaultValue="false"/>
+	    
+	    <PreferenceScreen
+		android:id="@+id/development_settings"
+                android:title="@string/development_settings_title"
+                android:fragment="com.android.settings.DevelopmentSettings"/>
+		
+	    <PreferenceScreen
+	    android:key="network_traffic_state"
+        android:fragment="com.android.settings.temasek.NetworkTraffic"
+	    android:summary="@string/network_traffic_summary"
+	    android:title="@string/network_traffic_title" />
+	
+	    <PreferenceScreen
+	    android:key="More"
+	    android:title="More tweaks will come soon!"/>
+	    
+     </PreferenceCategory>
+     
 </PreferenceScreen>

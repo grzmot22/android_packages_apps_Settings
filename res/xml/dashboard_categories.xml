@@ -357,13 +357,8 @@
                 />
 		
         <!-- Development -->
-        <dashboard-tile
-                android:id="@+id/development_settings"
-                android:title="@string/development_settings_title"
-                android:fragment="com.android.settings.DevelopmentSettings"
-                android:icon="@drawable/ic_settings_development"
-                />
-        
+        <!--Moved to OptCM Settings-->
+
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"

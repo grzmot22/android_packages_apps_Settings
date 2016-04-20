@@ -618,6 +618,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
     }
 
+
     private void updatePulldownSummary(int value) {
         Resources res = getResources();
 
