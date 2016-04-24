@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V7.0</string>
+    <string name="temasek_version_default">Build V7.1</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MOB30D Release 30</string>
 
@@ -1180,7 +1180,8 @@
 
     <!-- Heads Up Snooze -->
     <string name="heads_up_snooze">Snooze</string>
-    <string name="heads_up_snooze_summary">Notifications will NOT be shown for the next <xliff:g id="number">%d</xliff:g> minutes</string>
+    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
+    <string name="heads_up_snooze_summary">Swiping up on the heads up notification will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
     <string name="heads_up_snooze_1min">1 minute</string>
     <string name="heads_up_snooze_5min">5 minutes</string>
     <string name="heads_up_snooze_10min">10 minutes</string>
@@ -1197,5 +1198,10 @@
     <!-- Battery light settings -->
     <string name="battery_light_full_color_title">Charged (90%)</string>
     <string name="battery_light_really_full_color_title">Charged (100%)</string>
+
+    <!-- Hide apps from recents -->
+    <string name="hide_from_recents_add_app">Add App</string>
+    <string name="hide_apps_from_recents_title">Hidden Apps</string>
+    <string name="hide_apps_from_recents_summary">Pick which apps to exclude from the recents panel.</string>
 
 </resources>
