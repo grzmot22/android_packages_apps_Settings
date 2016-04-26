@@ -289,7 +289,7 @@
                 android:icon="@drawable/ic_settings_date_time"
                 />
 
-        <!-- Weather
+        <!-- Weather 
         <dashboard-tile
                 android:id="@+id/weather_settings"
                 android:title="@string/weather_settings_title"
