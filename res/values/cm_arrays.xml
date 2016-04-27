@@ -592,6 +592,7 @@
         <item>No access</item>
     </string-array>
 
+
     <!-- Network Traffic Display States -->
     <string-array name="show_network_traffic_state_entries" translatable="false">
         <item>@string/show_network_traffic_disable</item>
@@ -633,6 +634,7 @@
         <item>2000</item>
     </string-array>
     
+
     <!-- Weather temperature -->
     <string-array name="weather_temp_unit_entries" translatable="false">
         <item>@string/weather_settings_temp_celsius</item>
@@ -642,7 +644,6 @@
     <string-array name="weather_temp_unit_values" translatable="false">
         <item>1</item>
         <item>2</item>
-
     </string-array>
     
      <!-- Battery Bar -->
@@ -683,5 +684,8 @@
          <item>3</item>
          <item>4</item>
      </string-array>
+=======
+    </string-array>
+>>>>>>> 215d440... Add option to select temperature unit
 
 </resources>
