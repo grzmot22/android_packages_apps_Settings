@@ -1162,7 +1162,7 @@
     <string name="status_bar_custom_header_shadow_summary">Для лучшей видимости на светлых изображениях</string>
 
     <!-- Heads Up Timeout -->
-    <string name="heads_up_time_out_title">Тайм-аут</string>
+    <string name="heads_up_time_out_title">Длительность</string>
     <string name="heads_up_time_out_summary">Уведомление будет отображаться в течение <xliff:g id="number">%d</xliff:g> секунд(ы)</string>
     <string name="heads_up_time_out_2sec">2 секунды</string>
     <string name="heads_up_time_out_4sec">4 секунды</string>
@@ -1173,7 +1173,8 @@
 
     <!-- Heads Up Snooze -->
     <string name="heads_up_snooze">Отложить</string>
-    <string name="heads_up_snooze_summary">Уведомления не будут отображаться следующие(ю) <xliff:g id="number">%d</xliff:g> минут(у)</string>
+    <string name="heads_up_snooze_disabled_summary">Отключено</string>
+    <string name="heads_up_snooze_summary">Смахивание вверх отложит всплывающие сообщения от приложения на <xliff:g id="number">%d</xliff:g> минут(у)</string>
     <string name="heads_up_snooze_1min">1 минута</string>
     <string name="heads_up_snooze_5min">5 минут</string>
     <string name="heads_up_snooze_10min">10 минут</string>
@@ -1190,5 +1191,10 @@
     <!-- Battery light settings -->
     <string name="battery_light_full_color_title">Индикация при 90%</string>
     <string name="battery_light_really_full_color_title">Индикация при 100%</string>
+
+    <!-- Hide apps from recents -->
+    <string name="hide_from_recents_add_app">Добавить приложение</string>
+    <string name="hide_apps_from_recents_title">Скрытые приложения</string>
+    <string name="hide_apps_from_recents_summary">Выберите, какие приложения необходимо исключить из \"Недавних приложений\"</string>
 
 </resources>
