@@ -1197,4 +1197,15 @@
     <string name="hide_apps_from_recents_title">Скрытые приложения</string>
     <string name="hide_apps_from_recents_summary">Выберите, какие приложения необходимо исключить из \"Недавних приложений\"</string>
 
+    <!-- Floating Windows -->
+    <string name="shortcut_action_floating_windows">Плавающие окна</string>
+    <string name="floating_master_switch">Общий переключатель</string>
+    <string name="floating_additional_options">Дополнительные настройки</string>
+    <string name="floating_windows">Плавающие окна</string>
+    <string name="floating_windows_switch">Whether to allow global use of float mode, if this is off none of the below options will work DUH!!!</string>
+    <string name="slim_action_floats">Действия Slim и Pie</string>
+    <string name="slim_action_floats_summary">Запускать действия Slim и Pie в плавающем окне</string>
+    <string name="gesture_anywhere_floating">\"Жест везде\"</string>
+    <string name="gesture_anywhere_floating_summary">Запускать \"жест везде\" в плавающем окне</string>
+
 </resources>
