@@ -1086,8 +1086,18 @@
     <!-- Battery light settings -->
     <string name="battery_light_full_color_title">已充电(90%)</string>
     <string name="battery_light_really_full_color_title">已充电(100%)</string>
-    <!-- DoubleTap2Wake Doze -->
-    <string name="doze_wakeup_doubletap_title">doze双击唤醒</string>
-    <string name="doze_wakeup_doubletap_summary_on">doze显示屏幕需要双击唤醒设备</string>
-    <string name="doze_wakeup_doubletap_summary_off">doze显示屏幕单击屏幕唤醒设备(默认)</string>
+    <!-- Hide apps from recents -->
+    <string name="hide_from_recents_add_app">添加应用</string>
+    <string name="hide_apps_from_recents_title">隐藏应用</string>
+    <string name="hide_apps_from_recents_summary">选择不在最近任务面板中显示的应用.</string>
+    <!-- Floating Windows -->
+    <string name="shortcut_action_floating_windows">浮动窗口</string>
+    <string name="floating_master_switch">主开关</string>
+    <string name="floating_additional_options">额外浮动选项</string>
+    <string name="floating_windows">浮动窗口</string>
+    <string name="floating_windows_switch">是否允许启用全局浮动模式,如果禁用则下面的选项将不可用.</string>
+    <string name="slim_action_floats">Slim &amp; Pie操作</string>
+    <string name="slim_action_floats_summary">在浮动窗口模式启用Slim &amp; Pie操作</string>
+    <string name="gesture_anywhere_floating">全局手势</string>
+    <string name="gesture_anywhere_floating_summary">浮动模式下启用全局手势快捷方式</string>
 </resources>
