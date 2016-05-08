@@ -58,5 +58,15 @@
     <string name="optcm_settings">Optimized CM Settings</string>
     <string name="optcm_apps">Optimized CM Applications</string>
     <string name="optcm_tweaks">Optimized CM Tweaks</string>
+    
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
+    <!-- Lock screen wallpaper -->
+    <string name="lockscreen_category_title">Lockscreen</string>
+    <string name="lockscreen_wallpaper_title">Lockscreen Wallpaper</string>
+    <string name="lockscreen_wallpaper_set_title">Set new wallpaper</string>
+    <string name="lockscreen_wallpaper_clear_title">Return to default</string>
+    <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper set back to default</string>
 </resources>
