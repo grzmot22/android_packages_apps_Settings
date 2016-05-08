@@ -1208,4 +1208,11 @@
     <string name="gesture_anywhere_floating">\"Жест везде\"</string>
     <string name="gesture_anywhere_floating_summary">Запускать \"жест везде\" в плавающем окне</string>
 
+    <!-- Optional Dashboard Switches -->
+    <string name="dashboard_switches_title">Переключатели</string>
+    <string name="dashboard_switches_off">Переключатели выключены</string>
+    <string name="dashboard_switches_on">Переключатели включены</string>
+    <string name="dashboard_switches_summary">Изменить расположение переключателей</string>
+    <string name="dashboard_switches_dialog_title">Выберите расположение переключателей</string>
+
 </resources>
