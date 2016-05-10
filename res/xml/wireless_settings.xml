@@ -83,7 +83,6 @@
             android:key="toggle_nfc"
             android:title="@string/nfc_quick_toggle_title"
             android:summary="@string/nfc_quick_toggle_summary"
-	    android:defaultValue="false"
             android:persistent="false" />
 
         <PreferenceScreen
