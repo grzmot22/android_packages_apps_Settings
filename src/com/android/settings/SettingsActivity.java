@@ -1348,13 +1348,14 @@ public class SettingsActivity extends Activity
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {
+                } else if (id == R.id.weather_settings) {
+                    final boolean showWeatherMenu = getResources()
+                            .getBoolean(R.bool.config_showWeatherMenu);
+
+                    if (!getPackageManager().hasSystemFeature(
+                            CMContextConstants.Features.WEATHER_SERVICES) || !showWeatherMenu) {
                         removeTile = true;
                     }
-//                } else if (id == R.id.weather_settings) {
-//                    if (!getPackageManager().hasSystemFeature(
-//                            CMContextConstants.Features.WEATHER_SERVICES)) {
-//                        removeTile = true;
-//                    }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
