@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V8.7</string>
+    <string name="temasek_version_default">Build V8.8</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MOB30J Release 43</string>
 
@@ -186,6 +186,9 @@
     <string name="clock_font_size_21">21</string>
     <string name="clock_font_size_22">22</string>
     <string name="clock_font_size_23">23</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
 
     <!-- Navigation bar -->
     <string name="nav_bar_title">Navigation bar</string>
@@ -1221,5 +1224,9 @@
     <string name="dashboard_switches_on">Switches On</string>
     <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
     <string name="dashboard_switches_dialog_title">Select switch state</string>
+
+    <!-- Captive Portal -->
+    <string name="captive_portal_detection">Captive portal detection</string>
+    <string name="captive_portal_detection_summary">If disabled, a connection to google servers is not required in order to detect data connection.</string>
 
 </resources>
