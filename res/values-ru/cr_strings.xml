@@ -182,6 +182,9 @@
     <string name="clock_font_size_21">21</string>
     <string name="clock_font_size_22">22</string>
     <string name="clock_font_size_23">23</string>
+    <string name="clock_date_position">Расположение даты</string>
+    <string name="clock_date_right">Справа от часов</string>
+    <string name="clock_date_left">Слева от часов</string>
 
     <!-- Navigation bar -->
     <string name="nav_bar_title">Панель навигации</string>
@@ -1210,9 +1213,13 @@
 
     <!-- Optional Dashboard Switches -->
     <string name="dashboard_switches_title">Переключатели</string>
-    <string name="dashboard_switches_off">Переключатели выключены</string>
-    <string name="dashboard_switches_on">Переключатели включены</string>
-    <string name="dashboard_switches_summary">Изменить расположение переключателей</string>
-    <string name="dashboard_switches_dialog_title">Выберите расположение переключателей</string>
+    <string name="dashboard_switches_off">Переключатели скрыты</string>
+    <string name="dashboard_switches_on">Переключатели отображаются</string>
+    <string name="dashboard_switches_summary">Изменить видимость переключателей</string>
+    <string name="dashboard_switches_dialog_title">Состояние переключателей</string>
+
+    <!-- Captive Portal -->
+    <string name="captive_portal_detection">Captive portal detection</string>
+    <string name="captive_portal_detection_summary">If disabled, a connection to google servers is not required in order to detect data connection.</string>
 
 </resources>

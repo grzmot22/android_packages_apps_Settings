@@ -162,6 +162,9 @@
     <string name="clock_font_size_21">21</string>
     <string name="clock_font_size_22">22</string>
     <string name="clock_font_size_23">23</string>
+    <string name="clock_date_position">日期位置</string>
+    <string name="clock_date_right">时间右侧</string>
+    <string name="clock_date_left">时间左侧</string>
     <!-- Navigation bar -->
     <string name="nav_bar_title">导航栏</string>
     <string name="navbar_enable_bar_title">导航栏按钮</string>
@@ -1100,4 +1103,14 @@
     <string name="slim_action_floats_summary">在浮动窗口模式启用Slim &amp; Pie操作</string>
     <string name="gesture_anywhere_floating">全局手势</string>
     <string name="gesture_anywhere_floating_summary">浮动模式下启用全局手势快捷方式</string>
+    <!-- Optional Dashboard Switches -->
+    <string name="dashboard_switches_title">仪表盘快速切换</string>
+    <string name="dashboard_switches_off">禁用切换</string>
+    <string name="dashboard_switches_on">启用切换</string>
+    <string name="dashboard_switches_summary">更改仪表盘切换位置</string>
+    <string name="dashboard_switches_dialog_title">选择切换开关状态</string>
+
+    <!-- Captive Portal -->
+    <string name="captive_portal_detection">强制网络门户检测</string>
+    <string name="captive_portal_detection_summary">如果禁用,检测网络连接时将不必再连接到谷歌服务器.</string>
 </resources>
