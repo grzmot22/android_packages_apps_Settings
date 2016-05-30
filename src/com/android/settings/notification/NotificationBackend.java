@@ -47,7 +47,6 @@ public class NotificationBackend {
         row.priority = getHighPriority(row.pkg, row.uid);
         row.peekable = getPeekable(row.pkg, row.uid);
         row.sensitive = getSensitive(row.pkg, row.uid);
-        row.keyguard = getKeyguard(row.pkg, row.uid);
         return row;
     }
 
@@ -131,22 +130,22 @@ public class NotificationBackend {
         }
     }
 
-    public boolean getKeyguard(String pkg, int uid) {
+    public int getShowNotificationForPackageOnKeyguard(String pkg, int uid) {
         try {
-            return sINM.getPackageKeyguard(pkg, uid);
+            return sINM.getShowNotificationForPackageOnKeyguard(pkg, uid);
         } catch (Exception e) {
             Log.w(TAG, "Error calling NoMan", e);
-            return false;
+            return Notification.SHOW_ALL_NOTI_ON_KEYGUARD;
         }
     }
 
-    public boolean setKeyguard(String pkg, int uid, boolean keyguard) {
+    public boolean setShowNotificationForPackageOnKeyguard(String pkg, int uid, int status) {
         try {
-            sINM.setPackageKeyguard(pkg, uid, keyguard);
+            sINM.setShowNotificationForPackageOnKeyguard(pkg, uid, status);
             return true;
         } catch (Exception e) {
-           Log.w(TAG, "Error calling NoMan", e);
-           return false;
+            Log.w(TAG, "Error calling NoMan", e);
+            return false;
         }
     }
 
@@ -164,7 +163,6 @@ public class NotificationBackend {
         public boolean priority;
         public boolean peekable;
         public boolean sensitive;
-        public boolean keyguard;
         public boolean first;  // first app in section
     }
 
