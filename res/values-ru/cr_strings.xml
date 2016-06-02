@@ -992,6 +992,11 @@
     <string name="device_policy_override_title">Переопределение политики устройства</string>
     <string name="device_policy_override_summary">Разрешить приложениям переопределять настройки профилей и защищённого экрана блокировки</string>
 
+    <!-- Allow fake signature checkbox in developer settings -->
+    <string name="allow_signature_fake">Разрешить подмену подписи</string>
+    <string name="allow_signature_fake_summary">Разрешать приложениям обходить систему безопасности, выдавая себя за другое приложение</string>
+    <string name="allow_signature_fake_warning">Внимание! Данное разрешение может привести к серьезным проблемам безопасности и конфиденциальности! Включайте только для проверенных приложений</string>
+
     <!-- Lock Clock Fonts -->
     <string name="lock_clock_font_title">Шрифт часов экрана блокировки</string>
     <string name="lock_clock_font_summary">Сменить шрифт часов на экране блокировки</string>
@@ -1060,13 +1065,6 @@
     <string name="show_cpu_info">Показать информацию о процессоре</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Экран наложения показывает текущую информацию о процессоре</string>
-
-    <!-- app notifications hide on lockscreen -->
-    <string name="app_notification_no_keyguard_title">Скрывать, когда заблокировано</string>
-    <string name="app_notification_no_keyguard_summary">Скрывать уведомления этого приложения, когда устройство заблокировано</string>
-    <string name="filter_notif_no_keyguard">Скрытые, когда заблокировано</string>
-    <string name="notifications_no_keyguard">Скрытые, когда заблокировано</string>
-    <string name="notifications_four_items"><xliff:g id="notif_state" example="Priority">%1$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%2$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%3$s</xliff:g> / <xliff:g id="notif_state" example="Priority">%4$s</xliff:g></string>
 
     <!-- Option to Disable Brightness Icon In Brightness Slider -->
     <string name="brightness_icon_title">Значок яркости </string>
@@ -1221,5 +1219,22 @@
     <!-- Captive Portal -->
     <string name="captive_portal_detection">Captive portal detection</string>
     <string name="captive_portal_detection_summary">If disabled, a connection to google servers is not required in order to detect data connection.</string>
+
+    <!-- Battery fully charged notification -->
+    <string name="battery_fully_charged_notif_title">Уведомление о полном заряде батареи</string>
+    <string name="battery_fully_charged_notif_summary">Показывать уведомление когда батарея полностью заряжена</string>
+
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_style_title">Анимация плиток</string>
+    <string name="qs_tile_animation_duration_title">Длительность анимации плиток</string>
+    <string name="qs_tile_animation_style_off">отсутствует</string>
+    <string name="qs_tile_animation_style_flip">переворот</string>
+    <string name="qs_tile_animation_style_rotate">поворот</string>
+    <string name="qs_tile_animation_duration_low">медленно</string>
+    <string name="qs_tile_animation_duration_default">по умолчанию</string>
+    <string name="qs_tile_animation_duration_fast">быстро</string>
+    <string name="qs_tile_animation_duration_superfast">очень быстро</string>
+    <string name="qs_set_animation_style">Текущая анимация: %1$s</string>
+    <string name="qs_set_animation_duration">Текущая длительность анимации: %1$s</string>
 
 </resources>
