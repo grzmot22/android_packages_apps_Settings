@@ -51,6 +51,13 @@
 	    android:summaryOff="@string/qs_fast_data_enable_sum_off"
 	    android:defaultValue="false"/>
 	    
+	      <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+		android:key="double_tap_sleep_anywhere"
+		android:title="Double tap to lockscreen"
+		android:summaryOff="Double tap to lockscreen will lock the device"
+		android:summaryOn="Double tap to lockscreen won't lock the device"
+		android:defaultValue="false" />
+		
 	    <PreferenceScreen
 		android:id="@+id/development_settings"
                 android:title="@string/development_settings_title"
@@ -60,6 +67,8 @@
 		android:key="network_traffic"
 		android:title="Network Traffic"
 		android:fragment="com.android.settings.NetworkTraffic"/>
+		
+	   
 	    
 	
 	    <PreferenceScreen
