@@ -72,8 +72,12 @@ public class ApnSettings extends SettingsPreferenceFragment implements
     public static final String PREFERRED_APN_URI =
         "content://telephony/carriers/preferapn";
 
+    public static final Uri PREFERRED_MSIM_APN_URI =
+            Uri.parse("content://telephony/carriers/preferapn/subIdImsi");
+
     public static final String APN_ID = "apn_id";
     public static final String SUB_ID = "sub_id";
+    public static final String EXTRA_IMSI = "imsi";
     public static final String MVNO_TYPE = "mvno_type";
     public static final String MVNO_MATCH_DATA = "mvno_match_data";
 
@@ -117,6 +121,8 @@ public class ApnSettings extends SettingsPreferenceFragment implements
     private boolean mHideImsApn;
     private boolean mAllowAddingApns;
 
+    private String mImsi;
+
     private final BroadcastReceiver mMobileStateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -156,6 +162,11 @@ public class ApnSettings extends SettingsPreferenceFragment implements
         final Activity activity = getActivity();
         final int subId = activity.getIntent().getIntExtra(SUB_ID,
                 SubscriptionManager.INVALID_SUBSCRIPTION_ID);
+
+        mImsi = activity.getIntent().getStringExtra(EXTRA_IMSI);
+        if (mImsi == null) {
+            mImsi = "";
+        }
 
         mUm = (UserManager) getSystemService(Context.USER_SERVICE);
 
@@ -421,19 +432,34 @@ public class ApnSettings extends SettingsPreferenceFragment implements
 
         ContentValues values = new ContentValues();
         values.put(APN_ID, mSelectedKey);
-        resolver.update(getUriForCurrSubId(PREFERAPN_URI), values, null, null);
+        if (TelephonyManager.getDefault().getPhoneCount() > 1) {
+            Uri qUri = Uri.withAppendedPath(PREFERRED_MSIM_APN_URI,
+                    String.valueOf(mSubscriptionInfo.getSubscriptionId()));
+            qUri = Uri.withAppendedPath(qUri, mImsi);
+            resolver.update(qUri, values, null, null);
+        } else {
+            resolver.update(PREFERAPN_URI, values, null, null);
+        }
     }
 
     private String getSelectedApnKey() {
         String key = null;
 
-        Cursor cursor = getContentResolver().query(getUriForCurrSubId(PREFERAPN_URI),
-                new String[] {"_id"}, null, null, Telephony.Carriers.DEFAULT_SORT_ORDER);
-        if (cursor.getCount() > 0) {
-            cursor.moveToFirst();
-            key = cursor.getString(ID_INDEX);
+        Uri uri;
+        if (TelephonyManager.getDefault().getPhoneCount() > 1) {
+            uri = Uri.withAppendedPath(PREFERRED_MSIM_APN_URI,
+                    String.valueOf(mSubscriptionInfo.getSubscriptionId()));
+            uri = Uri.withAppendedPath(uri, mImsi);
+        } else {
+            uri = PREFERAPN_URI;
         }
-        cursor.close();
+        try (Cursor cursor = getContentResolver().query(uri, new String[] {"_id"},
+                null, null, Telephony.Carriers.DEFAULT_SORT_ORDER)) {
+            if (cursor != null && cursor.getCount() > 0) {
+                cursor.moveToFirst();
+                key = cursor.getString(ID_INDEX);
+            }
+        }
         return key;
     }
 
@@ -458,17 +484,6 @@ public class ApnSettings extends SettingsPreferenceFragment implements
         mRestoreApnProcessHandler
                 .sendEmptyMessage(EVENT_RESTORE_DEFAULTAPN_START);
         return true;
-    }
-
-    // Append subId to the Uri
-    private Uri getUriForCurrSubId(Uri uri) {
-        int subId = mSubscriptionInfo != null ? mSubscriptionInfo.getSubscriptionId()
-                : SubscriptionManager.INVALID_SUBSCRIPTION_ID;
-        if (SubscriptionManager.isValidSubscriptionId(subId)) {
-            return Uri.withAppendedPath(uri, "subId/" + String.valueOf(subId));
-        } else {
-            return uri;
-        }
     }
 
     private class RestoreApnUiHandler extends Handler {
@@ -509,7 +524,7 @@ public class ApnSettings extends SettingsPreferenceFragment implements
             switch (msg.what) {
                 case EVENT_RESTORE_DEFAULTAPN_START:
                     ContentResolver resolver = getContentResolver();
-                    resolver.delete(getUriForCurrSubId(DEFAULTAPN_URI), null, null);
+                    resolver.delete(DEFAULTAPN_URI, null, null);
                     mRestoreApnUiHandler
                         .sendEmptyMessage(EVENT_RESTORE_DEFAULTAPN_COMPLETE);
                     break;
