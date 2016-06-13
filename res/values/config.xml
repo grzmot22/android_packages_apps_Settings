@@ -137,4 +137,15 @@
 
     <!-- When true, weather options will be displayed in settings dashboard -->
     <bool name="config_showWeatherMenu">true</bool>
+
+    <!-- Possible storage sizes in giga bytes -->
+    <integer-array name="config_storageSizes">
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+        <item>128</item>
+    </integer-array>
+
 </resources>

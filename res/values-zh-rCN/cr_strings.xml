@@ -1113,4 +1113,26 @@
     <!-- Captive Portal -->
     <string name="captive_portal_detection">强制网络门户检测</string>
     <string name="captive_portal_detection_summary">如果禁用,检测网络连接时将不必再连接到谷歌服务器.</string>
+<!-- Battery fully charged notification -->
+    <string name="battery_fully_charged_notif_title">电池充满通知</string>
+    <string name="battery_fully_charged_notif_summary">当电池充满时显示通知</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_style_title">磁贴动画风格</string>
+    <string name="qs_tile_animation_duration_title">磁贴动画时长</string>
+    <string name="qs_tile_animation_interpolator_title">磁贴动画插值器</string>
+    <string name="qs_tile_animation_style_off">无动画</string>
+    <string name="qs_tile_animation_style_flip">翻转</string>
+    <string name="qs_tile_animation_style_rotate">旋转</string>
+    <string name="qs_tile_animation_duration_low">慢</string>
+    <string name="qs_tile_animation_duration_default">默认</string>
+    <string name="qs_tile_animation_duration_fast">快</string>
+    <string name="qs_tile_animation_duration_superfast">很快</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">匀速</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">减速</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">先加速再减速</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">弹球效果</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">加速到达终点后超出然后返回终点</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">先回退然后加速到达终点</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">先回退然后加速到达终点后超出最后返回终点</string>
 </resources>

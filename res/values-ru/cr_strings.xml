@@ -1227,14 +1227,24 @@
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_style_title">Анимация плиток</string>
     <string name="qs_tile_animation_duration_title">Длительность анимации плиток</string>
-    <string name="qs_tile_animation_style_off">отсутствует</string>
-    <string name="qs_tile_animation_style_flip">переворот</string>
-    <string name="qs_tile_animation_style_rotate">поворот</string>
-    <string name="qs_tile_animation_duration_low">медленно</string>
-    <string name="qs_tile_animation_duration_default">по умолчанию</string>
-    <string name="qs_tile_animation_duration_fast">быстро</string>
-    <string name="qs_tile_animation_duration_superfast">очень быстро</string>
-    <string name="qs_set_animation_style">Текущая анимация: %1$s</string>
-    <string name="qs_set_animation_duration">Текущая длительность анимации: %1$s</string>
+    <string name="qs_tile_animation_interpolator_title">Интерполяция анимации плиток</string>
+    <string name="qs_tile_animation_style_off">Отсутствует</string>
+    <string name="qs_tile_animation_style_flip">Переворот</string>
+    <string name="qs_tile_animation_style_rotate">Поворот</string>
+    <string name="qs_tile_animation_duration_low">Медленно</string>
+    <string name="qs_tile_animation_duration_default">По умолчанию</string>
+    <string name="qs_tile_animation_duration_fast">Быстро</string>
+    <string name="qs_tile_animation_duration_superfast">Очень быстро</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Линейно</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Усилить</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Ослабить</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Усилить/ослабить</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Отскок</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Вылет</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Ускорение</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Ускорение/вылет</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
 
 </resources>
