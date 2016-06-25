@@ -1217,8 +1217,8 @@
     <string name="dashboard_switches_dialog_title">Состояние переключателей</string>
 
     <!-- Captive Portal -->
-    <string name="captive_portal_detection">Captive portal detection</string>
-    <string name="captive_portal_detection_summary">If disabled, a connection to google servers is not required in order to detect data connection.</string>
+    <string name="captive_portal_detection">Принудительное обнаружение сервера</string>
+    <string name="captive_portal_detection_summary">Если отключено, то соединение с серверами Google не требуется для того, чтобы обнаружить передачу данных.</string>
 
     <!-- Battery fully charged notification -->
     <string name="battery_fully_charged_notif_title">Уведомление о полном заряде батареи</string>
@@ -1235,16 +1235,24 @@
     <string name="qs_tile_animation_duration_default">По умолчанию</string>
     <string name="qs_tile_animation_duration_fast">Быстро</string>
     <string name="qs_tile_animation_duration_superfast">Очень быстро</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Линейно</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Усилить</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Ослабить</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Усилить/ослабить</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Вытягивание</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Ускорение</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Замедление</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Ускорить и замедлить</string>
     <string name="qs_tile_animation_interpolator_bounceInterpolator">Отскок</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Вылет</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Ускорение</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Ускорение/вылет</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Перекрытие</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Опережение</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Опережение и вылет</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
+
+    <!-- Smart cover -->
+    <string name="smart_cover_title">Умная обложка</string>
+    <string name="lid_settings_title">Крышка</string>
+    <string name="lid_controls_sleep_title">Управление сном</string>
+    <string name="lid_controls_sleep_summary">Выключение экрана при закрытии крышки</string>
+    <string name="lid_controls_wake_title">Управление пробуждением</string>
+    <string name="lid_controls_wake_summary">Включение экрана при открытии крышки</string>
 
 </resources>

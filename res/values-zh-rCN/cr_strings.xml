@@ -1135,4 +1135,11 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">加速到达终点后超出然后返回终点</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">先回退然后加速到达终点</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">先回退然后加速到达终点后超出最后返回终点</string>
+    <!-- Smart cover -->
+    <string name="smart_cover_title">智能皮套</string>
+    <string name="lid_settings_title">皮套</string>
+    <string name="lid_controls_sleep_title">休眠控制</string>
+    <string name="lid_controls_sleep_summary">皮套合上时关闭屏幕</string>
+    <string name="lid_controls_wake_title">唤醒控制</string>
+    <string name="lid_controls_wake_summary">皮套打开时唤醒屏幕</string>
 </resources>
