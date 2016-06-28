@@ -65,22 +65,14 @@
           android:summaryOff="@string/su_indicator_summary_off"
           android:defaultValue="true" />
 		
-	    <PreferenceScreen
-		android:id="@+id/development_settings"
-                android:title="@string/development_settings_title"
-                android:fragment="com.android.settings.DevelopmentSettings"/>
-		
-	    <PreferenceScreen
-		android:key="network_traffic"
-		android:title="Network Traffic"
-		android:fragment="com.android.settings.NetworkTraffic"/>
-		
-	   
-	    
-	
-	    <PreferenceScreen
-	    android:key="More"
-	    android:title="More tweaks will come soon!"/>
+	<PreferenceScreen
+	  android:key="network_traffic"
+	  android:title="Network Traffic"
+	  android:fragment="com.android.settings.NetworkTraffic"/>
+
+	<PreferenceScreen
+	  android:key="More"
+          android:title="More tweaks will come soon!"/>
 	    
      </PreferenceCategory>
      
