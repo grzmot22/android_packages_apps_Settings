@@ -64,7 +64,7 @@
           android:summaryOn="@string/su_indicator_summary_on"
           android:summaryOff="@string/su_indicator_summary_off"
           android:defaultValue="true" />
-		
+
 	    <PreferenceScreen
 		android:id="@+id/development_settings"
                 android:title="@string/development_settings_title"
