@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V9.8</string>
+    <string name="temasek_version_default">Build V9.9</string>
     <string name="android_version_title">Marshmallow</string>
     <string name="android_version_default">6.0.1 MOB30R Release 52</string>
 
@@ -136,6 +136,7 @@
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Clock</string>
+    <string name="clock_color_switch_title">Color switch</string>
     <string name="clock_color_title">Color</string>
     <string name="status_bar_clock_style_reset">Reset color</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
