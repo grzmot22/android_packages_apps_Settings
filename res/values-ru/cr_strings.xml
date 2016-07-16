@@ -132,6 +132,7 @@
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Время и дата</string>
+    <string name="clock_color_switch_title">Включить цвет часов</string>
     <string name="clock_color_title">Цвет</string>
     <string name="status_bar_clock_style_reset">Сбросить цвет</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
